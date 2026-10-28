@@ -37,7 +37,7 @@ inst() { (cd "$LAB" && PATH="/usr/bin:/bin:$(dirname "$(command -v git)")" POLYS
 # --- P1 ----------------------------------------------------------------------------------------------
 rc=0; pkg 0.2 || rc=$?; [ $rc != 0 ] && [ ! -e "$LAB/rel/0.2/polyship.tar.gz" ] && ok "P1 a bad tag is refused" || bad "P1 bad tag: exit $rc"
 rc=0; pkg v0.2.0 || rc=$?
-list=$(tar -tzf "$LAB/rel/v0.2.0/polyship.tar.gz" 2>/dev/null | sed 's#^\./##' | grep -v -e '/$' -e '^$' | sort | tr '\n' ' ')
+list=$(tar -tzf "$LAB/rel/v0.2.0/polyship.tar.gz" 2>/dev/null | sed 's#^\./##' | grep -v -e '/$' -e '^$' | LC_ALL=C sort | tr '\n' ' ')
 sum=$(cd "$LAB/rel/v0.2.0" && shasum -a 256 -c checksums.txt 2>&1)
 [ $rc = 0 ] && [ "$list" = "LICENSE README.md VERSION bin/lib.sh bin/merge.sh bin/polyship bin/ship.sh lab/recover.sh " ] && [ "$sum" = "polyship.tar.gz: OK" ] &&
   ok "P1 v0.2.0: the archive holds bin/, lab/recover.sh, VERSION; checksums.txt matches" || bad "P1 package: exit $rc, files: $list, sum: $sum"
