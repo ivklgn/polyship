@@ -1,0 +1,10 @@
+t01	D1 provider	Add a function slugify(text) to src/text.js: lowercase, every run of characters that are not a-z or 0-9 becomes one hyphen, no hyphen at the start or the end. Add a test.
+t02	D1 consumer	Post paths must carry a slug of the title: postPath({ id: 7, title: 'Hello World' }) returns '/posts/7-hello-world' (src/posts.js). Add a test.
+t03	D3 rename	Rename getUser to findUser everywhere in the code base; the old name must not remain anywhere in src/ or test/.
+t04	D3 new caller	Add userLabel(db, id) to src/report.js: it returns 'Name <email>' for the user with that id, using the existing user lookup in src/users.js. Add a test.
+t05	D4 hot file	Add a command 'export' to the commands list in src/registry.js and its label 'Export' under the key 'cmd.export' in locales/en.json. Add a test.
+t06	D4 hot file	Add a command 'import' to the commands list in src/registry.js and its label 'Import' under the key 'cmd.import' in locales/en.json. Add a test.
+t07	D2 duplicate	createUser in src/users.js must reject an empty or whitespace-only name: throw new Error('name required'). Add a test.
+t08	D2 duplicate	Validate user input: creating a user without a name must throw an Error with the message 'name required'. Add a test.
+t09	D3 signature	formatPrice in src/format.js must take the currency as a required second argument: formatPrice(1234, 'EUR') is '€12.34', formatPrice(1234, 'USD') is '$12.34'. Update every caller.
+t10	D3 old signature	Add orderTotal(items) to src/report.js: the formatted price of the sum of item.cents, e.g. orderTotal([{ cents: 1000 }, { cents: 234 }]) is '$12.34'. Add a test.

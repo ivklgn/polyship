@@ -1,0 +1,11 @@
+{"commit":"055c8e0","subject":"init: fixture for lab/swarm.sh","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"e606993","subject":"Add userLabel(db, id) to report: 'Name <email>' via existing getUser lookup","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:ok t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"281ee4c","subject":"postPath: append title slug so post URLs are readable (/posts/7-hello-world)","visible":"green","acceptance":"t01:fail t02:ok t03:fail t04:ok t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"9292101","subject":"users: reject createUser without a name","visible":"green","acceptance":"t01:fail t02:ok t03:fail t04:ok t05:fail t06:fail t07:fail t08:ok t09:fail t10:fail "}
+{"commit":"eff36b9","subject":"Add 'export' command and its English label","visible":"green","acceptance":"t01:fail t02:ok t03:fail t04:ok t05:ok t06:fail t07:fail t08:ok t09:fail t10:fail "}
+{"commit":"e5e2bb8","subject":"Add slugify(text) to src/text.js","visible":"green","acceptance":"t01:ok t02:ok t03:fail t04:ok t05:ok t06:fail t07:fail t08:ok t09:fail t10:fail "}
+{"commit":"1bab18c","subject":"rename getUser to findUser: name says it may return nothing","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:fail t07:fail t08:ok t09:fail t10:fail "}
+{"commit":"f115c1c","subject":"report: add orderTotal(items) — formatted sum of item.cents for order summaries","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:fail t07:fail t08:ok t09:fail t10:ok "}
+{"commit":"f919296","subject":"createUser: reject empty or whitespace-only name","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:fail t07:ok t08:ok t09:fail t10:ok "}
+{"commit":"91bdd46","subject":"Add 'import' command and its English label","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:fail t10:ok "}
+{"commit":"4a3c1aa","subject":"formatPrice: require currency argument","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:fail "}

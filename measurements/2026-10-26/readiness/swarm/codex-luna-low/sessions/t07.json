@@ -1,0 +1,1 @@
+{"result": "The code and test are ready, and `node --test` passes all 7 tests. I could not commit or run `scripts/ship.sh`: Git could not create its index lock because access was denied.\n\nSTOPPED: commit blocked by filesystem permissions."}

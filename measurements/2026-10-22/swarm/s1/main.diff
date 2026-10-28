@@ -1,0 +1,137 @@
+diff --git a/locales/en.json b/locales/en.json
+index 8061d85..0197c9f 100644
+--- a/locales/en.json
++++ b/locales/en.json
+@@ -1,4 +1,6 @@
+ {
+   "cmd.list": "List",
+-  "cmd.show": "Show"
++  "cmd.show": "Show",
++  "cmd.export": "Export",
++  "cmd.import": "Import"
+ }
+diff --git a/src/format.js b/src/format.js
+index f04c3ce..5007acc 100644
+--- a/src/format.js
++++ b/src/format.js
+@@ -1,3 +1,7 @@
+-export function formatPrice(cents) {
+-  return '$' + (cents / 100).toFixed(2);
++const SYMBOLS = { EUR: '€', USD: '$' };
++
++export function formatPrice(cents, currency) {
++  const symbol = SYMBOLS[currency];
++  if (!symbol) throw new TypeError(`formatPrice: unknown currency ${JSON.stringify(currency)}`);
++  return symbol + (cents / 100).toFixed(2);
+ }
+diff --git a/src/posts.js b/src/posts.js
+index 6e53f28..8cc6302 100644
+--- a/src/posts.js
++++ b/src/posts.js
+@@ -1,3 +1,4 @@
+ export function postPath(post) {
+-  return `/posts/${post.id}`;
++  const slug = (post.title ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
++  return `/posts/${post.id}${slug ? `-${slug}` : ''}`;
+ }
+diff --git a/src/registry.js b/src/registry.js
+index 763fc1f..82d3930 100644
+--- a/src/registry.js
++++ b/src/registry.js
+@@ -1,4 +1,6 @@
+ export const commands = [
+   'list',
+   'show',
++  'export',
++  'import',
+ ];
+diff --git a/src/report.js b/src/report.js
+index bca4e19..694f57c 100644
+--- a/src/report.js
++++ b/src/report.js
+@@ -1,7 +1,16 @@
+-import { getUser } from './users.js';
++import { findUser } from './users.js';
+ import { formatPrice } from './format.js';
+ 
+-export function invoiceLine(db, userId, cents) {
+-  const user = getUser(db, userId);
+-  return `${user.name}: ${formatPrice(cents)}`;
++export function invoiceLine(db, userId, cents, currency) {
++  const user = findUser(db, userId);
++  return `${user.name}: ${formatPrice(cents, currency)}`;
++}
++
++export function orderTotal(items, currency) {
++  return formatPrice(items.reduce((sum, item) => sum + item.cents, 0), currency);
++}
++
++export function userLabel(db, id) {
++  const user = findUser(db, id);
++  return `${user.name} <${user.email}>`;
+ }
+diff --git a/src/text.js b/src/text.js
+index 64ed9bc..e914341 100644
+--- a/src/text.js
++++ b/src/text.js
+@@ -1,3 +1,7 @@
+ export function titleCase(s) {
+   return s.replace(/\b\w/g, (c) => c.toUpperCase());
+ }
++
++export function slugify(text) {
++  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
++}
+diff --git a/src/users.js b/src/users.js
+index 2ebfb9d..d484276 100644
+--- a/src/users.js
++++ b/src/users.js
+@@ -1,9 +1,10 @@
+ export function createUser(db, { name, email }) {
++  if (!name?.trim()) throw new Error('name required');
+   const user = { id: db.users.length + 1, name, email };
+   db.users.push(user);
+   return user;
+ }
+ 
+-export function getUser(db, id) {
++export function findUser(db, id) {
+   return db.users.find((u) => u.id === id) ?? null;
+ }
+diff --git a/test/basic.test.js b/test/basic.test.js
+index ff6d229..5af9ed8 100644
+--- a/test/basic.test.js
++++ b/test/basic.test.js
+@@ -1,15 +1,25 @@
+ import { test } from 'node:test';
+ import assert from 'node:assert/strict';
+-import { titleCase } from '../src/text.js';
+-import { createUser, getUser } from '../src/users.js';
++import { titleCase, slugify } from '../src/text.js';
++import { createUser, findUser } from '../src/users.js';
+ import { postPath } from '../src/posts.js';
+ import { formatPrice } from '../src/format.js';
+-import { invoiceLine } from '../src/report.js';
++import { invoiceLine, orderTotal, userLabel } from '../src/report.js';
+ import { commands } from '../src/registry.js';
++import { readFileSync } from 'node:fs';
++const en = JSON.parse(readFileSync(new URL('../locales/en.json', import.meta.url)));
+ 
+ test('titleCase', () => assert.equal(titleCase('a b'), 'A B'));
+-test('users', () => { const db = { users: [] }; const u = createUser(db, { name: 'Ann', email: 'a@x.io' }); assert.equal(getUser(db, u.id).name, 'Ann'); });
++test('users', () => { const db = { users: [] }; const u = createUser(db, { name: 'Ann', email: 'a@x.io' }); assert.equal(findUser(db, u.id).name, 'Ann'); });
++test('createUser without name throws', () => assert.throws(() => createUser({ users: [] }, { email: 'a@x.io' }), { message: 'name required' }));
+ test('postPath', () => assert.equal(postPath({ id: 3 }), '/posts/3'));
+-test('formatPrice', () => assert.equal(formatPrice(1234), '$12.34'));
+-test('invoiceLine', () => { const db = { users: [{ id: 1, name: 'Ann' }] }; assert.equal(invoiceLine(db, 1, 500), 'Ann: $5.00'); });
+-test('commands', () => assert.deepEqual(commands, ['list', 'show']));
++test('postPath slug', () => assert.equal(postPath({ id: 7, title: 'Hello World' }), '/posts/7-hello-world'));
++test('formatPrice', () => { assert.equal(formatPrice(1234, 'EUR'), '€12.34'); assert.equal(formatPrice(1234, 'USD'), '$12.34'); assert.throws(() => formatPrice(1234)); });
++test('invoiceLine', () => { const db = { users: [{ id: 1, name: 'Ann' }] }; assert.equal(invoiceLine(db, 1, 500, 'USD'), 'Ann: $5.00'); });
++test('orderTotal', () => assert.equal(orderTotal([{ cents: 1000 }, { cents: 234 }], 'USD'), '$12.34'));
++test('commands', () => { for (const c of ['list', 'show']) assert.ok(commands.includes(c)); });
++test('export command', () => { assert.ok(commands.includes('export')); assert.equal(en['cmd.export'], 'Export'); });
++test('createUser rejects empty name', () => { const db = { users: [] }; for (const name of ['', '   ', undefined]) assert.throws(() => createUser(db, { name, email: 'a@x.io' }), { message: 'name required' }); assert.equal(db.users.length, 0); });
++test('slugify', () => assert.equal(slugify('  Hello, World!  Foo_bar 42 '), 'hello-world-foo-bar-42'));
++test('userLabel', () => { const db = { users: [{ id: 1, name: 'Ann', email: 'a@x.io' }] }; assert.equal(userLabel(db, 1), 'Ann <a@x.io>'); });
++test('import command', () => { assert.ok(commands.includes('import')); assert.equal(en['cmd.import'], 'Import'); });

@@ -1,0 +1,538 @@
+lab/race.sh: line 143: 27746 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 51948 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 84738 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s5 not on main (dep-missing)
+  VIOLATION refused: s16 not on main (dep-missing)
+  VIOLATION refused: s22 not on main (gave-up)
+  VIOLATION refused: s24 not on main (dep-missing)
+run 1/50 seed=7250 mode=ship: 24 commits on main, 4 violation(s), 180s
+  lab kept: /tmp/wt-race.wkBbjZ
+lab/race.sh: line 143: 12601 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s11 not on main (dep-missing)
+  VIOLATION refused: s20 not on main (dep-missing)
+  VIOLATION refused: s21 not on main (dep-missing)
+run 2/50 seed=7251 mode=ship: 25 commits on main, 3 violation(s), 175s
+  lab kept: /tmp/wt-race.RRPnnB
+lab/race.sh: line 143: 64562 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 64477 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s6 not on main (gave-up)
+run 3/50 seed=7252 mode=ship: 20 commits on main, 2 violation(s), 169s
+  lab kept: /tmp/wt-race.BWNLpa
+lab/race.sh: line 143: 39045 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 43929 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 46476 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 55720 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 68925 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 75244 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 97600 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+--- paused here, 2026-10-23: the run in flight was dropped; resume.sh continues from the next seed
+lab/race.sh: line 143: 46816 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 52009 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 99591 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  4572 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  5538 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  5779 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 30832 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 39439 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (dep-missing)
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s15 not on main (gave-up)
+  VIOLATION refused: s21 not on main (dep-missing)
+run 1/47 seed=7253 mode=ship: 22 commits on main, 4 violation(s), 174s
+  lab kept: /tmp/wt-race.rKZnYM
+  VIOLATION refused: s5 not on main (dep-missing)
+  VIOLATION refused: s13 not on main (gave-up)
+  VIOLATION refused: s15 not on main (dep-missing)
+  VIOLATION refused: s16 not on main (dep-missing)
+run 2/47 seed=7254 mode=ship: 22 commits on main, 4 violation(s), 185s
+  lab kept: /tmp/wt-race.8e2bJh
+lab/race.sh: line 143: 30001 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 46567 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 62991 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 91686 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s9 not on main (dep-missing)
+run 3/47 seed=7255 mode=ship: 26 commits on main, 2 violation(s), 165s
+  lab kept: /tmp/wt-race.iulgtx
+lab/race.sh: line 143:  3231 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 12411 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 20158 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 39723 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s5 not on main (dep-missing)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s22 not on main (dep-missing)
+  VIOLATION refused: s24 not on main (dep-missing)
+run 4/47 seed=7256 mode=ship: 24 commits on main, 5 violation(s), 174s
+  lab kept: /tmp/wt-race.SiqJoW
+lab/race.sh: line 143: 71005 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 79712 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  2691 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 18789 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (dep-missing)
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s6 not on main (dep-missing)
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s25 not on main (dep-missing)
+run 5/47 seed=7257 mode=ship: 23 commits on main, 5 violation(s), 182s
+  lab kept: /tmp/wt-race.7vriSN
+lab/race.sh: line 143: 36789 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 39221 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 70017 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 80541 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s5 not on main (dep-missing)
+  VIOLATION refused: s6 not on main (gave-up)
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s27 not on main (dep-missing)
+run 6/47 seed=7258 mode=ship: 24 commits on main, 5 violation(s), 173s
+  lab kept: /tmp/wt-race.WKm3YO
+lab/race.sh: line 143: 79212 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 88816 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  2867 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (gave-up)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s15 not on main (gave-up)
+  VIOLATION refused: s20 not on main (dep-missing)
+  VIOLATION refused: s24 not on main (gave-up)
+run 7/47 seed=7259 mode=ship: 23 commits on main, 5 violation(s), 176s
+  lab kept: /tmp/wt-race.LUlGYP
+lab/race.sh: line 143: 48571 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 78931 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 92352 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 32513 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 32198 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s4 not on main (gave-up)
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s11 not on main (dep-missing)
+  VIOLATION refused: s13 not on main (dep-missing)
+  VIOLATION refused: s17 not on main (dep-missing)
+  VIOLATION refused: s24 not on main (gave-up)
+  VIOLATION refused: s26 not on main (gave-up)
+run 8/47 seed=7260 mode=ship: 21 commits on main, 7 violation(s), 185s
+  lab kept: /tmp/wt-race.sAXQhq
+lab/race.sh: line 143: 53654 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 58186 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 86466 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 99538 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (dep-missing)
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s6 not on main (gave-up)
+  VIOLATION refused: s11 not on main (dep-missing)
+  VIOLATION refused: s14 not on main (dep-missing)
+  VIOLATION refused: s17 not on main (gave-up)
+  VIOLATION refused: s21 not on main (gave-up)
+  VIOLATION refused: s30 not on main (dep-missing)
+run 9/47 seed=7261 mode=ship: 22 commits on main, 8 violation(s), 183s
+  lab kept: /tmp/wt-race.3G1q0C
+lab/race.sh: line 143: 77197 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 91337 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 92340 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s8 not on main (dep-missing)
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s20 not on main (gave-up)
+  VIOLATION refused: s21 not on main (dep-missing)
+  VIOLATION refused: s24 not on main (gave-up)
+  VIOLATION refused: s26 not on main (dep-missing)
+  VIOLATION refused: s27 not on main (dep-missing)
+  VIOLATION refused: s29 not on main (dep-missing)
+run 10/47 seed=7262 mode=ship: 21 commits on main, 10 violation(s), 186s
+  lab kept: /tmp/wt-race.tH5mVO
+lab/race.sh: line 143: 46546 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 60777 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 63382 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  5659 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s11 not on main (dep-missing)
+  VIOLATION refused: s26 not on main (dep-missing)
+run 11/47 seed=7263 mode=ship: 22 commits on main, 4 violation(s), 189s
+  lab kept: /tmp/wt-race.Gr3i4M
+lab/race.sh: line 143: 77972 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s10 not on main (gave-up)
+  VIOLATION refused: s14 not on main (gave-up)
+  VIOLATION refused: s15 not on main (gave-up)
+  VIOLATION refused: s26 not on main (dep-missing)
+run 12/47 seed=7264 mode=ship: 20 commits on main, 6 violation(s), 179s
+  lab kept: /tmp/wt-race.tzNd3z
+lab/race.sh: line 143: 64197 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 80666 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 86858 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  9300 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 16655 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 38448 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 47506 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s5 not on main (dep-missing)
+  VIOLATION refused: s13 not on main (dep-missing)
+  VIOLATION refused: s17 not on main (dep-missing)
+  VIOLATION refused: s18 not on main (dep-missing)
+  VIOLATION refused: s21 not on main (dep-missing)
+  VIOLATION refused: s24 not on main (dep-missing)
+run 13/47 seed=7265 mode=ship: 21 commits on main, 6 violation(s), 181s
+  lab kept: /tmp/wt-race.xIwHTj
+  VIOLATION refused: s11 not on main (dep-missing)
+  VIOLATION refused: s12 not on main (dep-missing)
+run 14/47 seed=7266 mode=ship: 27 commits on main, 2 violation(s), 173s
+  lab kept: /tmp/wt-race.vy7m5P
+lab/race.sh: line 143: 87817 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 88514 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  3187 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 30020 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 42562 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 48632 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s23 not on main (dep-missing)
+  VIOLATION refused: s28 not on main (dep-missing)
+  VIOLATION refused: s29 not on main (dep-missing)
+run 15/47 seed=7267 mode=ship: 26 commits on main, 3 violation(s), 170s
+  lab kept: /tmp/wt-race.oJrhpF
+lab/race.sh: line 143: 26637 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 31290 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 37429 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 40556 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 63545 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 90039 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s8 not on main (gave-up)
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s14 not on main (dep-missing)
+run 16/47 seed=7268 mode=ship: 25 commits on main, 4 violation(s), 182s
+  lab kept: /tmp/wt-race.HLJ8CF
+lab/race.sh: line 143: 73364 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 21255 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 28085 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s10 not on main (gave-up)
+  VIOLATION refused: s14 not on main (dep-missing)
+  VIOLATION refused: s22 not on main (dep-missing)
+  VIOLATION refused: s29 not on main (dep-missing)
+run 17/47 seed=7269 mode=ship: 22 commits on main, 6 violation(s), 164s
+  lab kept: /tmp/wt-race.lgaKt2
+lab/race.sh: line 143:  7526 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s15 not on main (gave-up)
+  VIOLATION refused: s17 not on main (dep-missing)
+  VIOLATION refused: s28 not on main (dep-missing)
+run 18/47 seed=7270 mode=ship: 23 commits on main, 3 violation(s), 177s
+  lab kept: /tmp/wt-race.MsRfH0
+lab/race.sh: line 143: 20285 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 51788 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 63151 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 80292 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 84857 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s1 not on main (gave-up)
+  VIOLATION refused: s3 not on main (gave-up)
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s13 not on main (gave-up)
+run 19/47 seed=7271 mode=ship: 25 commits on main, 4 violation(s), 173s
+  lab kept: /tmp/wt-race.KBzV4v
+lab/race.sh: line 143: 45148 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 48477 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s5 not on main (dep-missing)
+  VIOLATION refused: s15 not on main (dep-missing)
+  VIOLATION refused: s29 not on main (dep-missing)
+run 20/47 seed=7272 mode=ship: 26 commits on main, 3 violation(s), 179s
+  lab kept: /tmp/wt-race.O06eLE
+lab/race.sh: line 143: 37539 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 63129 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 88995 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:   548 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s11 not on main (gave-up)
+  VIOLATION refused: s27 not on main (dep-missing)
+run 21/47 seed=7273 mode=ship: 23 commits on main, 4 violation(s), 157s
+  lab kept: /tmp/wt-race.Re8deg
+lab/race.sh: line 143: 93207 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 21605 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 39396 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s8 not on main (gave-up)
+  VIOLATION refused: s15 not on main (dep-missing)
+run 22/47 seed=7274 mode=ship: 24 commits on main, 3 violation(s), 175s
+  lab kept: /tmp/wt-race.3WT1SA
+lab/race.sh: line 143: 40897 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 41300 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 50645 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 78597 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 87619 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 95309 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (gave-up)
+  VIOLATION refused: s9 not on main (gave-up)
+  VIOLATION refused: s16 not on main (dep-missing)
+  VIOLATION refused: s17 not on main (dep-missing)
+  VIOLATION refused: s19 not on main (dep-missing)
+run 23/47 seed=7275 mode=ship: 21 commits on main, 5 violation(s), 182s
+  lab kept: /tmp/wt-race.dXMBac
+lab/race.sh: line 143: 42075 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 42154 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 74770 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 97593 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  4191 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  3262 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s4 not on main (gave-up)
+  VIOLATION refused: s11 not on main (gave-up)
+  VIOLATION refused: s14 not on main (dep-missing)
+  VIOLATION refused: s29 not on main (dep-missing)
+run 24/47 seed=7276 mode=ship: 24 commits on main, 4 violation(s), 167s
+  lab kept: /tmp/wt-race.6pW2lo
+lab/race.sh: line 143: 33518 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 36183 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 43712 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 77221 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s10 not on main (gave-up)
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s18 not on main (dep-missing)
+  VIOLATION refused: s20 not on main (dep-missing)
+  VIOLATION refused: s21 not on main (dep-missing)
+  VIOLATION refused: s30 not on main (dep-missing)
+run 25/47 seed=7277 mode=ship: 24 commits on main, 7 violation(s), 183s
+  lab kept: /tmp/wt-race.1GUPXg
+lab/race.sh: line 143: 65706 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 81136 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 88773 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 14577 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s24 not on main (dep-missing)
+run 26/47 seed=7278 mode=ship: 26 commits on main, 2 violation(s), 176s
+  lab kept: /tmp/wt-race.L7jITW
+lab/race.sh: line 143: 16746 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s21 not on main (dep-missing)
+run 27/47 seed=7279 mode=ship: 24 commits on main, 2 violation(s), 172s
+  lab kept: /tmp/wt-race.g8vBH6
+lab/race.sh: line 143: 61813 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 61882 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 69208 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 69376 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 83849 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s13 not on main (dep-missing)
+  VIOLATION refused: s14 not on main (dep-missing)
+  VIOLATION refused: s16 not on main (dep-missing)
+  VIOLATION refused: s18 not on main (dep-missing)
+  VIOLATION refused: s25 not on main (dep-missing)
+  VIOLATION refused: s26 not on main (dep-missing)
+run 28/47 seed=7280 mode=ship: 23 commits on main, 6 violation(s), 178s
+  lab kept: /tmp/wt-race.KnjWl7
+lab/race.sh: line 143: 62138 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 65458 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 66248 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 67064 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 77614 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 76222 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 87830 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 96902 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  7598 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (dep-missing)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s15 not on main (dep-missing)
+  VIOLATION refused: s25 not on main (dep-missing)
+run 29/47 seed=7281 mode=ship: 23 commits on main, 5 violation(s), 160s
+  lab kept: /tmp/wt-race.l3wbAU
+lab/race.sh: line 143: 77669 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 83716 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 88108 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  2047 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 14553 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (gave-up)
+  VIOLATION refused: s8 not on main (gave-up)
+run 30/47 seed=7282 mode=ship: 23 commits on main, 2 violation(s), 81s
+  lab kept: /tmp/wt-race.mUNv3w
+lab/race.sh: line 143: 72080 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 73523 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 92435 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 15411 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (dep-missing)
+  VIOLATION refused: s6 not on main (gave-up)
+  VIOLATION refused: s10 not on main (dep-missing)
+  VIOLATION refused: s16 not on main (dep-missing)
+  VIOLATION refused: s17 not on main (dep-missing)
+  VIOLATION refused: s20 not on main (dep-missing)
+  VIOLATION refused: s24 not on main (dep-missing)
+run 31/47 seed=7283 mode=ship: 19 commits on main, 7 violation(s), 178s
+  lab kept: /tmp/wt-race.wXXCqV
+lab/race.sh: line 143: 35747 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 38194 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 40211 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 42000 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 46965 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 60279 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s5 not on main (gave-up)
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s10 not on main (dep-missing)
+  VIOLATION refused: s13 not on main (dep-missing)
+  VIOLATION refused: s18 not on main (dep-missing)
+run 32/47 seed=7284 mode=ship: 24 commits on main, 5 violation(s), 172s
+  lab kept: /tmp/wt-race.25OSHn
+lab/race.sh: line 143: 39665 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 65159 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 74510 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 76554 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s14 not on main (gave-up)
+  VIOLATION refused: s18 not on main (dep-missing)
+  VIOLATION refused: s23 not on main (gave-up)
+  VIOLATION refused: s28 not on main (dep-missing)
+  VIOLATION refused: s30 not on main (dep-missing)
+run 33/47 seed=7285 mode=ship: 22 commits on main, 7 violation(s), 163s
+  lab kept: /tmp/wt-race.SA4ZtE
+lab/race.sh: line 143: 52604 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 56809 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 66925 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 73205 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 74675 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s5 not on main (dep-missing)
+  VIOLATION refused: s18 not on main (dep-missing)
+  VIOLATION refused: s19 not on main (dep-missing)
+  VIOLATION refused: s27 not on main (dep-missing)
+run 34/47 seed=7286 mode=ship: 21 commits on main, 4 violation(s), 180s
+  lab kept: /tmp/wt-race.HfJkUp
+lab/race.sh: line 143: 15556 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 20647 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 21112 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 27203 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s6 not on main (dep-missing)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s25 not on main (dep-missing)
+  VIOLATION refused: s30 not on main (dep-missing)
+run 35/47 seed=7287 mode=ship: 26 commits on main, 4 violation(s), 178s
+  lab kept: /tmp/wt-race.2AVehW
+lab/race.sh: line 143: 43755 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 53265 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 65074 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 76112 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 81481 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s13 not on main (dep-missing)
+  VIOLATION refused: s20 not on main (dep-missing)
+  VIOLATION refused: s21 not on main (gave-up)
+  VIOLATION refused: s25 not on main (dep-missing)
+run 36/47 seed=7288 mode=ship: 23 commits on main, 6 violation(s), 182s
+  lab kept: /tmp/wt-race.vrnG4O
+lab/race.sh: line 143: 94690 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 97134 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  1699 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  7577 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  9073 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 22609 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s30 not on main (dep-missing)
+run 37/47 seed=7289 mode=ship: 27 commits on main, 2 violation(s), 174s
+  lab kept: /tmp/wt-race.NjoC8f
+lab/race.sh: line 143: 30797 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 30666 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 38275 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 48090 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 53360 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 60038 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 67301 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 70910 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (dep-missing)
+  VIOLATION refused: s11 not on main (dep-missing)
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s26 not on main (gave-up)
+run 38/47 seed=7290 mode=ship: 24 commits on main, 4 violation(s), 176s
+  lab kept: /tmp/wt-race.Jh7r6Z
+lab/race.sh: line 143: 80369 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 85499 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 87056 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 87843 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:   729 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 18064 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s26 not on main (gave-up)
+run 39/47 seed=7291 mode=ship: 23 commits on main, 2 violation(s), 178s
+  lab kept: /tmp/wt-race.Cu0Z4J
+lab/race.sh: line 143: 67426 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 69627 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s4 not on main (gave-up)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s14 not on main (gave-up)
+  VIOLATION refused: s30 not on main (dep-missing)
+run 40/47 seed=7292 mode=ship: 24 commits on main, 4 violation(s), 179s
+  lab kept: /tmp/wt-race.xxKlDy
+lab/race.sh: line 143: 37868 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 41883 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 41949 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 51235 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 64818 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (gave-up)
+  VIOLATION refused: s21 not on main (dep-missing)
+  VIOLATION refused: s22 not on main (dep-missing)
+  VIOLATION refused: s25 not on main (dep-missing)
+  VIOLATION refused: s30 not on main (dep-missing)
+run 41/47 seed=7293 mode=ship: 24 commits on main, 5 violation(s), 170s
+  lab kept: /tmp/wt-race.cDlRUX
+lab/race.sh: line 143: 82306 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 84789 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  5582 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 16348 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 27701 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s20 not on main (gave-up)
+  VIOLATION refused: s30 not on main (dep-missing)
+run 42/47 seed=7294 mode=ship: 27 commits on main, 4 violation(s), 173s
+  lab kept: /tmp/wt-race.pNiutf
+lab/race.sh: line 143: 33630 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 37789 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 38570 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 52408 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 75598 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s15 not on main (dep-missing)
+  VIOLATION refused: s21 not on main (dep-missing)
+  VIOLATION refused: s23 not on main (dep-missing)
+  VIOLATION refused: s25 not on main (dep-missing)
+run 43/47 seed=7295 mode=ship: 23 commits on main, 4 violation(s), 176s
+  lab kept: /tmp/wt-race.1NnvRu
+lab/race.sh: line 143: 93952 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 95098 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  7617 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 11846 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 21074 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s1 not on main (gave-up)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s8 not on main (gave-up)
+  VIOLATION refused: s17 not on main (gave-up)
+  VIOLATION refused: s23 not on main (dep-missing)
+run 44/47 seed=7296 mode=ship: 24 commits on main, 5 violation(s), 164s
+  lab kept: /tmp/wt-race.ieLDa8
+lab/race.sh: line 143: 58585 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 70284 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 76706 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 86202 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s14 not on main (dep-missing)
+  VIOLATION refused: s24 not on main (dep-missing)
+  VIOLATION refused: s28 not on main (gave-up)
+run 45/47 seed=7297 mode=ship: 25 commits on main, 3 violation(s), 168s
+  lab kept: /tmp/wt-race.3Ep87O
+lab/race.sh: line 143: 38362 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 59034 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 60740 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s4 not on main (gave-up)
+  VIOLATION refused: s8 not on main (dep-missing)
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s11 not on main (gave-up)
+  VIOLATION refused: s22 not on main (dep-missing)
+  VIOLATION refused: s23 not on main (dep-missing)
+  VIOLATION refused: s26 not on main (gave-up)
+run 46/47 seed=7298 mode=ship: 21 commits on main, 7 violation(s), 175s
+  lab kept: /tmp/wt-race.QVS57U
+lab/race.sh: line 143: 96627 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  1379 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 18787 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 23139 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 24726 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 26685 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 30160 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 34677 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 47/47 seed=7299 mode=ship: 26 commits on main, 0 violation(s), 51s
+FAIL: 209 violation(s); seeds: 7253 7254 7255 7256 7257 7258 7259 7260 7261 7262 7263 7264 7265 7266 7267 7268 7269 7270 7271 7272 7273 7274 7275 7276 7277 7278 7279 7280 7281 7282 7283 7284 7285 7286 7287 7288 7289 7290 7291 7292 7293 7294 7295 7296 7297 7298

@@ -1,0 +1,1 @@
+{"result": "`createUser` now throws `Error('name required')` when called without a name. The new test also checks that the database stays unchanged. All 7 tests pass, and the change was merged to main.\n\nSHIPPED"}

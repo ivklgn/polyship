@@ -1,0 +1,276 @@
+lab/race.sh: line 143: 31104 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 32047 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 33748 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 1/100 seed=7000 mode=ship: 9 commits on main, 0 violation(s), 18s
+lab/race.sh: line 143: 59877 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 59129 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 2/100 seed=7001 mode=ship: 8 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 90027 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 3/100 seed=7002 mode=ship: 7 commits on main, 0 violation(s), 31s
+lab/race.sh: line 143: 34019 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 4/100 seed=7003 mode=ship: 10 commits on main, 0 violation(s), 21s
+run 5/100 seed=7004 mode=ship: 10 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 93309 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 6/100 seed=7005 mode=ship: 11 commits on main, 0 violation(s), 24s
+lab/race.sh: line 143: 26143 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 26326 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 7/100 seed=7006 mode=ship: 11 commits on main, 0 violation(s), 21s
+lab/race.sh: line 143: 60203 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 8/100 seed=7007 mode=ship: 10 commits on main, 0 violation(s), 24s
+lab/race.sh: line 143: 93384 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 9/100 seed=7008 mode=ship: 9 commits on main, 0 violation(s), 29s
+lab/race.sh: line 143: 30563 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 32804 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 31531 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 10/100 seed=7009 mode=ship: 10 commits on main, 0 violation(s), 30s
+run 11/100 seed=7010 mode=ship: 10 commits on main, 0 violation(s), 22s
+run 12/100 seed=7011 mode=ship: 9 commits on main, 0 violation(s), 21s
+lab/race.sh: line 143: 33885 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 35748 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 35906 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 13/100 seed=7012 mode=ship: 10 commits on main, 0 violation(s), 25s
+lab/race.sh: line 143: 69324 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 69100 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 69983 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 71713 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 14/100 seed=7013 mode=ship: 11 commits on main, 0 violation(s), 17s
+lab/race.sh: line 143: 94992 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 95558 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 15/100 seed=7014 mode=ship: 8 commits on main, 0 violation(s), 28s
+lab/race.sh: line 143: 35303 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 35727 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 37399 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 16/100 seed=7015 mode=ship: 9 commits on main, 0 violation(s), 27s
+lab/race.sh: line 143: 70375 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 72587 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 73206 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 72077 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 17/100 seed=7016 mode=ship: 11 commits on main, 0 violation(s), 25s
+lab/race.sh: line 143:  7729 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  8435 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 10089 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 18/100 seed=7017 mode=ship: 10 commits on main, 0 violation(s), 22s
+lab/race.sh: line 143: 40825 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 41369 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 40854 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 42313 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 19/100 seed=7018 mode=ship: 10 commits on main, 0 violation(s), 18s
+run 20/100 seed=7019 mode=ship: 11 commits on main, 0 violation(s), 22s
+lab/race.sh: line 143:  1934 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  2325 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  2712 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 21/100 seed=7020 mode=ship: 10 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143: 32395 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 34937 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 22/100 seed=7021 mode=ship: 9 commits on main, 0 violation(s), 151s
+lab/race.sh: line 143: 85140 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 84402 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 84463 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 85966 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 23/100 seed=7022 mode=ship: 11 commits on main, 0 violation(s), 18s
+run 24/100 seed=7023 mode=ship: 9 commits on main, 0 violation(s), 16s
+run 25/100 seed=7024 mode=ship: 10 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143: 40953 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 39437 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 26/100 seed=7025 mode=ship: 9 commits on main, 0 violation(s), 15s
+lab/race.sh: line 143: 57660 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 27/100 seed=7026 mode=ship: 8 commits on main, 0 violation(s), 26s
+lab/race.sh: line 143: 79134 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 77545 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 28/100 seed=7027 mode=ship: 11 commits on main, 0 violation(s), 19s
+run 29/100 seed=7028 mode=ship: 11 commits on main, 0 violation(s), 18s
+lab/race.sh: line 143: 17988 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 30/100 seed=7029 mode=ship: 8 commits on main, 0 violation(s), 23s
+lab/race.sh: line 143: 39011 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 38494 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 40223 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 40938 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 31/100 seed=7030 mode=ship: 7 commits on main, 0 violation(s), 24s
+lab/race.sh: line 143: 61353 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 32/100 seed=7031 mode=ship: 9 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 82647 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 83244 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 33/100 seed=7032 mode=ship: 10 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143:  1107 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  2387 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 34/100 seed=7033 mode=ship: 11 commits on main, 0 violation(s), 16s
+lab/race.sh: line 143: 20220 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 19798 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 35/100 seed=7034 mode=ship: 9 commits on main, 0 violation(s), 16s
+lab/race.sh: line 143: 37221 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 38067 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 36/100 seed=7035 mode=ship: 9 commits on main, 0 violation(s), 24s
+lab/race.sh: line 143: 59261 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 37/100 seed=7036 mode=ship: 9 commits on main, 0 violation(s), 28s
+lab/race.sh: line 143: 82884 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 83582 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 38/100 seed=7037 mode=ship: 11 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143:  7774 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  8585 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 39/100 seed=7038 mode=ship: 10 commits on main, 0 violation(s), 17s
+run 40/100 seed=7039 mode=ship: 9 commits on main, 0 violation(s), 21s
+lab/race.sh: line 143: 43942 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 41/100 seed=7040 mode=ship: 10 commits on main, 0 violation(s), 18s
+lab/race.sh: line 143: 63670 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 65210 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 42/100 seed=7041 mode=ship: 10 commits on main, 0 violation(s), 23s
+lab/race.sh: line 143: 87833 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 43/100 seed=7042 mode=ship: 10 commits on main, 0 violation(s), 15s
+lab/race.sh: line 143:  4372 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  4496 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  6847 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 44/100 seed=7043 mode=ship: 7 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 24467 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 26276 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 45/100 seed=7044 mode=ship: 10 commits on main, 0 violation(s), 23s
+lab/race.sh: line 143: 44519 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 44408 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 46953 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 46/100 seed=7045 mode=ship: 10 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 63482 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 63788 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 47/100 seed=7046 mode=ship: 10 commits on main, 0 violation(s), 21s
+lab/race.sh: line 143: 84583 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 86575 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 48/100 seed=7047 mode=ship: 8 commits on main, 0 violation(s), 14s
+lab/race.sh: line 143: 99758 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  1124 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 49/100 seed=7048 mode=ship: 10 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143: 22437 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 50/100 seed=7049 mode=ship: 10 commits on main, 0 violation(s), 16s
+run 51/100 seed=7050 mode=ship: 9 commits on main, 0 violation(s), 17s
+lab/race.sh: line 143: 59799 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 58435 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 59866 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 59969 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 52/100 seed=7051 mode=ship: 10 commits on main, 0 violation(s), 22s
+lab/race.sh: line 143: 80262 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 80439 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 80847 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 53/100 seed=7052 mode=ship: 8 commits on main, 0 violation(s), 22s
+lab/race.sh: line 143:  1208 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  1634 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  2710 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 54/100 seed=7053 mode=ship: 11 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 20341 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 55/100 seed=7054 mode=ship: 10 commits on main, 0 violation(s), 17s
+lab/race.sh: line 143: 39207 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 56/100 seed=7055 mode=ship: 8 commits on main, 0 violation(s), 141s
+lab/race.sh: line 143: 16130 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 57/100 seed=7056 mode=ship: 9 commits on main, 0 violation(s), 17s
+lab/race.sh: line 143: 31763 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 31126 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 58/100 seed=7057 mode=ship: 8 commits on main, 0 violation(s), 17s
+lab/race.sh: line 143: 49563 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 50802 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 59/100 seed=7058 mode=ship: 11 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143: 70490 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 60/100 seed=7059 mode=ship: 9 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 89864 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 89172 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 61/100 seed=7060 mode=ship: 10 commits on main, 0 violation(s), 27s
+lab/race.sh: line 143: 15366 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 15977 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 62/100 seed=7061 mode=ship: 11 commits on main, 0 violation(s), 20s
+run 63/100 seed=7062 mode=ship: 9 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143: 55910 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 56264 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 57808 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 64/100 seed=7063 mode=ship: 11 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 77677 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 77577 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 65/100 seed=7064 mode=ship: 9 commits on main, 0 violation(s), 23s
+lab/race.sh: line 143:   209 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:   140 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:   270 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 66/100 seed=7065 mode=ship: 11 commits on main, 0 violation(s), 16s
+lab/race.sh: line 143: 18223 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 19552 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 67/100 seed=7066 mode=ship: 10 commits on main, 0 violation(s), 18s
+lab/race.sh: line 143: 39082 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 39380 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 38751 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 68/100 seed=7067 mode=ship: 8 commits on main, 0 violation(s), 141s
+run 69/100 seed=7068 mode=ship: 9 commits on main, 0 violation(s), 18s
+run 70/100 seed=7069 mode=ship: 11 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143: 51914 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 51525 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 52758 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 51830 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 71/100 seed=7070 mode=ship: 11 commits on main, 0 violation(s), 18s
+lab/race.sh: line 143: 70459 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 70172 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 70543 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 72/100 seed=7071 mode=ship: 10 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143: 91643 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 73/100 seed=7072 mode=ship: 11 commits on main, 0 violation(s), 17s
+lab/race.sh: line 143:  8896 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 10167 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 74/100 seed=7073 mode=ship: 10 commits on main, 0 violation(s), 21s
+lab/race.sh: line 143: 32500 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 75/100 seed=7074 mode=ship: 8 commits on main, 0 violation(s), 15s
+lab/race.sh: line 143: 51837 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 76/100 seed=7075 mode=ship: 10 commits on main, 0 violation(s), 17s
+lab/race.sh: line 143: 70544 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 69410 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 69808 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 77/100 seed=7076 mode=ship: 10 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 92884 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 78/100 seed=7077 mode=ship: 8 commits on main, 0 violation(s), 27s
+lab/race.sh: line 143: 16119 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 15560 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 17747 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 79/100 seed=7078 mode=ship: 10 commits on main, 0 violation(s), 16s
+lab/race.sh: line 143: 34730 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 35026 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 80/100 seed=7079 mode=ship: 9 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143: 52199 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 81/100 seed=7080 mode=ship: 9 commits on main, 0 violation(s), 25s
+run 82/100 seed=7081 mode=ship: 10 commits on main, 0 violation(s), 23s
+lab/race.sh: line 143: 99818 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 83/100 seed=7082 mode=ship: 10 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143: 20742 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 23052 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 84/100 seed=7083 mode=ship: 11 commits on main, 0 violation(s), 17s
+run 85/100 seed=7084 mode=ship: 10 commits on main, 0 violation(s), 16s
+run 86/100 seed=7085 mode=ship: 11 commits on main, 0 violation(s), 22s
+lab/race.sh: line 143: 78207 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 78439 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 87/100 seed=7086 mode=ship: 11 commits on main, 0 violation(s), 26s
+lab/race.sh: line 143:  1363 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  3171 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 88/100 seed=7087 mode=ship: 10 commits on main, 0 violation(s), 20s
+lab/race.sh: line 143: 21990 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 22033 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 89/100 seed=7088 mode=ship: 9 commits on main, 0 violation(s), 24s
+lab/race.sh: line 143: 43321 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 43131 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 43988 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 90/100 seed=7089 mode=ship: 11 commits on main, 0 violation(s), 18s
+lab/race.sh: line 143: 61024 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 60824 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 91/100 seed=7090 mode=ship: 10 commits on main, 0 violation(s), 19s
+run 92/100 seed=7091 mode=ship: 10 commits on main, 0 violation(s), 19s
+lab/race.sh: line 143:  1488 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 93/100 seed=7092 mode=ship: 11 commits on main, 0 violation(s), 22s
+lab/race.sh: line 143: 23274 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 21912 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 94/100 seed=7093 mode=ship: 10 commits on main, 0 violation(s), 18s
+lab/race.sh: line 143: 39957 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 41847 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 41339 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 95/100 seed=7094 mode=ship: 8 commits on main, 0 violation(s), 23s
+lab/race.sh: line 143: 62995 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 96/100 seed=7095 mode=ship: 9 commits on main, 0 violation(s), 21s
+lab/race.sh: line 143: 80870 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 81485 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 82868 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 97/100 seed=7096 mode=ship: 10 commits on main, 0 violation(s), 17s
+lab/race.sh: line 143:  2000 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  3508 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 98/100 seed=7097 mode=ship: 10 commits on main, 0 violation(s), 14s
+lab/race.sh: line 143: 18810 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 18718 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+run 99/100 seed=7098 mode=ship: 10 commits on main, 0 violation(s), 22s
+run 100/100 seed=7099 mode=ship: 10 commits on main, 0 violation(s), 18s
+PASS: 100 run(s), mode=ship

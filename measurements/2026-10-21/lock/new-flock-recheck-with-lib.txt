@@ -1,0 +1,475 @@
+PASS T1 0/50 (reps with two waiters inside at once: 0; reps timed out or with a waiter that never entered: 0; W=5)
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+PASS T2 0/50 (reps where the next merge hung >10 s after a kill during start)
+PASS T3 0/50 (reps where a live unrelated pid in the lock blocked the next merge >10 s)
+lab/lock.sh: line 49:  9188 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49:  9253 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49:  9320 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49:  9444 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 49:  9573 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49:  9721 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49:  9856 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49:  9988 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 49: 10516 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 10966 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 11245 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 11338 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 11457 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 11595 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 49: 11734 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 49: 11845 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 11989 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 12124 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 12284 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 12411 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 12559 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 12670 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 12839 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 12957 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 13092 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 13228 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 13353 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 13516 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 13632 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 13773 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 13901 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 14032 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 14181 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 14311 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 14421 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 14570 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 14692 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 14797 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 14890 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 14966 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15031 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15111 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15177 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15271 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15336 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15401 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15477 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15544 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15638 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 15709 Terminated: 15          ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+PASS T4-TERM 0/50 (reps where the next merge waited >10 s after SIGTERM to the holder)
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+PASS T4-INT 0/50 (reps where the next merge waited >10 s after SIGINT to the holder)
+lab/lock.sh: line 49: 41176 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 41244 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 41337 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 49: 41416 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 41485 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 41561 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 41638 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 49: 42039 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 42477 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 49: 42957 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 43111 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 43409 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 43489 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 43588 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 43655 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 44033 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 44353 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 44421 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 44514 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 44762 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 52: /tmp/wt-lock.y252eE/entered: No such file or directory
+lab/lock.sh: line 49: 45200 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 45273 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 45338 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 45403 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 45800 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 46119 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 46187 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 46261 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 46506 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 46982 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 47060 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 47178 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 47254 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 47574 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 47682 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 47748 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 47831 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 48197 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 48735 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 49112 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 49480 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 49575 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 49643 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 49717 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 49784 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 50268 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 50765 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 51259 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 51682 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+lab/lock.sh: line 49: 51859 Hangup: 1               ( cd "$R" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$M" ) >> "$LAB/$1.log" 2>&1 < /dev/null
+PASS T4-HUP 0/50 (reps where the next merge waited >10 s after SIGHUP to the holder)
+INFO T5 takeover after SIGKILL: n=50 p50=0.04s p95=0.06s max=0.06s
+PASS T1 0/40 (reps with two waiters inside at once: 0; reps timed out or with a waiter that never entered: 0; W=20)
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+lab/lock.sh: line 52: /tmp/wt-lock.NgxHJY/entered: No such file or directory
+PASS T2 0/300 (reps where the next merge hung >10 s after a kill during start)

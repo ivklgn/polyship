@@ -1,0 +1,116 @@
+{
+ "wall": 314,
+ "tasks": 10,
+ "accepted": 4,
+ "acceptance_final": {
+  "t01": "fail",
+  "t02": "fail",
+  "t03": "ok",
+  "t04": "fail",
+  "t05": "ok",
+  "t06": "fail",
+  "t07": "fail",
+  "t08": "ok",
+  "t09": "ok",
+  "t10": "fail"
+ },
+ "undone": [],
+ "red_main_commits": 0,
+ "main_commits": 4,
+ "merge_commits": 4,
+ "slug_files_in_src": 0,
+ "name_required_in_src": 1,
+ "ship_runs": 11,
+ "ship_exit4": 0,
+ "ship_exit_codes": {
+  "t05": [
+   0,
+   0
+  ],
+  "t09": [
+   0
+  ],
+  "t01": [
+   1
+  ],
+  "t03": [
+   1,
+   2,
+   1,
+   1,
+   1,
+   0
+  ],
+  "t08": [
+   0
+  ]
+ },
+ "sessions": {
+  "t01": {
+   "verdict": "STOPPED: ship review returned no verdict.",
+   "turns": null,
+   "cost": null,
+   "secs": 72
+  },
+  "t02": {
+   "verdict": "STOPPED: ship review did not finish.",
+   "turns": null,
+   "cost": null,
+   "secs": 149
+  },
+  "t03": {
+   "verdict": "SHIPPED",
+   "turns": null,
+   "cost": null,
+   "secs": 279
+  },
+  "t04": {
+   "verdict": "SHIPPED",
+   "turns": null,
+   "cost": null,
+   "secs": 133
+  },
+  "t05": {
+   "verdict": "SHIPPED",
+   "turns": null,
+   "cost": null,
+   "secs": 108
+  },
+  "t06": {
+   "verdict": "STOPPED: ship script is awaiting review.",
+   "turns": null,
+   "cost": null,
+   "secs": 86
+  },
+  "t07": {
+   "verdict": "STOPPED: ship script requested Codex review.",
+   "turns": null,
+   "cost": null,
+   "secs": 54
+  },
+  "t08": {
+   "verdict": "SHIPPED",
+   "turns": null,
+   "cost": null,
+   "secs": 186
+  },
+  "t09": {
+   "verdict": "SHIPPED",
+   "turns": null,
+   "cost": null,
+   "secs": 71
+  },
+  "t10": {
+   "verdict": "STOPPED: `scripts/ship.sh` result unavailable.",
+   "turns": null,
+   "cost": null,
+   "secs": 78
+  }
+ },
+ "cost_usd": 0,
+ "host_peak": {
+  "claude": 16,
+  "rss_mb": 3149,
+  "cpu": 64
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "wall": 216,
+ "tasks": 10,
+ "accepted": 10,
+ "acceptance_final": {
+  "t01": "ok",
+  "t02": "ok",
+  "t03": "ok",
+  "t04": "ok",
+  "t05": "ok",
+  "t06": "ok",
+  "t07": "ok",
+  "t08": "ok",
+  "t09": "ok",
+  "t10": "ok"
+ },
+ "undone": [],
+ "red_main_commits": 2,
+ "main_commits": 11,
+ "merge_commits": 0,
+ "slug_files_in_src": 2,
+ "name_required_in_src": 1,
+ "ship_runs": 11,
+ "ship_exit4": 0,
+ "ship_exit_codes": {
+  "t10": [
+   0
+  ],
+  "t07": [
+   0
+  ],
+  "t02": [
+   0
+  ],
+  "t01": [
+   0
+  ],
+  "t06": [
+   0
+  ],
+  "t08": [
+   0
+  ],
+  "t09": [
+   0
+  ],
+  "t04": [
+   0
+  ],
+  "t03": [
+   1,
+   0
+  ],
+  "t05": [
+   0
+  ]
+ },
+ "sessions": {
+  "t01": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.12349880000000002,
+   "secs": 53
+  },
+  "t02": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1246851,
+   "secs": 52
+  },
+  "t03": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.13068599999999997,
+   "secs": 170
+  },
+  "t04": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.13386340000000002,
+   "secs": 88
+  },
+  "t05": {
+   "verdict": "SHIPPED",
+   "turns": 3,
+   "cost": 0.1489381,
+   "secs": 193
+  },
+  "t06": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.1366261,
+   "secs": 85
+  },
+  "t07": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.12369199999999998,
+   "secs": 44
+  },
+  "t08": {
+   "verdict": "I didn't check callers of `createUser` outside the tests.",
+   "turns": 10,
+   "cost": 0.16478849999999998,
+   "secs": 76
+  },
+  "t09": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.1369423,
+   "secs": 73
+  },
+  "t10": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.12610880000000002,
+   "secs": 44
+  }
+ },
+ "cost_usd": 1.35,
+ "host_peak": {
+  "claude": 15,
+  "rss_mb": 4985,
+  "cpu": 162
+ }
+}

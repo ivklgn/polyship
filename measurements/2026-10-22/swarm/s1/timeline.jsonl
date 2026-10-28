@@ -1,0 +1,11 @@
+{"commit":"4f0a6d6","subject":"init: fixture for lab/swarm.sh","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"1921627","subject":"posts: add title slug to postPath","visible":"green","acceptance":"t01:fail t02:ok t03:fail t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"b1daf2b","subject":"Rename getUser to findUser","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"7cf7515","subject":"report: add orderTotal(items)","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:ok "}
+{"commit":"573b6a2","subject":"Add 'export' command with its English label","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:fail t05:ok t06:fail t07:fail t08:fail t09:fail t10:ok "}
+{"commit":"095a35d","subject":"users: reject createUser without a name","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:fail t05:ok t06:fail t07:fail t08:ok t09:fail t10:ok "}
+{"commit":"b8defee","subject":"createUser: reject empty or whitespace-only name","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:fail t05:ok t06:fail t07:ok t08:ok t09:fail t10:ok "}
+{"commit":"4cb2254","subject":"formatPrice: require currency argument","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:fail t05:ok t06:fail t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"b7a787a","subject":"Add slugify(text) to src/text.js","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:fail t05:ok t06:fail t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"256f4b4","subject":"Add userLabel(db, id) to report: 'Name <email>' via getUser, for user-facing report lines","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:fail t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"c332231","subject":"Add 'import' command and its English label","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:fail "}

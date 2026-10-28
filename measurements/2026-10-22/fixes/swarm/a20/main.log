@@ -1,0 +1,19 @@
+4841828 feat(src2): add orderTotal(items) to report.js
+fcaef75 userLabel: use findUser after the getUser rename on main
+b274968 Add userLabel(db, id) to src/report: 'Name <email>' via getUser (src/, not the src2/ copy)
+4e52094 formatPrice: require currency argument
+c65649b Add 'export' command to src2 registry with its en2 label
+37b34cc Add 'import' command and its English label
+82630b2 Rename getUser to findUser
+0a62738 posts: add title slug to post path
+440a740 feat(src2): add 'import' command with English label
+e206eb2 Add slugify(text) to src/text.js
+185270f Add orderTotal(items) to report: formatted sum of item.cents for order summaries
+c0adfb2 src2/text: add slugify for URL-safe names from free text
+108a894 src2: formatPrice takes a required currency (USD/EUR)
+d586e81 createUser: reject empty or whitespace-only name
+d4e9e16 postPath: append a slug of the title so post URLs are readable
+cf5bfba feat: add 'export' command with its English label
+5033e94 createUser: require a name
+e9abccb report: add userLabel(db, id) returning 'Name <email>' via getUser, with test
+656a54c createUser: reject empty or whitespace-only name

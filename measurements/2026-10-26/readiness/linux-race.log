@@ -1,0 +1,15 @@
+PASS: 20 run(s), mode=lock
+PASS: 20 run(s), mode=ship
+PASS: 20 run(s), mode=ship
+   per landed branch: attempts p50 2.0 p95 4.0 max 6; suite runs 1.45; time to land p50 2.2s p95 6.6s
+   lock wait p50 0.4s p95 1.1s; stale takeovers 0; suites overlapping 0 (+1 orphans of a killed wt)
+   lost-commit stops restored 0; target checkouts re-synced 0; stale index.lock removed 0
+   conflicts 219; open rebases finished before an attempt (conflict or kill) 219; run wall p50 8.9s
+== ship: 40 runs, 400 sessions
+   outcomes   landed 386, refused 0, owner 0, gave-up 14, dep-missing 0
+   violations none in 0 run(s); 0 bad runs in 40 → bad-run rate < 7.5% (95%, rule of three)
+   per landed branch: attempts p50 1.0 p95 2.0 max 3; suite runs 2.43; time to land p50 2.6s p95 6.7s
+   lock wait p50 0.4s p95 1.1s; stale takeovers 0; suites overlapping 0 (+6 orphans of a killed wt)
+   lost-commit stops restored 0; target checkouts re-synced 0; stale index.lock removed 0
+   conflicts 472; open rebases finished before an attempt (conflict or kill) 24; run wall p50 8.9s
+   ship.sh exit codes {'0': 386, '1': 207} (4 = the guard stopped: main moved during the agent run)

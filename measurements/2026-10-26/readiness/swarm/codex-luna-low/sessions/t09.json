@@ -1,0 +1,1 @@
+{"result": "**STOPPED: commit blocked by filesystem permissions.** The `git add` step could not create the worktree index lock, so the change remains uncommitted and `scripts/ship.sh` did not run. The test suite passed: 6 tests, 0 failures."}

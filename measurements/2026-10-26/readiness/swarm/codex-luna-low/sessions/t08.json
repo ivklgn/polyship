@@ -1,0 +1,1 @@
+{"result": "Added the `name required` check and a test that confirms a missing name throws the expected error without adding a user. All 7 tests pass.\n\nI couldn\u2019t commit or run `scripts/ship.sh`: Git could not create its worktree index lock because access was denied.\n\nSTOPPED: Git worktree index lock creation was denied."}

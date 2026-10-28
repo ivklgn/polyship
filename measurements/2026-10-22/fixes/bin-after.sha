@@ -1,0 +1,4 @@
+a243c0058735be0dcae3d6252484dcb68761ab2d  bin/lib.sh
+fccd7962fc622a0fd9555c94052d7defdfaad973  bin/merge.sh
+3e4c0e754496066260eb6c4b54980f116f9cdabc  bin/ship.sh
+db5bcdc7b763599ea02a48ea90c0d1594952e9aa  bin/vendor.sh

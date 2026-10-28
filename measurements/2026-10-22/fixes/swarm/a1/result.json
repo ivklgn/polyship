@@ -1,0 +1,127 @@
+{
+ "wall": 353,
+ "tasks": 10,
+ "accepted": 10,
+ "acceptance_final": {
+  "t01": "ok",
+  "t02": "ok",
+  "t03": "ok",
+  "t04": "ok",
+  "t05": "ok",
+  "t06": "ok",
+  "t07": "ok",
+  "t08": "ok",
+  "t09": "ok",
+  "t10": "ok"
+ },
+ "undone": [],
+ "red_main_commits": 0,
+ "main_commits": 10,
+ "merge_commits": 0,
+ "slug_files_in_src": 2,
+ "name_required_in_src": 1,
+ "ship_runs": 12,
+ "ship_exit4": 0,
+ "ship_exit_codes": {
+  "t05": [
+   0
+  ],
+  "t07": [
+   0
+  ],
+  "t02": [
+   0
+  ],
+  "t04": [
+   0
+  ],
+  "t08": [
+   0
+  ],
+  "t03": [
+   1,
+   0
+  ],
+  "t09": [
+   0
+  ],
+  "t10": [
+   1,
+   0
+  ],
+  "t01": [
+   0
+  ],
+  "t06": [
+   0
+  ]
+ },
+ "sessions": {
+  "t01": {
+   "verdict": "SHIPPED",
+   "turns": 3,
+   "cost": 0.60507215,
+   "secs": 122
+  },
+  "t02": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.6230973500000001,
+   "secs": 59
+  },
+  "t03": {
+   "verdict": "SHIPPED",
+   "turns": 8,
+   "cost": 0.7523457,
+   "secs": 134
+  },
+  "t04": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.63530575,
+   "secs": 78
+  },
+  "t05": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.66199285,
+   "secs": 60
+  },
+  "t06": {
+   "verdict": "SHIPPED",
+   "turns": 2,
+   "cost": 0.7026841,
+   "secs": 203
+  },
+  "t07": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.62916105,
+   "secs": 54
+  },
+  "t08": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.69595445,
+   "secs": 87
+  },
+  "t09": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.71498995,
+   "secs": 90
+  },
+  "t10": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.746255,
+   "secs": 327
+  }
+ },
+ "cost_usd": 6.77,
+ "host_peak": {
+  "claude": 18,
+  "rss_mb": 6332,
+  "cpu": 250
+ }
+}

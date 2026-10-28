@@ -1,0 +1,9 @@
+0bb385d Add orderTotal(items) to report: formatted sum of item.cents
+2fbc931 Rename getUser to findUser
+7d2dfcf Add 'import' command to registry with its English label
+cd13891 postPath: append title slug to post URLs
+bf4f528 Add 'export' command with its English label
+89c561a formatPrice: require currency argument (USD, EUR)
+5d6995a Add slugify(text) to src/text.js
+ab4aadb report: add userLabel(db, id) returning 'Name <email>' via getUser
+b8a213b createUser: reject empty or whitespace-only name

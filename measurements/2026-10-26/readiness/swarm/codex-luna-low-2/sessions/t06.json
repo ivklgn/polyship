@@ -1,0 +1,1 @@
+{"result": "Added `import` to the command registry, added the `cmd.import` label, and extended the test to check both. `node --test` passed.\n\nCommit `0d30156` was created. `scripts/ship.sh` stopped at \u201creview by codex,\u201d so I can\u2019t confirm it was merged to main.\n\nSTOPPED: ship script is awaiting review."}

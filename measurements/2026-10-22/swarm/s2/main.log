@@ -1,0 +1,10 @@
+4a3c1aa formatPrice: require currency argument
+91bdd46 Add 'import' command and its English label
+f919296 createUser: reject empty or whitespace-only name
+f115c1c report: add orderTotal(items) — formatted sum of item.cents for order summaries
+1bab18c rename getUser to findUser: name says it may return nothing
+e5e2bb8 Add slugify(text) to src/text.js
+eff36b9 Add 'export' command and its English label
+9292101 users: reject createUser without a name
+281ee4c postPath: append title slug so post URLs are readable (/posts/7-hello-world)
+e606993 Add userLabel(db, id) to report: 'Name <email>' via existing getUser lookup

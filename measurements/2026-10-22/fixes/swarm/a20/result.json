@@ -1,0 +1,227 @@
+{
+ "wall": 349,
+ "tasks": 20,
+ "accepted": 20,
+ "acceptance_final": {
+  "t01": "ok",
+  "t02": "ok",
+  "t03": "ok",
+  "t04": "ok",
+  "t05": "ok",
+  "t06": "ok",
+  "t07": "ok",
+  "t08": "ok",
+  "t09": "ok",
+  "t10": "ok",
+  "t11": "ok",
+  "t12": "ok",
+  "t13": "ok",
+  "t14": "ok",
+  "t15": "ok",
+  "t16": "ok",
+  "t17": "ok",
+  "t18": "ok",
+  "t19": "ok",
+  "t20": "ok"
+ },
+ "undone": [],
+ "red_main_commits": 1,
+ "main_commits": 19,
+ "merge_commits": 0,
+ "slug_files_in_src": 4,
+ "name_required_in_src": 2,
+ "ship_runs": 22,
+ "ship_exit4": 0,
+ "ship_exit_codes": {
+  "t17": [
+   0
+  ],
+  "t14": [
+   0
+  ],
+  "t08": [
+   0
+  ],
+  "t05": [
+   0
+  ],
+  "t02": [
+   0
+  ],
+  "t07": [
+   0
+  ],
+  "t18": [
+   0
+  ],
+  "t19": [
+   0
+  ],
+  "t11": [
+   0
+  ],
+  "t04": [
+   0,
+   1,
+   0
+  ],
+  "t10": [
+   0
+  ],
+  "t01": [
+   0
+  ],
+  "t16": [
+   0
+  ],
+  "t12": [
+   0
+  ],
+  "t03": [
+   0
+  ],
+  "t06": [
+   0
+  ],
+  "t13": [
+   0
+  ],
+  "t15": [
+   0
+  ],
+  "t09": [
+   0
+  ],
+  "t20": [
+   0
+  ]
+ },
+ "sessions": {
+  "t01": {
+   "verdict": "Skipped: no input validation (non-string input throws). The `src2/text.js` slugify from another session may behave differently; I did not compare them.",
+   "turns": 2,
+   "cost": 0.6666099,
+   "secs": 177
+  },
+  "t02": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.6226211,
+   "secs": 55
+  },
+  "t03": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.67555095,
+   "secs": 207
+  },
+  "t04": {
+   "verdict": "SHIPPED",
+   "turns": 2,
+   "cost": 0.95027375,
+   "secs": 301
+  },
+  "t05": {
+   "verdict": "Skipped: `src2/` and `test2/` were left untouched since the task named only `src/registry.js` and `locales/en.json`. Risk: the `commands` test asserts order, so",
+   "turns": 5,
+   "cost": 0.6475166,
+   "secs": 75
+  },
+  "t06": {
+   "verdict": "SHIPPED",
+   "turns": 2,
+   "cost": 0.6815261,
+   "secs": 216
+  },
+  "t07": {
+   "verdict": "Skipped: src2/users.js (task named src/ only) and names of a non-string type like a number. Risk: two near-duplicate tests for the same error now exist in test/",
+   "turns": 4,
+   "cost": 0.62789705,
+   "secs": 103
+  },
+  "t08": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6471461999999999,
+   "secs": 64
+  },
+  "t09": {
+   "verdict": "Skipped: src2 has its own copy of formatPrice without a currency argument. The task named src/format.js, so I left src2 alone. Risk: orderTotal is hard-wired to",
+   "turns": 7,
+   "cost": 0.80868795,
+   "secs": 266
+  },
+  "t10": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.6383780000000001,
+   "secs": 126
+  },
+  "t11": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.63186425,
+   "secs": 124
+  },
+  "t12": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.7284457000000001,
+   "secs": 195
+  },
+  "t13": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.70234815,
+   "secs": 243
+  },
+  "t14": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.63133795,
+   "secs": 66
+  },
+  "t15": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.68018555,
+   "secs": 238
+  },
+  "t16": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.69458355,
+   "secs": 196
+  },
+  "t17": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.61766115,
+   "secs": 42
+  },
+  "t18": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.7083287,
+   "secs": 107
+  },
+  "t19": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.6782135499999999,
+   "secs": 108
+  },
+  "t20": {
+   "verdict": "SHIPPED",
+   "turns": 1,
+   "cost": 0.72887485,
+   "secs": 286
+  }
+ },
+ "cost_usd": 13.77,
+ "host_peak": {
+  "claude": 29,
+  "rss_mb": 8658,
+  "cpu": 278
+ }
+}

@@ -1,0 +1,12 @@
+{"commit":"ce5c210","subject":"init: fixture for lab/swarm.sh","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"264edcb","subject":"rename getUser to findUser","visible":"green","acceptance":"t01:fail t02:fail t03:ok t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"fdbc0ce","subject":"feat: add 'export' command with English label","visible":"green","acceptance":"t01:fail t02:fail t03:ok t04:fail t05:ok t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"c218c1e","subject":"posts: add title slug to postPath","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:fail t05:ok t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"e73fad3","subject":"report: add userLabel(db, id) returning 'Name <email>'","visible":"red","acceptance":"t01:fail t02:ok t03:fail t04:fail t05:ok t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"8a3ec25","subject":"report: userLabel uses findUser after rename on main","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:ok t05:ok t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"ea31e07","subject":"Add 'import' command with its English label","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:ok t05:ok t06:ok t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"0d790f1","subject":"users: reject empty or whitespace-only name in createUser","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:fail t10:fail "}
+{"commit":"53bb500","subject":"formatPrice: require currency argument","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"c8e2473","subject":"Add orderTotal(items) to report: formatted sum of item.cents for order summaries","visible":"red","acceptance":"t01:fail t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"af05445","subject":"orderTotal: pass USD to formatPrice, which now requires a currency","visible":"green","acceptance":"t01:fail t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:ok "}
+{"commit":"aee3f60","subject":"text: add slugify for URL-safe identifiers","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:ok "}

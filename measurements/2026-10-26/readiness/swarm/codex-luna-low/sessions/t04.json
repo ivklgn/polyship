@@ -1,0 +1,1 @@
+{"result": "`userLabel(db, id)` and its test are ready, and all 7 tests pass. I couldn\u2019t commit or ship: Git could not create its index lock in the shared worktree metadata (`Operation not permitted`).\n\nSTOPPED: commit blocked by filesystem permissions."}

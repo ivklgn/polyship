@@ -1,0 +1,21 @@
+run 1/20 seed=6000 mode=ship: 21 commits on main, 0 violation(s), 35s
+run 2/20 seed=6001 mode=ship: 21 commits on main, 0 violation(s), 36s
+run 3/20 seed=6002 mode=ship: 21 commits on main, 0 violation(s), 33s
+run 4/20 seed=6003 mode=ship: 21 commits on main, 0 violation(s), 41s
+run 5/20 seed=6004 mode=ship: 21 commits on main, 0 violation(s), 37s
+run 6/20 seed=6005 mode=ship: 21 commits on main, 0 violation(s), 41s
+run 7/20 seed=6006 mode=ship: 21 commits on main, 0 violation(s), 38s
+run 8/20 seed=6007 mode=ship: 21 commits on main, 0 violation(s), 36s
+run 9/20 seed=6008 mode=ship: 21 commits on main, 0 violation(s), 39s
+run 10/20 seed=6009 mode=ship: 21 commits on main, 0 violation(s), 40s
+run 11/20 seed=6010 mode=ship: 21 commits on main, 0 violation(s), 39s
+run 12/20 seed=6011 mode=ship: 21 commits on main, 0 violation(s), 40s
+run 13/20 seed=6012 mode=ship: 21 commits on main, 0 violation(s), 36s
+run 14/20 seed=6013 mode=ship: 21 commits on main, 0 violation(s), 40s
+run 15/20 seed=6014 mode=ship: 21 commits on main, 0 violation(s), 41s
+run 16/20 seed=6015 mode=ship: 21 commits on main, 0 violation(s), 42s
+run 17/20 seed=6016 mode=ship: 21 commits on main, 0 violation(s), 36s
+run 18/20 seed=6017 mode=ship: 21 commits on main, 0 violation(s), 35s
+run 19/20 seed=6018 mode=ship: 21 commits on main, 0 violation(s), 38s
+run 20/20 seed=6019 mode=ship: 21 commits on main, 0 violation(s), 41s
+PASS: 20 run(s), mode=ship

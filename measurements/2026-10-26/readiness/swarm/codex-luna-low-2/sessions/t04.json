@@ -1,0 +1,1 @@
+{"result": "Added and exported `userLabel(db, id)`, which returns the user\u2019s name and email in `Name <email>` format. Added a test; all seven tests pass.\n\nSHIPPED"}

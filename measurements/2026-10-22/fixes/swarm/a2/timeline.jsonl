@@ -1,0 +1,10 @@
+{"commit":"66793ef","subject":"init: fixture for lab/swarm.sh","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"b8a213b","subject":"createUser: reject empty or whitespace-only name","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:fail t06:fail t07:ok t08:ok t09:fail t10:fail "}
+{"commit":"ab4aadb","subject":"report: add userLabel(db, id) returning 'Name <email>' via getUser","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:ok t05:fail t06:fail t07:ok t08:ok t09:fail t10:fail "}
+{"commit":"5d6995a","subject":"Add slugify(text) to src/text.js","visible":"green","acceptance":"t01:ok t02:fail t03:fail t04:ok t05:fail t06:fail t07:ok t08:ok t09:fail t10:fail "}
+{"commit":"89c561a","subject":"formatPrice: require currency argument (USD, EUR)","visible":"green","acceptance":"t01:ok t02:fail t03:fail t04:ok t05:fail t06:fail t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"bf4f528","subject":"Add 'export' command with its English label","visible":"green","acceptance":"t01:ok t02:fail t03:fail t04:ok t05:ok t06:fail t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"cd13891","subject":"postPath: append title slug to post URLs","visible":"green","acceptance":"t01:ok t02:ok t03:fail t04:ok t05:ok t06:fail t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"7d2dfcf","subject":"Add 'import' command to registry with its English label","visible":"green","acceptance":"t01:ok t02:ok t03:fail t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"2fbc931","subject":"Rename getUser to findUser","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"0bb385d","subject":"Add orderTotal(items) to report: formatted sum of item.cents","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:ok "}

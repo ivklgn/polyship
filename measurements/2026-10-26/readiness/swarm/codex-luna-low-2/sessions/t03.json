@@ -1,0 +1,1 @@
+{"result": "Renamed `getUser` to `findUser` across `src/` and `test/`. No `getUser` references remain in those directories. All 7 tests passed, and the change is on `main`.\n\nSHIPPED"}

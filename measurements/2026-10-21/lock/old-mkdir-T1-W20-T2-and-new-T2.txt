@@ -1,0 +1,3 @@
+FAIL T1 8/40 (reps with two waiters inside at once; 0 reps timed out, W=20)
+FAIL T2 1/300 (reps where the next merge hung >10 s after a kill during start)
+PASS T2 0/300 (reps where the next merge hung >10 s after a kill during start)

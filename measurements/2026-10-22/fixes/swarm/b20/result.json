@@ -1,0 +1,254 @@
+{
+ "wall": 395,
+ "tasks": 20,
+ "accepted": 20,
+ "acceptance_final": {
+  "t01": "ok",
+  "t02": "ok",
+  "t03": "ok",
+  "t04": "ok",
+  "t05": "ok",
+  "t06": "ok",
+  "t07": "ok",
+  "t08": "ok",
+  "t09": "ok",
+  "t10": "ok",
+  "t11": "ok",
+  "t12": "ok",
+  "t13": "ok",
+  "t14": "ok",
+  "t15": "ok",
+  "t16": "ok",
+  "t17": "ok",
+  "t18": "ok",
+  "t19": "ok",
+  "t20": "ok"
+ },
+ "undone": [],
+ "red_main_commits": 2,
+ "main_commits": 21,
+ "merge_commits": 0,
+ "slug_files_in_src": 4,
+ "name_required_in_src": 2,
+ "ship_runs": 49,
+ "ship_exit4": 21,
+ "ship_exit_codes": {
+  "t05": [
+   0
+  ],
+  "t18": [
+   0
+  ],
+  "t01": [
+   0
+  ],
+  "t15": [
+   0
+  ],
+  "t09": [
+   0
+  ],
+  "t06": [
+   4,
+   0
+  ],
+  "t19": [
+   0
+  ],
+  "t17": [
+   4,
+   0,
+   4,
+   0
+  ],
+  "t14": [
+   0,
+   4,
+   0
+  ],
+  "t16": [
+   4,
+   0
+  ],
+  "t12": [
+   4,
+   0
+  ],
+  "t10": [
+   4,
+   0
+  ],
+  "t07": [
+   4,
+   0
+  ],
+  "t03": [
+   4,
+   4,
+   0
+  ],
+  "t20": [
+   4,
+   4,
+   4,
+   0,
+   4,
+   0,
+   0
+  ],
+  "t13": [
+   1,
+   0
+  ],
+  "t02": [
+   0
+  ],
+  "t04": [
+   4,
+   4,
+   4,
+   1,
+   0
+  ],
+  "t08": [
+   4,
+   5,
+   0
+  ],
+  "t11": [
+   4,
+   4,
+   0,
+   4,
+   0
+  ]
+ },
+ "sessions": {
+  "t01": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.6107414,
+   "secs": 80
+  },
+  "t02": {
+   "verdict": "Skipped: `src2/posts.js` (the task named only `src/posts.js`) and non-ASCII titles, which slug to an empty string and fall back to `/posts/<id>`.",
+   "turns": 4,
+   "cost": 0.6611583500000001,
+   "secs": 119
+  },
+  "t03": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.8010476999999999,
+   "secs": 242
+  },
+  "t04": {
+   "verdict": "SHIPPED",
+   "turns": 9,
+   "cost": 0.8597579999999999,
+   "secs": 310
+  },
+  "t05": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6605153500000001,
+   "secs": 47
+  },
+  "t06": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6532903500000001,
+   "secs": 145
+  },
+  "t07": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6716493,
+   "secs": 172
+  },
+  "t08": {
+   "verdict": "SHIPPED",
+   "turns": 9,
+   "cost": 0.7892889500000001,
+   "secs": 142
+  },
+  "t09": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.7277212,
+   "secs": 76
+  },
+  "t10": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.64755275,
+   "secs": 220
+  },
+  "t11": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.73578275,
+   "secs": 278
+  },
+  "t12": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6665022,
+   "secs": 144
+  },
+  "t13": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.75242765,
+   "secs": 175
+  },
+  "t14": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.6990249499999999,
+   "secs": 146
+  },
+  "t15": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.62999205,
+   "secs": 73
+  },
+  "t16": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6764648000000001,
+   "secs": 129
+  },
+  "t17": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.7150266499999999,
+   "secs": 224
+  },
+  "t18": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6455067,
+   "secs": 54
+  },
+  "t19": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.6979390499999999,
+   "secs": 83
+  },
+  "t20": {
+   "verdict": "SHIPPED",
+   "turns": 10,
+   "cost": 0.8117256,
+   "secs": 356
+  }
+ },
+ "cost_usd": 14.11,
+ "host_peak": {
+  "claude": 32,
+  "rss_mb": 9039,
+  "cpu": 269
+ }
+}

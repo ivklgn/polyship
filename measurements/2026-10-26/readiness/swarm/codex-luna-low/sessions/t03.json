@@ -1,0 +1,1 @@
+{"result": "Renamed `getUser` to `findUser` in `src/` and `test/`; no old-name occurrences remain there. All 6 tests pass.\n\nCommit and ship stopped because Git could not create its index lock: `Operation not permitted`. The changes are still uncommitted.\n\nSTOPPED: Git could not create the worktree index lock."}

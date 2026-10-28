@@ -1,0 +1,10 @@
+66781c8 report: add orderTotal(items) — formatted USD sum of item.cents for order summaries
+fbf4d4f report: add orderTotal(items) — formatted sum of item.cents for order summaries
+6e16363 Add 'import' command and its English label
+139beb3 Rename getUser to findUser across src and test
+6bec466 Add slugify(text) to src/text.js
+56a1a09 formatPrice: require currency argument
+71d27a6 Add userLabel(db, id) to report: 'Name <email>' via getUser, for user-facing labels
+7392fa7 posts: add title slug to postPath
+38703dc createUser: reject empty or whitespace-only name
+7a6e662 Add 'export' command with its English label

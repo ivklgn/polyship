@@ -1,0 +1,279 @@
+{"a": "b31182ae3563aac0947225f0171fc20f59582542", "b": "3619a608f21b181ac60893564ee5e3959fe24e33", "d": 1, "form": "textual", "tree": null}
+{"a": "b31182ae3563aac0947225f0171fc20f59582542", "b": "eae4b73884344b407dfb564f9af0b3b69d11ab20", "d": 2, "form": "chain"}
+{"a": "b31182ae3563aac0947225f0171fc20f59582542", "b": "f0958af9117bac0e1721fe590cc19607bb1884bc", "d": 3, "form": "chain"}
+{"a": "b31182ae3563aac0947225f0171fc20f59582542", "b": "486a2bd8638bb7733dc1e260231134dd671c8007", "d": 4, "form": "chain"}
+{"a": "b31182ae3563aac0947225f0171fc20f59582542", "b": "4de4430be12d6d770cb7390029ff23f824faa20d", "d": 5, "form": "chain"}
+{"a": "b31182ae3563aac0947225f0171fc20f59582542", "b": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "d": 6, "form": "chain"}
+{"a": "3619a608f21b181ac60893564ee5e3959fe24e33", "b": "eae4b73884344b407dfb564f9af0b3b69d11ab20", "d": 1, "form": "textual", "tree": null}
+{"a": "3619a608f21b181ac60893564ee5e3959fe24e33", "b": "f0958af9117bac0e1721fe590cc19607bb1884bc", "d": 2, "form": "chain"}
+{"a": "3619a608f21b181ac60893564ee5e3959fe24e33", "b": "486a2bd8638bb7733dc1e260231134dd671c8007", "d": 3, "form": "chain"}
+{"a": "3619a608f21b181ac60893564ee5e3959fe24e33", "b": "4de4430be12d6d770cb7390029ff23f824faa20d", "d": 4, "form": "chain"}
+{"a": "3619a608f21b181ac60893564ee5e3959fe24e33", "b": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "d": 5, "form": "chain"}
+{"a": "3619a608f21b181ac60893564ee5e3959fe24e33", "b": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "d": 6, "form": "chain"}
+{"a": "eae4b73884344b407dfb564f9af0b3b69d11ab20", "b": "f0958af9117bac0e1721fe590cc19607bb1884bc", "d": 1, "form": "textual", "tree": null}
+{"a": "eae4b73884344b407dfb564f9af0b3b69d11ab20", "b": "486a2bd8638bb7733dc1e260231134dd671c8007", "d": 2, "form": "chain"}
+{"a": "eae4b73884344b407dfb564f9af0b3b69d11ab20", "b": "4de4430be12d6d770cb7390029ff23f824faa20d", "d": 3, "form": "chain"}
+{"a": "eae4b73884344b407dfb564f9af0b3b69d11ab20", "b": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "d": 4, "form": "chain"}
+{"a": "eae4b73884344b407dfb564f9af0b3b69d11ab20", "b": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "d": 5, "form": "chain"}
+{"a": "eae4b73884344b407dfb564f9af0b3b69d11ab20", "b": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "d": 6, "form": "chain"}
+{"a": "f0958af9117bac0e1721fe590cc19607bb1884bc", "b": "486a2bd8638bb7733dc1e260231134dd671c8007", "d": 1, "form": "textual", "tree": null}
+{"a": "f0958af9117bac0e1721fe590cc19607bb1884bc", "b": "4de4430be12d6d770cb7390029ff23f824faa20d", "d": 2, "form": "chain"}
+{"a": "f0958af9117bac0e1721fe590cc19607bb1884bc", "b": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "d": 3, "form": "chain"}
+{"a": "f0958af9117bac0e1721fe590cc19607bb1884bc", "b": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "d": 4, "form": "chain"}
+{"a": "f0958af9117bac0e1721fe590cc19607bb1884bc", "b": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "d": 5, "form": "chain"}
+{"a": "f0958af9117bac0e1721fe590cc19607bb1884bc", "b": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "d": 6, "form": "chain"}
+{"a": "486a2bd8638bb7733dc1e260231134dd671c8007", "b": "4de4430be12d6d770cb7390029ff23f824faa20d", "d": 1, "form": "textual", "tree": null}
+{"a": "486a2bd8638bb7733dc1e260231134dd671c8007", "b": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "d": 2, "form": "chain"}
+{"a": "486a2bd8638bb7733dc1e260231134dd671c8007", "b": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "d": 3, "form": "chain"}
+{"a": "486a2bd8638bb7733dc1e260231134dd671c8007", "b": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "d": 4, "form": "chain"}
+{"a": "486a2bd8638bb7733dc1e260231134dd671c8007", "b": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "d": 5, "form": "chain"}
+{"a": "486a2bd8638bb7733dc1e260231134dd671c8007", "b": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "d": 6, "form": "chain"}
+{"a": "4de4430be12d6d770cb7390029ff23f824faa20d", "b": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "d": 1, "form": "textual", "tree": null}
+{"a": "4de4430be12d6d770cb7390029ff23f824faa20d", "b": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "d": 2, "form": "chain"}
+{"a": "4de4430be12d6d770cb7390029ff23f824faa20d", "b": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "d": 3, "form": "chain"}
+{"a": "4de4430be12d6d770cb7390029ff23f824faa20d", "b": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "d": 4, "form": "chain"}
+{"a": "4de4430be12d6d770cb7390029ff23f824faa20d", "b": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "d": 5, "form": "chain"}
+{"a": "4de4430be12d6d770cb7390029ff23f824faa20d", "b": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "d": 6, "form": "chain"}
+{"a": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "b": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "d": 1, "form": "textual", "tree": null}
+{"a": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "b": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "d": 2, "form": "chain"}
+{"a": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "b": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "d": 3, "form": "chain"}
+{"a": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "b": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "d": 4, "form": "chain"}
+{"a": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "b": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "d": 5, "form": "chain"}
+{"a": "bf75ecb83510e16e6b16bfce53cfe7a948ba6569", "b": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "d": 6, "form": "chain"}
+{"a": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "b": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "d": 1, "form": "textual", "tree": null}
+{"a": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "b": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "d": 2, "form": "chain"}
+{"a": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "b": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "d": 3, "form": "chain"}
+{"a": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "b": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "d": 4, "form": "chain"}
+{"a": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "b": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "d": 5, "form": "chain"}
+{"a": "9a9ddc28ffbf420902a746bf57d06ee4c833b461", "b": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "d": 6, "form": "chain"}
+{"a": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "b": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "d": 1, "form": "textual", "tree": null}
+{"a": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "b": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "d": 2, "form": "chain"}
+{"a": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "b": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "d": 3, "form": "chain"}
+{"a": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "b": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "d": 4, "form": "chain"}
+{"a": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "b": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "d": 5, "form": "chain"}
+{"a": "594b13d802d1800a69e169d9bfdbc4848c987aa4", "b": "27d8ff223c3637d5c5270522aefce0734f10daa8", "d": 6, "form": "chain"}
+{"a": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "b": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "d": 1, "form": "textual", "tree": null}
+{"a": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "b": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "d": 2, "form": "chain"}
+{"a": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "b": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "d": 3, "form": "chain"}
+{"a": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "b": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "d": 4, "form": "chain"}
+{"a": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "b": "27d8ff223c3637d5c5270522aefce0734f10daa8", "d": 5, "form": "chain"}
+{"a": "dc6860d01a92b36ad2d7d73424cfb72b30f34dc2", "b": "9f24dc98f6ff1feed09c69233854063e23f10210", "d": 6, "form": "chain"}
+{"a": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "b": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "d": 1, "form": "textual", "tree": null}
+{"a": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "b": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "d": 2, "form": "chain"}
+{"a": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "b": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "d": 3, "form": "chain"}
+{"a": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "b": "27d8ff223c3637d5c5270522aefce0734f10daa8", "d": 4, "form": "chain"}
+{"a": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "b": "9f24dc98f6ff1feed09c69233854063e23f10210", "d": 5, "form": "chain"}
+{"a": "7ce939c7cee62c597a23283856b20e62c2bbd49e", "b": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "d": 6, "form": "chain"}
+{"a": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "b": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "d": 1, "form": "clean", "tree": "1adf05c35fa6cd954464e6ef0c81f972293503cb", "suite_b": true, "suite_without_a": true}
+{"a": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "b": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "d": 2, "form": "clean", "tree": "c0641440c9797c85297f0f91f7921c8662fafdd0", "suite_b": true, "suite_without_a": true}
+{"a": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "b": "27d8ff223c3637d5c5270522aefce0734f10daa8", "d": 3, "form": "textual", "tree": null}
+{"a": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "b": "9f24dc98f6ff1feed09c69233854063e23f10210", "d": 4, "form": "chain"}
+{"a": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "b": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "d": 5, "form": "chain"}
+{"a": "6c6f37b8ce8c398bd9b8e5b6a46c32498e6f3cc0", "b": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "d": 6, "form": "chain"}
+{"a": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "b": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "d": 1, "form": "clean", "tree": "e1b6a2b513d9ef5e44cd8563ce0c14b74049c220", "suite_b": true, "suite_without_a": true}
+{"a": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "b": "27d8ff223c3637d5c5270522aefce0734f10daa8", "d": 2, "form": "clean", "tree": "fca97ccd4a90f425af8a63308879d0f84f6bc2cf", "suite_b": true, "suite_without_a": true}
+{"a": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "b": "9f24dc98f6ff1feed09c69233854063e23f10210", "d": 3, "form": "textual", "tree": null}
+{"a": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "b": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "d": 4, "form": "chain"}
+{"a": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "b": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "d": 5, "form": "chain"}
+{"a": "5af112655f24b72b3d99f6ee5e6096a8c9517f60", "b": "63ef89149371437a6f730d1039586be1c5bd2900", "d": 6, "form": "chain"}
+{"a": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "b": "27d8ff223c3637d5c5270522aefce0734f10daa8", "d": 1, "form": "clean", "tree": "8f812bd7fa6ed48b4a650930423fd877310273c5", "suite_b": true, "suite_without_a": true}
+{"a": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "b": "9f24dc98f6ff1feed09c69233854063e23f10210", "d": 2, "form": "clean", "tree": "96ee9cc77916a8563b53a5a76af38b87438ca1d7", "suite_b": true, "suite_without_a": true}
+{"a": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "b": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "d": 3, "form": "textual", "tree": null}
+{"a": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "b": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "d": 4, "form": "chain"}
+{"a": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "b": "63ef89149371437a6f730d1039586be1c5bd2900", "d": 5, "form": "chain"}
+{"a": "f4b958595f39aa4d2ac19f6a9750779fc1619b2b", "b": "0e577d48319f25665a292520fc5394576fc2ab6c", "d": 6, "form": "chain"}
+{"a": "27d8ff223c3637d5c5270522aefce0734f10daa8", "b": "9f24dc98f6ff1feed09c69233854063e23f10210", "d": 1, "form": "clean", "tree": "c1cdc63f4de6e3ae5ac2b71ed8111cff3831c52e", "suite_b": true, "suite_without_a": true}
+{"a": "27d8ff223c3637d5c5270522aefce0734f10daa8", "b": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "d": 2, "form": "clean", "tree": "6c228d4813ab1ab635e485e0e8b67473961451f9", "suite_b": true, "suite_without_a": true}
+{"a": "27d8ff223c3637d5c5270522aefce0734f10daa8", "b": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "d": 3, "form": "chain"}
+{"a": "27d8ff223c3637d5c5270522aefce0734f10daa8", "b": "63ef89149371437a6f730d1039586be1c5bd2900", "d": 4, "form": "chain"}
+{"a": "27d8ff223c3637d5c5270522aefce0734f10daa8", "b": "0e577d48319f25665a292520fc5394576fc2ab6c", "d": 5, "form": "chain"}
+{"a": "27d8ff223c3637d5c5270522aefce0734f10daa8", "b": "3744241034c0ceb92b15ed03f009267b0efdd856", "d": 6, "form": "chain"}
+{"a": "9f24dc98f6ff1feed09c69233854063e23f10210", "b": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "d": 1, "form": "textual", "tree": null}
+{"a": "9f24dc98f6ff1feed09c69233854063e23f10210", "b": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "d": 2, "form": "chain"}
+{"a": "9f24dc98f6ff1feed09c69233854063e23f10210", "b": "63ef89149371437a6f730d1039586be1c5bd2900", "d": 3, "form": "chain"}
+{"a": "9f24dc98f6ff1feed09c69233854063e23f10210", "b": "0e577d48319f25665a292520fc5394576fc2ab6c", "d": 4, "form": "chain"}
+{"a": "9f24dc98f6ff1feed09c69233854063e23f10210", "b": "3744241034c0ceb92b15ed03f009267b0efdd856", "d": 5, "form": "chain"}
+{"a": "9f24dc98f6ff1feed09c69233854063e23f10210", "b": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "d": 6, "form": "chain"}
+{"a": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "b": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "d": 1, "form": "clean", "tree": "4b49ba15546050ffdf882d19fe5cd26c9f8168b6", "suite_b": true, "suite_without_a": true}
+{"a": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "b": "63ef89149371437a6f730d1039586be1c5bd2900", "d": 2, "form": "clean", "tree": "270b58020c0bb730a0a7213bf1cfd426348111a9", "suite_b": true, "suite_without_a": true}
+{"a": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "b": "0e577d48319f25665a292520fc5394576fc2ab6c", "d": 3, "form": "clean", "tree": "c07e8eb9a666b59cc3f4fe3185f4e68fa3e0da27", "suite_b": true, "suite_without_a": true}
+{"a": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "b": "3744241034c0ceb92b15ed03f009267b0efdd856", "d": 4, "form": "clean", "tree": "24f38354e34c9df94741df361c214be28227b73c", "suite_b": true, "suite_without_a": true}
+{"a": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "b": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "d": 5, "form": "clean", "tree": "2251b7392e1ec2bb2f2105c3fabecafc0f5700c8", "suite_b": true, "suite_without_a": true}
+{"a": "da7fb263068b8f2cdc04e18e8d2039c06612d8ba", "b": "521994c52276a10257773e4a07bfb5a0fe442573", "d": 6, "form": "clean", "tree": "7bf1f8ddd7108d2054df1c352ba99bf9818a030c", "suite_b": true, "suite_without_a": true}
+{"a": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "b": "63ef89149371437a6f730d1039586be1c5bd2900", "d": 1, "form": "clean", "tree": "3f5ef9b3bc0c559fbd1b4cbc5aa8e48c3574744e", "suite_b": true, "suite_without_a": true}
+{"a": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "b": "0e577d48319f25665a292520fc5394576fc2ab6c", "d": 2, "form": "clean", "tree": "6f262222dc54d389beaa98e2a30768a05aa83645", "suite_b": true, "suite_without_a": true}
+{"a": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "b": "3744241034c0ceb92b15ed03f009267b0efdd856", "d": 3, "form": "clean", "tree": "461335a7addbe0ba8794e79a4a37c44f2bfe61b4", "suite_b": true, "suite_without_a": true}
+{"a": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "b": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "d": 4, "form": "clean", "tree": "3c0f20361888f2cb6b8d7cb84c391de592ccfab2", "suite_b": true, "suite_without_a": true}
+{"a": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "b": "521994c52276a10257773e4a07bfb5a0fe442573", "d": 5, "form": "clean", "tree": "db89e49a0229c285f821c7eed2bb22b2cb2043ad", "suite_b": true, "suite_without_a": true}
+{"a": "bd73c884cb9b0e055b1dfdae96c868eb03d003ee", "b": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "d": 6, "form": "clean", "tree": "6c655ac9a46882fef7e2ef4db5e38deaa5dc17a1", "suite_b": true, "suite_without_a": true}
+{"a": "63ef89149371437a6f730d1039586be1c5bd2900", "b": "0e577d48319f25665a292520fc5394576fc2ab6c", "d": 1, "form": "clean", "tree": "482fb6988d83d516f5d8ee67236b001f647c8905", "suite_b": true, "suite_without_a": true}
+{"a": "63ef89149371437a6f730d1039586be1c5bd2900", "b": "3744241034c0ceb92b15ed03f009267b0efdd856", "d": 2, "form": "clean", "tree": "254fec6aa48221c1c41ccdde40d61b327ad42921", "suite_b": true, "suite_without_a": true}
+{"a": "63ef89149371437a6f730d1039586be1c5bd2900", "b": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "d": 3, "form": "clean", "tree": "558c3a44d8a729e3dde703efbbc18042cd29068c", "suite_b": true, "suite_without_a": true}
+{"a": "63ef89149371437a6f730d1039586be1c5bd2900", "b": "521994c52276a10257773e4a07bfb5a0fe442573", "d": 4, "form": "clean", "tree": "e7a1dc5a865743a2e53b320789d26edf3498beff", "suite_b": true, "suite_without_a": true}
+{"a": "63ef89149371437a6f730d1039586be1c5bd2900", "b": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "d": 5, "form": "clean", "tree": "8ccac76707e971448be50c3a76ee7d9801025a33", "suite_b": true, "suite_without_a": true}
+{"a": "63ef89149371437a6f730d1039586be1c5bd2900", "b": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "d": 6, "form": "clean", "tree": "afc40faf9f8b0a5a3df3af58de58719416abbd59", "suite_b": true, "suite_without_a": true}
+{"a": "0e577d48319f25665a292520fc5394576fc2ab6c", "b": "3744241034c0ceb92b15ed03f009267b0efdd856", "d": 1, "form": "textual", "tree": null}
+{"a": "0e577d48319f25665a292520fc5394576fc2ab6c", "b": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "d": 2, "form": "chain"}
+{"a": "0e577d48319f25665a292520fc5394576fc2ab6c", "b": "521994c52276a10257773e4a07bfb5a0fe442573", "d": 3, "form": "chain"}
+{"a": "0e577d48319f25665a292520fc5394576fc2ab6c", "b": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "d": 4, "form": "chain"}
+{"a": "0e577d48319f25665a292520fc5394576fc2ab6c", "b": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "d": 5, "form": "chain"}
+{"a": "0e577d48319f25665a292520fc5394576fc2ab6c", "b": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "d": 6, "form": "chain"}
+{"a": "3744241034c0ceb92b15ed03f009267b0efdd856", "b": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "d": 1, "form": "clean", "tree": "afc6a803231809fa5f1301e520a56e0d82dfa5c8", "suite_b": true, "suite_without_a": true}
+{"a": "3744241034c0ceb92b15ed03f009267b0efdd856", "b": "521994c52276a10257773e4a07bfb5a0fe442573", "d": 2, "form": "clean", "tree": "bab6a7c22a3324df58be3fa95035925e9c07914f", "suite_b": true, "suite_without_a": true}
+{"a": "3744241034c0ceb92b15ed03f009267b0efdd856", "b": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "d": 3, "form": "clean", "tree": "02886607e3aa3c9d6dfce593151ccb1bd348f62c", "suite_b": true, "suite_without_a": true}
+{"a": "3744241034c0ceb92b15ed03f009267b0efdd856", "b": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "d": 4, "form": "clean", "tree": "ec6c9722e55cdff87cf0fd8839ab0951aa7eeb5c", "suite_b": true, "suite_without_a": true}
+{"a": "3744241034c0ceb92b15ed03f009267b0efdd856", "b": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "d": 5, "form": "clean", "tree": "2568f648db61753bd784efed89f0a73d6f274925", "suite_b": true, "suite_without_a": true}
+{"a": "3744241034c0ceb92b15ed03f009267b0efdd856", "b": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "d": 6, "form": "clean", "tree": "42b5e15a6eaeee09368b3e70264e0c23e465ecbf", "suite_b": true, "suite_without_a": true}
+{"a": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "b": "521994c52276a10257773e4a07bfb5a0fe442573", "d": 1, "form": "clean", "tree": "e5f15f23afd52b892ebe57343078abce878a8ba9", "suite_b": true, "suite_without_a": true}
+{"a": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "b": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "d": 2, "form": "clean", "tree": "3545085ee270718186d20832b487e35127076d38", "suite_b": true, "suite_without_a": true}
+{"a": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "b": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "d": 3, "form": "clean", "tree": "34eef9fc55ff4a7c167556b727d5cbc638b18512", "suite_b": true, "suite_without_a": true}
+{"a": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "b": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "d": 4, "form": "clean", "tree": "df5666d85dc8a1634b99cc5b5bbc0052cc41ad5e", "suite_b": true, "suite_without_a": true}
+{"a": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "b": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "d": 5, "form": "textual", "tree": null}
+{"a": "d145c471fc0587bde2eaae99ec2edc83cc67decd", "b": "52f02ccd751c152e15de0d122601fd8bd535de30", "d": 6, "form": "chain"}
+{"a": "521994c52276a10257773e4a07bfb5a0fe442573", "b": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "d": 1, "form": "clean", "tree": "8f5dea174b99acddca6f4ec7366e48075f4fae4a", "suite_b": true, "suite_without_a": true}
+{"a": "521994c52276a10257773e4a07bfb5a0fe442573", "b": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "d": 2, "form": "clean", "tree": "5c8e2506c0ac5382a4a48dbec19c8d3d5fcad4dd", "suite_b": true, "suite_without_a": true}
+{"a": "521994c52276a10257773e4a07bfb5a0fe442573", "b": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "d": 3, "form": "clean", "tree": "2af97640afd95dcc918a088a0a69fcbdd5a6a427", "suite_b": true, "suite_without_a": true}
+{"a": "521994c52276a10257773e4a07bfb5a0fe442573", "b": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "d": 4, "form": "clean", "tree": "08f735a16ff4a6303d16ba0ea2bbb9128fb963a0", "suite_b": true, "suite_without_a": true}
+{"a": "521994c52276a10257773e4a07bfb5a0fe442573", "b": "52f02ccd751c152e15de0d122601fd8bd535de30", "d": 5, "form": "clean", "tree": "2d6d9559dbb305fdf793a96fb570deb0a1486e55", "suite_b": true, "suite_without_a": true}
+{"a": "521994c52276a10257773e4a07bfb5a0fe442573", "b": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "d": 6, "form": "clean", "tree": "dcc926fd4d9ca5734df50f5ed99f00f6be6c8562", "suite_b": true, "suite_without_a": true}
+{"a": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "b": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "d": 1, "form": "clean", "tree": "17b68c900d5def5d3fdda9422c2003b32824a2e6", "suite_b": true, "suite_without_a": true}
+{"a": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "b": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "d": 2, "form": "clean", "tree": "3083adf49e04eead9dcc3845e5a47d9e0a6cc72b", "suite_b": true, "suite_without_a": true}
+{"a": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "b": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "d": 3, "form": "clean", "tree": "e3500bfeb8f2c2755dedc42e5547ea6544a4633c", "suite_b": true, "suite_without_a": true}
+{"a": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "b": "52f02ccd751c152e15de0d122601fd8bd535de30", "d": 4, "form": "clean", "tree": "f89413aea8864685c85777e2fe08d0b51ccc1fcf", "suite_b": true, "suite_without_a": true}
+{"a": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "b": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "d": 5, "form": "clean", "tree": "012627d9032a4fca1688101653d0118673f096be", "suite_b": true, "suite_without_a": true}
+{"a": "5c0d56b3b77f033c28c940fc197deb8d20d0be83", "b": "d5328f5efe0dbd946949c37cd0013a28836cae89", "d": 6, "form": "clean", "tree": "4c27a792442ba16a1ba0929ee6c098f10837ba2a", "suite_b": true, "suite_without_a": true}
+{"a": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "b": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "d": 1, "form": "clean", "tree": "aa2c8cc58875c86ecd9bf4c78ca4d69e71e48e91", "suite_b": true, "suite_without_a": true}
+{"a": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "b": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "d": 2, "form": "clean", "tree": "e4257c8271ab215e68a02225a69878f6d4c41786", "suite_b": true, "suite_without_a": true}
+{"a": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "b": "52f02ccd751c152e15de0d122601fd8bd535de30", "d": 3, "form": "clean", "tree": "8f465e64335e6063f46d4c2f865872e20ce05077", "suite_b": true, "suite_without_a": true}
+{"a": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "b": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "d": 4, "form": "clean", "tree": "49357529d8c1c51489a1d6f4f5c400b5f739d553", "suite_b": true, "suite_without_a": true}
+{"a": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "b": "d5328f5efe0dbd946949c37cd0013a28836cae89", "d": 5, "form": "clean", "tree": "7d4859da7e63aee0671ac547d73bebb1a97766e7", "suite_b": true, "suite_without_a": true}
+{"a": "343509005deb41ce844e6e98d06e3eb53d4ee86a", "b": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "d": 6, "form": "clean", "tree": "83dd17a9a964cc7a28d1cb9d3b73761568c0c63e", "suite_b": true, "suite_without_a": true}
+{"a": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "b": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "d": 1, "form": "clean", "tree": "a162fb9a3fb48811d364998d0b383beda35ac0e6", "suite_b": true, "suite_without_a": true}
+{"a": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "b": "52f02ccd751c152e15de0d122601fd8bd535de30", "d": 2, "form": "clean", "tree": "f05f0264cbe0d1e8ae07b97f1a8aba45f1901ad1", "suite_b": true, "suite_without_a": true}
+{"a": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "b": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "d": 3, "form": "clean", "tree": "af8e87888e2a3be18f006efdb6c72b9330222817", "suite_b": true, "suite_without_a": true}
+{"a": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "b": "d5328f5efe0dbd946949c37cd0013a28836cae89", "d": 4, "form": "clean", "tree": "f903aec1fdcb6fb21bd129ddc87073b8cb93d47c", "suite_b": true, "suite_without_a": true}
+{"a": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "b": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "d": 5, "form": "clean", "tree": "3510c077a7ec1f9c4989980c45444d53a37c2eab", "suite_b": true, "suite_without_a": true}
+{"a": "7f40ab6526b44a1f34ee99d54a4127364fe9af6f", "b": "3d24c688e6389c514891c58e2f1be25957c5614b", "d": 6, "form": "clean", "tree": "5b7d82866ded0bbd22bc05fc852bf75575d4ddf3", "suite_b": true, "suite_without_a": true}
+{"a": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "b": "52f02ccd751c152e15de0d122601fd8bd535de30", "d": 1, "form": "textual", "tree": null}
+{"a": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "b": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "d": 2, "form": "chain"}
+{"a": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "b": "d5328f5efe0dbd946949c37cd0013a28836cae89", "d": 3, "form": "chain"}
+{"a": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "b": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "d": 4, "form": "chain"}
+{"a": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "b": "3d24c688e6389c514891c58e2f1be25957c5614b", "d": 5, "form": "chain"}
+{"a": "5b22326f4e8d70c2e9aa5fc4e46da243e8ef26ff", "b": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "d": 6, "form": "chain"}
+{"a": "52f02ccd751c152e15de0d122601fd8bd535de30", "b": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "d": 1, "form": "clean", "tree": "610247e0ed9ae975e19e3f230c7000d3cb0cd293", "suite_b": true, "suite_without_a": true}
+{"a": "52f02ccd751c152e15de0d122601fd8bd535de30", "b": "d5328f5efe0dbd946949c37cd0013a28836cae89", "d": 2, "form": "clean", "tree": "6ca8e29840d4db84fdbb2c76ba89e1bc5d7cb57a", "suite_b": true, "suite_without_a": true}
+{"a": "52f02ccd751c152e15de0d122601fd8bd535de30", "b": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "d": 3, "form": "clean", "tree": "2bfea2acc77b8d70f638976f392f33acccc1ec5f", "suite_b": true, "suite_without_a": true}
+{"a": "52f02ccd751c152e15de0d122601fd8bd535de30", "b": "3d24c688e6389c514891c58e2f1be25957c5614b", "d": 4, "form": "clean", "tree": "cc913b1f96e6f47353a35d7493a497df4f868fa0", "suite_b": true, "suite_without_a": true}
+{"a": "52f02ccd751c152e15de0d122601fd8bd535de30", "b": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "d": 5, "form": "clean", "tree": "649eea904cd984631eb9dcafa5f3c0f6779e22de", "suite_b": true, "suite_without_a": true}
+{"a": "52f02ccd751c152e15de0d122601fd8bd535de30", "b": "5a5572f41ee1db5bbda6f6009665083727d6209b", "d": 6, "form": "clean", "tree": "002231a6ed133545cbce5d7137f04710800cf563", "suite_b": true, "suite_without_a": true}
+{"a": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "b": "d5328f5efe0dbd946949c37cd0013a28836cae89", "d": 1, "form": "textual", "tree": null}
+{"a": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "b": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "d": 2, "form": "chain"}
+{"a": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "b": "3d24c688e6389c514891c58e2f1be25957c5614b", "d": 3, "form": "chain"}
+{"a": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "b": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "d": 4, "form": "chain"}
+{"a": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "b": "5a5572f41ee1db5bbda6f6009665083727d6209b", "d": 5, "form": "chain"}
+{"a": "edb9b2f52d0c0300be7623ae6b1397b9c8279aca", "b": "31d551c63b7a50f4839668248a9763c357fd14e1", "d": 6, "form": "chain"}
+{"a": "d5328f5efe0dbd946949c37cd0013a28836cae89", "b": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "d": 1, "form": "clean", "tree": "0a5e5fabd826c004bc13a313a5f044b41463936f", "suite_b": true, "suite_without_a": true}
+{"a": "d5328f5efe0dbd946949c37cd0013a28836cae89", "b": "3d24c688e6389c514891c58e2f1be25957c5614b", "d": 2, "form": "clean", "tree": "03bd0df21e4bb53e5683f3b7010fa76e6b694ca6", "suite_b": true, "suite_without_a": true}
+{"a": "d5328f5efe0dbd946949c37cd0013a28836cae89", "b": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "d": 3, "form": "textual", "tree": null}
+{"a": "d5328f5efe0dbd946949c37cd0013a28836cae89", "b": "5a5572f41ee1db5bbda6f6009665083727d6209b", "d": 4, "form": "chain"}
+{"a": "d5328f5efe0dbd946949c37cd0013a28836cae89", "b": "31d551c63b7a50f4839668248a9763c357fd14e1", "d": 5, "form": "chain"}
+{"a": "d5328f5efe0dbd946949c37cd0013a28836cae89", "b": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "d": 6, "form": "chain"}
+{"a": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "b": "3d24c688e6389c514891c58e2f1be25957c5614b", "d": 1, "form": "clean", "tree": "1311a66696867f2f07fe97948a36ae3b52f21940", "suite_b": true, "suite_without_a": true}
+{"a": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "b": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "d": 2, "form": "textual", "tree": null}
+{"a": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "b": "5a5572f41ee1db5bbda6f6009665083727d6209b", "d": 3, "form": "chain"}
+{"a": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "b": "31d551c63b7a50f4839668248a9763c357fd14e1", "d": 4, "form": "chain"}
+{"a": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "b": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "d": 5, "form": "chain"}
+{"a": "dbf83c9a71e4f7a74b746b4b5fab467bb943193d", "b": "248d9833391f204729bb0d29587f05e09355158b", "d": 6, "form": "chain"}
+{"a": "3d24c688e6389c514891c58e2f1be25957c5614b", "b": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "d": 1, "form": "clean", "tree": "9a36a114121e1275c7a1020692bf991561e322bd", "suite_b": true, "suite_without_a": true}
+{"a": "3d24c688e6389c514891c58e2f1be25957c5614b", "b": "5a5572f41ee1db5bbda6f6009665083727d6209b", "d": 2, "form": "clean", "tree": "1e3cf5606e87863c477005438cfc1ae9a94b62ae", "suite_b": true, "suite_without_a": true}
+{"a": "3d24c688e6389c514891c58e2f1be25957c5614b", "b": "31d551c63b7a50f4839668248a9763c357fd14e1", "d": 3, "form": "clean", "tree": "a39e6171e657f9763cb9f7f9785a8a26ea646231", "suite_b": true, "suite_without_a": true}
+{"a": "3d24c688e6389c514891c58e2f1be25957c5614b", "b": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "d": 4, "form": "clean", "tree": "2bc76d785888719845359149e213666835a9ed14", "suite_b": true, "suite_without_a": true}
+{"a": "3d24c688e6389c514891c58e2f1be25957c5614b", "b": "248d9833391f204729bb0d29587f05e09355158b", "d": 5, "form": "clean", "tree": "1f31db03889bfe0993ed0358902ab4d7fd7359d1", "suite_b": true, "suite_without_a": true}
+{"a": "3d24c688e6389c514891c58e2f1be25957c5614b", "b": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "d": 6, "form": "clean", "tree": "6f0dea704a7a948d47ffd8f27479a9d9b85234a7", "suite_b": true, "suite_without_a": true}
+{"a": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "b": "5a5572f41ee1db5bbda6f6009665083727d6209b", "d": 1, "form": "clean", "tree": "702a9fa0d4701eda71393632d808e3aa160a1f53", "suite_b": true, "suite_without_a": true}
+{"a": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "b": "31d551c63b7a50f4839668248a9763c357fd14e1", "d": 2, "form": "clean", "tree": "a5f95a0b9bb62bc254dc17c2e65a2bc6927ebf01", "suite_b": true, "suite_without_a": true}
+{"a": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "b": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "d": 3, "form": "clean", "tree": "d93e57589a29f14094eb698659a1b7032279dca7", "suite_b": true, "suite_without_a": true}
+{"a": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "b": "248d9833391f204729bb0d29587f05e09355158b", "d": 4, "form": "textual", "tree": null}
+{"a": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "b": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "d": 5, "form": "chain"}
+{"a": "a7fd884cf8430ad0f0ab31569b29cd6ebc82def5", "b": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "d": 6, "form": "chain"}
+{"a": "5a5572f41ee1db5bbda6f6009665083727d6209b", "b": "31d551c63b7a50f4839668248a9763c357fd14e1", "d": 1, "form": "clean", "tree": "337d33ae863f974eadad9fb4ec7739d02c37f5d2", "suite_b": true, "suite_without_a": true}
+{"a": "5a5572f41ee1db5bbda6f6009665083727d6209b", "b": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "d": 2, "form": "textual", "tree": null}
+{"a": "5a5572f41ee1db5bbda6f6009665083727d6209b", "b": "248d9833391f204729bb0d29587f05e09355158b", "d": 3, "form": "chain"}
+{"a": "5a5572f41ee1db5bbda6f6009665083727d6209b", "b": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "d": 4, "form": "chain"}
+{"a": "5a5572f41ee1db5bbda6f6009665083727d6209b", "b": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "d": 5, "form": "chain"}
+{"a": "5a5572f41ee1db5bbda6f6009665083727d6209b", "b": "2cb0be249cc3084103e58ded5b2936ca596824f0", "d": 6, "form": "chain"}
+{"a": "31d551c63b7a50f4839668248a9763c357fd14e1", "b": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "d": 1, "form": "clean", "tree": "72d066e877575d044eabf8bf7e73d10cd3b077f5", "suite_b": true, "suite_without_a": true}
+{"a": "31d551c63b7a50f4839668248a9763c357fd14e1", "b": "248d9833391f204729bb0d29587f05e09355158b", "d": 2, "form": "clean", "tree": "f69c04a543da55193f9b1f48028aad3d96f6ee03", "suite_b": true, "suite_without_a": true}
+{"a": "31d551c63b7a50f4839668248a9763c357fd14e1", "b": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "d": 3, "form": "clean", "tree": "e6d98c400a83d4ccd65d670bbc16b7a585e4a682", "suite_b": true, "suite_without_a": true}
+{"a": "31d551c63b7a50f4839668248a9763c357fd14e1", "b": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "d": 4, "form": "clean", "tree": "077599e600b6d216b0816a01983de3c165ebf2af", "suite_b": true, "suite_without_a": true}
+{"a": "31d551c63b7a50f4839668248a9763c357fd14e1", "b": "2cb0be249cc3084103e58ded5b2936ca596824f0", "d": 5, "form": "clean", "tree": "2f5d53a28bb3c708c2143d15af60e262b1525d2a", "suite_b": true, "suite_without_a": true}
+{"a": "31d551c63b7a50f4839668248a9763c357fd14e1", "b": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "d": 6, "form": "clean", "tree": "bb64e72261eeccd845ad5fa03d3c4eb4741ed48f", "suite_b": true, "suite_without_a": true}
+{"a": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "b": "248d9833391f204729bb0d29587f05e09355158b", "d": 1, "form": "clean", "tree": "90bc15801960a73b18dcb3b472237399f5eda7a8", "suite_b": true, "suite_without_a": true}
+{"a": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "b": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "d": 2, "form": "clean", "tree": "b3e21e5cf95c549ec6eff1104d6743f406bf004c", "suite_b": true, "suite_without_a": true}
+{"a": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "b": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "d": 3, "form": "clean", "tree": "e81ea59cf11c9f4d2e0e8526d3844d65eed8f97e", "suite_b": true, "suite_without_a": true}
+{"a": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "b": "2cb0be249cc3084103e58ded5b2936ca596824f0", "d": 4, "form": "clean", "tree": "ae0ec3e7b6f0ec364ab2e4242032758a9d00e3c4", "suite_b": true, "suite_without_a": true}
+{"a": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "b": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "d": 5, "form": "clean", "tree": "06a553dfce444585d042f018fbc5da4f24f0cb1f", "suite_b": true, "suite_without_a": true}
+{"a": "b1bbcfcddd54ac455c599fd39dfd31358e631614", "b": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "d": 6, "form": "clean", "tree": "f7f6b426d694396c5eecf990e363cb60826ac61f", "suite_b": true, "suite_without_a": true}
+{"a": "248d9833391f204729bb0d29587f05e09355158b", "b": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "d": 1, "form": "textual", "tree": null}
+{"a": "248d9833391f204729bb0d29587f05e09355158b", "b": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "d": 2, "form": "chain"}
+{"a": "248d9833391f204729bb0d29587f05e09355158b", "b": "2cb0be249cc3084103e58ded5b2936ca596824f0", "d": 3, "form": "chain"}
+{"a": "248d9833391f204729bb0d29587f05e09355158b", "b": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "d": 4, "form": "chain"}
+{"a": "248d9833391f204729bb0d29587f05e09355158b", "b": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "d": 5, "form": "chain"}
+{"a": "248d9833391f204729bb0d29587f05e09355158b", "b": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "d": 6, "form": "chain"}
+{"a": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "b": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "d": 1, "form": "textual", "tree": null}
+{"a": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "b": "2cb0be249cc3084103e58ded5b2936ca596824f0", "d": 2, "form": "chain"}
+{"a": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "b": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "d": 3, "form": "chain"}
+{"a": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "b": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "d": 4, "form": "chain"}
+{"a": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "b": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "d": 5, "form": "chain"}
+{"a": "9269d03a9934da0cca88c6ca8fc4ca1324b80144", "b": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "d": 6, "form": "chain"}
+{"a": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "b": "2cb0be249cc3084103e58ded5b2936ca596824f0", "d": 1, "form": "textual", "tree": null}
+{"a": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "b": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "d": 2, "form": "chain"}
+{"a": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "b": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "d": 3, "form": "chain"}
+{"a": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "b": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "d": 4, "form": "chain"}
+{"a": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "b": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "d": 5, "form": "chain"}
+{"a": "7bf68953c62e8044eff3e331d5a7c8dffda92d81", "b": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "d": 6, "form": "chain"}
+{"a": "2cb0be249cc3084103e58ded5b2936ca596824f0", "b": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "d": 1, "form": "clean", "tree": "8d46fd83b8bfc0cb346befffca6bfd24d42ac8f4", "suite_b": true, "suite_without_a": true}
+{"a": "2cb0be249cc3084103e58ded5b2936ca596824f0", "b": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "d": 2, "form": "clean", "tree": "6187bcd5063206a8f45815e85a41607345f89ff7", "suite_b": true, "suite_without_a": true}
+{"a": "2cb0be249cc3084103e58ded5b2936ca596824f0", "b": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "d": 3, "form": "clean", "tree": "a24f0343c1ed8a7272b17ab718b057de8a48d098", "suite_b": true, "suite_without_a": true}
+{"a": "2cb0be249cc3084103e58ded5b2936ca596824f0", "b": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "d": 4, "form": "clean", "tree": "15e0752e6bc615e5700364c5f5587941d468b6d2", "suite_b": true, "suite_without_a": true}
+{"a": "2cb0be249cc3084103e58ded5b2936ca596824f0", "b": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "d": 5, "form": "clean", "tree": "3250f20f01558f4ad34568863f0a0235411bd705", "suite_b": true, "suite_without_a": true}
+{"a": "2cb0be249cc3084103e58ded5b2936ca596824f0", "b": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "d": 6, "form": "clean", "tree": "aee92a2fb84faa16fd756637585a5885b5e08db7", "suite_b": true, "suite_without_a": true}
+{"a": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "b": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "d": 1, "form": "clean", "tree": "7b3c025510a87115afbd82b076de5b0030097739", "suite_b": true, "suite_without_a": true}
+{"a": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "b": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "d": 2, "form": "clean", "tree": "36e75db75b12a76bfd353868d7e8d5c9261c3476", "suite_b": true, "suite_without_a": true}
+{"a": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "b": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "d": 3, "form": "clean", "tree": "b4792b92d6360a9dec045391f9d339be7c5a36ba", "suite_b": true, "suite_without_a": true}
+{"a": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "b": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "d": 4, "form": "clean", "tree": "fd0810d66a74b2f633df1ea080e1ae51bb31982a", "suite_b": true, "suite_without_a": true}
+{"a": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "b": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "d": 5, "form": "clean", "tree": "6c6fdd5c4eeb97aac8c1011d96e6122405a7ccc7", "suite_b": true, "suite_without_a": true}
+{"a": "2bd8299e75d9c9aa3487478fb5c313ba4d36ab69", "b": "d9f72f5eb400cd4f937f58ef374cb6df5c85a939", "d": 6, "form": "clean", "tree": "22aeb3c4a4735234a6d573c58a061693b58b3aaa", "suite_b": true, "suite_without_a": true}
+{"a": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "b": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "d": 1, "form": "clean", "tree": "c842efa2820549b0d83d6bd0691240d8f5e18061", "suite_b": true, "suite_without_a": true}
+{"a": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "b": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "d": 2, "form": "clean", "tree": "1d2e810e858d7852488c2f0f6168ab778e3b4e6a", "suite_b": true, "suite_without_a": true}
+{"a": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "b": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "d": 3, "form": "clean", "tree": "d642eca6f1e1f5bb38b208f1b2619619050615c5", "suite_b": true, "suite_without_a": true}
+{"a": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "b": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "d": 4, "form": "clean", "tree": "395f1b7841773e3018f3f0f8d0900bc2cbfb3d5c", "suite_b": true, "suite_without_a": true}
+{"a": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "b": "d9f72f5eb400cd4f937f58ef374cb6df5c85a939", "d": 5, "form": "clean", "tree": "98f6e30e1ae664adc707d2cdf6a4eb3841b1f2ff", "suite_b": true, "suite_without_a": true}
+{"a": "f0e098e2feca4a06522bf1e09723a2629494a4b4", "b": "f602d59beb8ebf6b83d0d091f626f5296beedfec", "d": 6, "form": "clean", "tree": "5af56627591b6ddf7f1befb6d2f07f83375fef57", "suite_b": true, "suite_without_a": true}
+{"a": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "b": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "d": 1, "form": "textual", "tree": null}
+{"a": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "b": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "d": 2, "form": "chain"}
+{"a": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "b": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "d": 3, "form": "chain"}
+{"a": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "b": "d9f72f5eb400cd4f937f58ef374cb6df5c85a939", "d": 4, "form": "chain"}
+{"a": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "b": "f602d59beb8ebf6b83d0d091f626f5296beedfec", "d": 5, "form": "chain"}
+{"a": "1fefa1c3017992875487b065c7bb0a6fe96c0f95", "b": "327f4913c766a5c06a090d3f7c6e5f914dd17ae4", "d": 6, "form": "chain"}
+{"a": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "b": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "d": 1, "form": "textual", "tree": null}
+{"a": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "b": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "d": 2, "form": "chain"}
+{"a": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "b": "d9f72f5eb400cd4f937f58ef374cb6df5c85a939", "d": 3, "form": "chain"}
+{"a": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "b": "f602d59beb8ebf6b83d0d091f626f5296beedfec", "d": 4, "form": "chain"}
+{"a": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "b": "327f4913c766a5c06a090d3f7c6e5f914dd17ae4", "d": 5, "form": "chain"}
+{"a": "78278ddf2931a3ca0919004e94d004d3eb9bee34", "b": "f5a5a274575f32e630a91cd22b6dba90e79fc939", "d": 6, "form": "chain"}
+{"a": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "b": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "d": 1, "form": "textual", "tree": null}
+{"a": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "b": "d9f72f5eb400cd4f937f58ef374cb6df5c85a939", "d": 2, "form": "chain"}
+{"a": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "b": "f602d59beb8ebf6b83d0d091f626f5296beedfec", "d": 3, "form": "chain"}
+{"a": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "b": "327f4913c766a5c06a090d3f7c6e5f914dd17ae4", "d": 4, "form": "chain"}
+{"a": "4a9b2543ae52370d18f4d5402f7652d0d165c70a", "b": "f5a5a274575f32e630a91cd22b6dba90e79fc939", "d": 5, "form": "chain"}
+{"a": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "b": "d9f72f5eb400cd4f937f58ef374cb6df5c85a939", "d": 1, "form": "textual", "tree": null}
+{"a": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "b": "f602d59beb8ebf6b83d0d091f626f5296beedfec", "d": 2, "form": "chain"}
+{"a": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "b": "327f4913c766a5c06a090d3f7c6e5f914dd17ae4", "d": 3, "form": "chain"}
+{"a": "9084fc36635796fdc130a6ceecb1ccbb3ad26090", "b": "f5a5a274575f32e630a91cd22b6dba90e79fc939", "d": 4, "form": "chain"}
+{"a": "d9f72f5eb400cd4f937f58ef374cb6df5c85a939", "b": "f602d59beb8ebf6b83d0d091f626f5296beedfec", "d": 1, "form": "clean", "tree": "5ca99765bd70ac3fa05d7022b3ffdcbe6bc95100", "suite_b": true, "suite_without_a": true}
+{"a": "d9f72f5eb400cd4f937f58ef374cb6df5c85a939", "b": "327f4913c766a5c06a090d3f7c6e5f914dd17ae4", "d": 2, "form": "clean", "tree": "1f5f43e261bf319a755aa7b9f38cad154523f060", "suite_b": true, "suite_without_a": true}
+{"a": "d9f72f5eb400cd4f937f58ef374cb6df5c85a939", "b": "f5a5a274575f32e630a91cd22b6dba90e79fc939", "d": 3, "form": "clean", "tree": "09effb65e9d37bbb9e9bf60e502cc13812d69623", "suite_b": true, "suite_without_a": true}
+{"a": "f602d59beb8ebf6b83d0d091f626f5296beedfec", "b": "327f4913c766a5c06a090d3f7c6e5f914dd17ae4", "d": 1, "form": "clean", "tree": "3910836218f053df0e5d8bc6620ab31f644c04e4", "suite_b": true, "suite_without_a": true}
+{"a": "f602d59beb8ebf6b83d0d091f626f5296beedfec", "b": "f5a5a274575f32e630a91cd22b6dba90e79fc939", "d": 2, "form": "textual", "tree": null}
+{"a": "327f4913c766a5c06a090d3f7c6e5f914dd17ae4", "b": "f5a5a274575f32e630a91cd22b6dba90e79fc939", "d": 1, "form": "clean", "tree": "1ce65733d3a85b8c1e6510ab57d07ee34377ab57", "suite_b": true, "suite_without_a": true}

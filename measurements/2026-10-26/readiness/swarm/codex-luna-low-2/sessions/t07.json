@@ -1,0 +1,1 @@
+{"result": "Implemented `createUser` validation and added a test for empty and whitespace-only names. All 7 tests pass.\n\nThe change is committed as `a7ba1d0` (`Reject blank user names`). `scripts/ship.sh` stopped at \u201creview by codex,\u201d so it has not confirmed the branch is on `main`.\n\nSTOPPED: ship script requested Codex review."}

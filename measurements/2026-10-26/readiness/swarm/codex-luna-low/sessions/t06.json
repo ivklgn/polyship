@@ -1,0 +1,1 @@
+{"result": "The code and test changes pass `node --test` (6 tests). The commit could not be created: Git was blocked from writing the shared worktree index lock, so `scripts/ship.sh` did not run.\n\nSTOPPED: Git could not create the worktree index lock."}

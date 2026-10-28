@@ -1,0 +1,41 @@
+## hotpot2, typical day (W=30 min), few conflicts
+T=15.0s W=1800.0s A=20.0s (exp) overhead=1.0s p-conflict=0.05 slow=1:1,4:1,8:1.8
+   N  lock-util  wait-p50  wait-p95  exit4-per-landed  sessions-with-exit4  ship-to-landed-p50  -p95  suites-at-once-max
+   2       0.02      0.0s      0.0s                0%                   0%               31.0s     32s                   2
+   4       0.03      0.0s      0.0s                0%                   0%               31.0s     38s                   3
+   6       0.05      0.0s      0.0s                0%                   0%               31.0s     39s                   3
+   8       0.07      0.0s      3.1s                0%                   0%               31.0s     42s                   3
+  10       0.09      0.0s      5.5s                0%                   0%               31.0s     42s                   3
+  15       0.13      0.0s      9.7s                0%                   0%               31.0s     45s                   4
+  20       0.17      0.0s     12.2s                0%                   0%               31.0s     46s                   5
+  30       0.26      0.0s     14.6s                1%                   1%               31.0s     51s                   6
+## hotpot2, busy day (W=8 min), coupled tasks like the swarm (p-conflict 0.7)
+T=15.0s W=480.0s A=20.0s (exp) overhead=1.0s p-conflict=0.7 slow=1:1,4:1,8:1.8
+   N  lock-util  wait-p50  wait-p95  exit4-per-landed  sessions-with-exit4  ship-to-landed-p50  -p95  suites-at-once-max
+   2       0.06      0.0s      0.0s                1%                   1%               38.6s     86s                   2
+   4       0.12      0.0s      6.8s                3%                   3%               39.2s     94s                   4
+   6       0.18      0.0s     11.1s                6%                   6%               40.2s    101s                   5
+   8       0.24      0.0s     12.9s                7%                   7%               41.3s    104s                   5
+  10       0.30      0.0s     14.2s               11%                   9%               42.6s    113s                   5
+  15       0.45      0.0s     19.9s               16%                  14%               46.2s    129s                   7
+  20       0.58      0.5s     29.8s               21%                  17%               50.7s    149s                   9
+## monorepo, typical day (W=30 min), p-conflict 0.157 (MR base rate), agent 100 s (replay median)
+T=183.0s W=1800.0s A=100.0s (exp) overhead=2.0s p-conflict=0.157 slow=1:1,2:1.70,4:3.50
+   N  lock-util  wait-p50  wait-p95  exit4-per-landed  sessions-with-exit4  ship-to-landed-p50  -p95  suites-at-once-max
+   1       0.08      0.0s      0.0s                0%                   0%              368.0s    482s                   1
+   2       0.18      0.0s     47.0s                0%                   0%              368.0s    615s                   2
+   3       0.28      0.0s    149.4s                0%                   0%              448.7s    761s                   3
+   4       0.38      0.0s    232.8s                1%                   1%              496.1s    930s                   4
+   5       0.51      0.0s    373.4s                0%                   0%              612.2s   1186s                   5
+   6       0.59      0.0s    514.4s                0%                   0%              673.6s   1406s                   6
+   8       0.82    166.6s   1139.9s                1%                   1%              971.3s   2235s                   7
+  10       0.93    421.0s   2152.9s                1%                   1%             1370.2s   3370s                   8
+## monorepo, busy day (W=8 min)
+T=183.0s W=480.0s A=100.0s (exp) overhead=2.0s p-conflict=0.157 slow=1:1,2:1.70,4:3.50
+   N  lock-util  wait-p50  wait-p95  exit4-per-landed  sessions-with-exit4  ship-to-landed-p50  -p95  suites-at-once-max
+   1       0.21      0.0s      0.0s                0%                   0%              368.0s    480s                   1
+   2       0.44      0.0s    135.5s                0%                   0%              494.9s    697s                   2
+   3       0.66      0.0s    261.6s                1%                   1%              638.4s    990s                   3
+   4       0.84    128.8s    548.8s                1%                   1%              841.6s   1416s                   4
+   5       0.94    237.9s    989.3s                1%                   1%             1070.1s   2023s                   5
+   6       0.98    418.8s   1738.5s                1%                   1%             1322.6s   2846s                   6

@@ -1,0 +1,23 @@
+# ship seed 1016 (campaign A, old flow): s5's commit lost, ship.sh exit 0
+## git reflog show s5
+dfe8e4b s5@{0}: rebase (finish): refs/heads/s5 onto dfe8e4b3311c4f117ab705d0943d19ef6351ece1
+fe58b5c s5@{1}: commit: s5: edits 1:2 2:4 sem=none (intent: keep every edit)
+67eac79 s5@{2}: branch: Created from main
+## worktree HEAD reflog
+dfe8e4b HEAD@{0}: rebase (finish): returning to refs/heads/s5
+dfe8e4b HEAD@{1}: rebase (start): checkout main
+fe58b5c HEAD@{2}: commit: s5: edits 1:2 2:4 sem=none (intent: keep every edit)
+67eac79 HEAD@{3}: reset: moving to HEAD
+67eac79 HEAD@{4}: 
+## repo.s5.log (session output)
+ship: tests before the queue
+ship: merge (round 1)
+◎ Rebasing onto main...
+ship: s5 is already on main
+## main
+5c0071b s4: edits 2:6 3:3 sem=none (intent: keep every edit)
+21bec59 s3: edits 2:4 3:1 sem=none (intent: keep every edit)
+98fc4f3 s1: edits 3:5 3:2 sem=none (intent: keep every edit)
+a847558 s6: edits 3:2 4:4 sem=remove (intent: keep every edit)
+dfe8e4b s2: edits 2:6 2:3 sem=none (intent: keep every edit)
+67eac79 init

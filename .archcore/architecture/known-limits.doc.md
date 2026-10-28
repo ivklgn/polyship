@@ -1,0 +1,32 @@
+---
+title: "Known limits of the merge flow"
+status: draft
+tags:
+  - "architecture"
+  - "limits"
+---
+
+## Overview
+What `@bin/merge.sh` and `@bin/ship.sh` do not cover, and the costs they carry by design. Measured values come from `@measurements/REPORT.md`; the rest is stated as a limit, not a measurement.
+
+## Content
+- Without `MERGE_PUSH` the merge is local: new worktrees from `origin/<target>` start from stale code. With it, merge.sh takes the remote's target under the lock and lands only what the remote took (R19-R19h). The lock is per machine: two machines pushing the same target serialize only through rejected pushes, which cost a rerun of the merge (up to 5 tries per merge.sh). Measured only against a bare repository on disk, not over a network. Merge requests that own the target (a push and an MR as the last step) are not built.
+- The default review prompt is generic (`SHIP_REVIEW_HOW` in `@bin/ship.sh`); a project's own review skill or checklist goes there.
+- ship.sh runs its agent without a sandbox: Claude with `bypassPermissions`, Codex with `--dangerously-bypass-approvals-and-sandbox`, because Codex's workspace-write sandbox keeps a worktree's git dir read-only (R22). The fence after each run is the guard. A session that itself runs inside that sandbox cannot commit either.
+- `ship.sh` runs for minutes; a session that ends its turn meanwhile cuts it off. Codex gpt-6-luna at effort low did so in 6 of 10 sessions (4 of 10 landed; `@measurements/REPORT.md` 2026-10-26); the agent instructions now say to wait for the exit code, not rerun since.
+- One lock per repository; merges are serial: at most `3600 / T` merges per hour for a suite of `T` seconds. The lock itself behaves as an ideal single server (idle under 1.5 % of the waiting time, `@lab/queue.py check`); `@lab/queue.py predict` sizes a project from its `T` and task rhythm (measured 2026-10-22: 30+ sessions at `T` = 15 s, about 4 at the monorepo's 183 s). On a slow suite the first limit is the CPU the parallel tests before the queue take, the second the lock: the model gives 6 sessions with `SHIP_TEST=true` and 20+ with batches of 4 on top; batches are not built (`@lab/merge-batch.sh` models them).
+- `wt` runs hooks in their own process group: a merge killed with SIGKILL leaves its `pre-merge` suite running next to the next holder's. The target stays safe; the cost is two suites at once.
+- `ship.sh` exits 4 when the target, the remotes or the hooks change during an agent run other than by moves `merge.sh` recorded in `wt-merge.moves`; another session's merge goes through (since 8070ee8; before, a third of the branches at N = 10 needed a rerun). The moves file is a fence against mistakes: an agent that writes a line into it passes. A merge SIGKILLed between its merge commit and its line leaves an unrecorded move: a session whose agent ran meanwhile gets exit 4 (fail-closed), and the next merge.sh records the move from `wt-merge.pending` (R19i). ship.sh's agent cannot run merge.sh in its own repository (`SHIP_AGENT_RUN`). A commit someone slips onto the target between merge.sh reading it and wt merge's rebase is not recorded: the merge commit's first parent is then another commit (R8e).
+- Sessions now wait inside `ship.sh` for the next merge round instead of leaving with 4, and more branches reach the lock: on the stand a branch that landed on both versions waits longer (p95 time to land +10 to +15 s at N = 20 and 30, paired by seed), while every session ends 4-7 times sooner. A latency-for-throughput trade; batches are the lever, not built (`@measurements/REPORT.md`, 2026-10-23).
+- When the rebase before the tests conflicts, ship.sh skips those tests; the adopter's `pre-merge` hook is then the only test of the branch.
+- The gate tests the branch's tip; merge.sh lands every branch with a merge commit (`--no-ff`), so every first-parent commit of the target is a tested tree, and a red commit fixed later on the same branch stays on the second parent (R20). `git bisect` needs `--first-parent` to skip those.
+- `merge-dropped` excuses a commit the agent says is already on the target in other code (R6); an agent that names a commit it should have kept hides a real loss.
+- Out of scope of the queue: one session changing another task's behavior under a green gate, and two sessions writing the same helper twice (both seen in `@lab/swarm.sh`); the review step and the project's tests are where they are caught.
+- Requirements: bash, perl (for `flock`), git ≥ 2.40 and `wt` ≥ 0.80. Below git 2.31 `@bin/merge.sh` and `@bin/ship.sh` stop at once (`rev-parse --path-format`); below 2.40 the content check of `landed` fails quietly and a duplicate is exit 5 again (`merge-tree --merge-base`). Tested on macOS (bash 3.2, git 2.50) and on Linux in Docker (Debian trixie, bash 5.2, git 2.47: the gate and race runs, `@measurements/REPORT.md` 2026-10-26); Git for Windows not run.
+- A SIGKILL inside the rebase before the tests can leave `CHERRY_PICK_HEAD` with no rebase open, or a `rebase-merge/` without `head-name`. ship.sh clears them only when HEAD is on the branch and the tree is clean (R21, R21b); with an uncommitted edit it stops with 2 and the session decides (R21c). `lab/kill-stress.sh`: 300 of 300 reps landed after the fix (about 3 in 550 STUCK before).
+- `merge-orig`, the recorded tip, is kept while `HEAD` does not contain it, so a partial loss across retries is seen (R12). The record cannot tell a lost commit from an owner's `commit --amend` or manual rebase: after one, `landed` gives exit 5 until the owner removes the file; the message names it (R18). Commits added after `ship.sh`'s own rebase are not in the record.
+- `landed` matches a landed copy of a commit by author, author time and subject, and the copy's files must be a subset of the original's (a rebase drops a file the target already had, R6d). A collision on a subset of the files, with a different patch, still reads as landed. A merge commit with a change of its own is refused with exit 2 (`git log --remerge-diff`, git ≥ 2.36); a clean merge of the target into the branch passes.
+- A repository switching from an older copy of `merge.sh` (a `mkdir` lock directory): until every open branch is rebased onto the new scripts, an old and a new merge do not exclude each other.
+
+## Examples
+- Suite 6 min, 4 merges per hour: load `4 × 0.1 h = 0.4`; at 6 merges per hour the load is 0.6 and queueing dominates.

@@ -1,0 +1,5 @@
+{"commit":"13b8d02","subject":"init: fixture for lab/swarm.sh","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"f002e41","subject":"Merge branch 't05' into main","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:ok t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"7c20623","subject":"Merge branch 't09' into main","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:ok t06:fail t07:fail t08:fail t09:ok t10:fail "}
+{"commit":"50ac418","subject":"Merge branch 't08' into main","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:ok t06:fail t07:fail t08:ok t09:ok t10:fail "}
+{"commit":"7355cb4","subject":"Merge branch 't03' into main","visible":"green","acceptance":"t01:fail t02:fail t03:ok t04:fail t05:ok t06:fail t07:fail t08:ok t09:ok t10:fail "}

@@ -1,0 +1,241 @@
+{
+ "wall": 480,
+ "tasks": 20,
+ "accepted": 20,
+ "acceptance_final": {
+  "t01": "ok",
+  "t02": "ok",
+  "t03": "ok",
+  "t04": "ok",
+  "t05": "ok",
+  "t06": "ok",
+  "t07": "ok",
+  "t08": "ok",
+  "t09": "ok",
+  "t10": "ok",
+  "t11": "ok",
+  "t12": "ok",
+  "t13": "ok",
+  "t14": "ok",
+  "t15": "ok",
+  "t16": "ok",
+  "t17": "ok",
+  "t18": "ok",
+  "t19": "ok",
+  "t20": "ok"
+ },
+ "undone": [],
+ "red_main_commits": 0,
+ "main_commits": 19,
+ "merge_commits": 19,
+ "slug_files_in_src": 4,
+ "name_required_in_src": 2,
+ "ship_runs": 36,
+ "ship_exit4": 0,
+ "ship_exit_codes": {
+  "t20": [
+   0
+  ],
+  "t13": [
+   0
+  ],
+  "t04": [
+   0
+  ],
+  "t03": [
+   1,
+   1,
+   0
+  ],
+  "t01": [
+   0
+  ],
+  "t02": [
+   0
+  ],
+  "t16": [
+   0
+  ],
+  "t05": [
+   0
+  ],
+  "t09": [
+   0
+  ],
+  "t10": [
+   1,
+   1,
+   0
+  ],
+  "t07": [
+   1,
+   1,
+   5,
+   0,
+   0
+  ],
+  "t11": [
+   0
+  ],
+  "t18": [
+   1,
+   1,
+   1,
+   5,
+   0,
+   0
+  ],
+  "t19": [
+   0
+  ],
+  "t17": [
+   1,
+   1,
+   0
+  ],
+  "t15": [
+   0,
+   0
+  ],
+  "t14": [
+   0
+  ],
+  "t06": [
+   0
+  ],
+  "t08": [
+   0
+  ],
+  "t12": [
+   0
+  ]
+ },
+ "sessions": {
+  "t01": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.125669,
+   "secs": 90
+  },
+  "t02": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.1385429,
+   "secs": 74
+  },
+  "t03": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.1338828,
+   "secs": 210
+  },
+  "t04": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1250519,
+   "secs": 83
+  },
+  "t05": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.12957690000000002,
+   "secs": 143
+  },
+  "t06": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1366504,
+   "secs": 265
+  },
+  "t07": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.17451,
+   "secs": 440
+  },
+  "t08": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.14020639999999998,
+   "secs": 294
+  },
+  "t09": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.14193999999999998,
+   "secs": 131
+  },
+  "t10": {
+   "verdict": "SHIPPED",
+   "turns": 3,
+   "cost": 0.12660919999999998,
+   "secs": 206
+  },
+  "t11": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.135688,
+   "secs": 172
+  },
+  "t12": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.15191200000000002,
+   "secs": 403
+  },
+  "t13": {
+   "verdict": "SHIPPED",
+   "turns": 3,
+   "cost": 0.1190373,
+   "secs": 76
+  },
+  "t14": {
+   "verdict": "- **Missing user:** If no user has that id, `userLabel` throws a `TypeError`. `invoiceLine` already does the same. I did not change this because the right behav",
+   "turns": 4,
+   "cost": 0.1393354,
+   "secs": 252
+  },
+  "t15": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.1672507,
+   "secs": 322
+  },
+  "t16": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1297264,
+   "secs": 135
+  },
+  "t17": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.13853349999999998,
+   "secs": 363
+  },
+  "t18": {
+   "verdict": "SHIPPED",
+   "turns": 8,
+   "cost": 0.1767107,
+   "secs": 362
+  },
+  "t19": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.1500729,
+   "secs": 231
+  },
+  "t20": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.13142900000000002,
+   "secs": 69
+  }
+ },
+ "cost_usd": 2.81,
+ "host_peak": {
+  "claude": 33,
+  "rss_mb": 8342,
+  "cpu": 316
+ }
+}

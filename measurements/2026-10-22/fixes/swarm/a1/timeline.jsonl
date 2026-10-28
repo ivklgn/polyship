@@ -1,0 +1,11 @@
+{"commit":"fd19a4b","subject":"init: fixture for lab/swarm.sh","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:fail t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"7a6e662","subject":"Add 'export' command with its English label","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:ok t06:fail t07:fail t08:fail t09:fail t10:fail "}
+{"commit":"38703dc","subject":"createUser: reject empty or whitespace-only name","visible":"green","acceptance":"t01:fail t02:fail t03:fail t04:fail t05:ok t06:fail t07:ok t08:ok t09:fail t10:fail "}
+{"commit":"7392fa7","subject":"posts: add title slug to postPath","visible":"green","acceptance":"t01:fail t02:ok t03:fail t04:fail t05:ok t06:fail t07:ok t08:ok t09:fail t10:fail "}
+{"commit":"71d27a6","subject":"Add userLabel(db, id) to report: 'Name <email>' via getUser, for user-facing labels","visible":"green","acceptance":"t01:fail t02:ok t03:fail t04:ok t05:ok t06:fail t07:ok t08:ok t09:fail t10:fail "}
+{"commit":"56a1a09","subject":"formatPrice: require currency argument","visible":"green","acceptance":"t01:fail t02:ok t03:fail t04:ok t05:ok t06:fail t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"6bec466","subject":"Add slugify(text) to src/text.js","visible":"green","acceptance":"t01:ok t02:ok t03:fail t04:ok t05:ok t06:fail t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"139beb3","subject":"Rename getUser to findUser across src and test","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:fail t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"6e16363","subject":"Add 'import' command and its English label","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"fbf4d4f","subject":"report: add orderTotal(items) — formatted sum of item.cents for order summaries","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:fail "}
+{"commit":"66781c8","subject":"report: add orderTotal(items) — formatted USD sum of item.cents for order summaries","visible":"green","acceptance":"t01:ok t02:ok t03:ok t04:ok t05:ok t06:ok t07:ok t08:ok t09:ok t10:ok "}

@@ -1,0 +1,94 @@
+{
+ "wall": 95,
+ "tasks": 10,
+ "accepted": 0,
+ "acceptance_final": {
+  "t01": "fail",
+  "t02": "fail",
+  "t03": "fail",
+  "t04": "fail",
+  "t05": "fail",
+  "t06": "fail",
+  "t07": "fail",
+  "t08": "fail",
+  "t09": "fail",
+  "t10": "fail"
+ },
+ "undone": [],
+ "red_main_commits": 0,
+ "main_commits": 0,
+ "merge_commits": 0,
+ "slug_files_in_src": 0,
+ "name_required_in_src": 0,
+ "ship_runs": 0,
+ "ship_exit4": 0,
+ "ship_exit_codes": {},
+ "sessions": {
+  "t01": {
+   "verdict": "STOPPED: Git worktree lock file creation was denied.",
+   "turns": null,
+   "cost": null,
+   "secs": 17
+  },
+  "t02": {
+   "verdict": "STOPPED: unable to commit; `scripts/ship.sh` was not run.",
+   "turns": null,
+   "cost": null,
+   "secs": 34
+  },
+  "t03": {
+   "verdict": "STOPPED: Git could not create the worktree index lock.",
+   "turns": null,
+   "cost": null,
+   "secs": 50
+  },
+  "t04": {
+   "verdict": "STOPPED: commit blocked by filesystem permissions.",
+   "turns": null,
+   "cost": null,
+   "secs": 23
+  },
+  "t05": {
+   "verdict": "STOPPED: Git metadata is not writable.",
+   "turns": null,
+   "cost": null,
+   "secs": 50
+  },
+  "t06": {
+   "verdict": "STOPPED: Git could not create the worktree index lock.",
+   "turns": null,
+   "cost": null,
+   "secs": 17
+  },
+  "t07": {
+   "verdict": "STOPPED: commit blocked by filesystem permissions.",
+   "turns": null,
+   "cost": null,
+   "secs": 37
+  },
+  "t08": {
+   "verdict": "STOPPED: Git worktree index lock creation was denied.",
+   "turns": null,
+   "cost": null,
+   "secs": 57
+  },
+  "t09": {
+   "verdict": "**STOPPED: commit blocked by filesystem permissions.** The `git add` step could not create the worktree index lock, so the change remains uncommitted and `scrip",
+   "turns": null,
+   "cost": null,
+   "secs": 34
+  },
+  "t10": {
+   "verdict": "STOPPED: commit blocked by filesystem permissions.",
+   "turns": null,
+   "cost": null,
+   "secs": 24
+  }
+ },
+ "cost_usd": 0,
+ "host_peak": {
+  "claude": 9,
+  "rss_mb": 2135,
+  "cpu": 115
+ }
+}

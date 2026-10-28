@@ -1,0 +1,230 @@
+{
+ "wall": 394,
+ "tasks": 20,
+ "accepted": 20,
+ "acceptance_final": {
+  "t01": "ok",
+  "t02": "ok",
+  "t03": "ok",
+  "t04": "ok",
+  "t05": "ok",
+  "t06": "ok",
+  "t07": "ok",
+  "t08": "ok",
+  "t09": "ok",
+  "t10": "ok",
+  "t11": "ok",
+  "t12": "ok",
+  "t13": "ok",
+  "t14": "ok",
+  "t15": "ok",
+  "t16": "ok",
+  "t17": "ok",
+  "t18": "ok",
+  "t19": "ok",
+  "t20": "ok"
+ },
+ "undone": [],
+ "red_main_commits": 0,
+ "main_commits": 20,
+ "merge_commits": 0,
+ "slug_files_in_src": 4,
+ "name_required_in_src": 2,
+ "ship_runs": 25,
+ "ship_exit4": 0,
+ "ship_exit_codes": {
+  "t01": [
+   0
+  ],
+  "t12": [
+   0
+  ],
+  "t20": [
+   0
+  ],
+  "t17": [
+   0
+  ],
+  "t02": [
+   0
+  ],
+  "t18": [
+   0
+  ],
+  "t08": [
+   0
+  ],
+  "t15": [
+   0
+  ],
+  "t19": [
+   0
+  ],
+  "t09": [
+   0
+  ],
+  "t07": [
+   0
+  ],
+  "t06": [
+   0
+  ],
+  "t16": [
+   0
+  ],
+  "t13": [
+   0
+  ],
+  "t04": [
+   0
+  ],
+  "t14": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "t03": [
+   1,
+   0
+  ],
+  "t05": [
+   0
+  ],
+  "t11": [
+   0,
+   0
+  ],
+  "t10": [
+   0
+  ]
+ },
+ "sessions": {
+  "t01": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.6632219000000001,
+   "secs": 44
+  },
+  "t02": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.64365585,
+   "secs": 69
+  },
+  "t03": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.7588719500000001,
+   "secs": 254
+  },
+  "t04": {
+   "verdict": "SHIPPED",
+   "turns": 3,
+   "cost": 0.628951,
+   "secs": 206
+  },
+  "t05": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.68655985,
+   "secs": 281
+  },
+  "t06": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.6961050999999999,
+   "secs": 158
+  },
+  "t07": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6488022999999999,
+   "secs": 139
+  },
+  "t08": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.7012327000000002,
+   "secs": 141
+  },
+  "t09": {
+   "verdict": "Skipped: src2/format.js has the same old one-argument formatPrice. The task named src/format.js, so I left src2 alone. Risk: only USD and EUR are supported; any",
+   "turns": 6,
+   "cost": 0.7946932000000001,
+   "secs": 183
+  },
+  "t10": {
+   "verdict": "SHIPPED",
+   "turns": 1,
+   "cost": 0.74001675,
+   "secs": 307
+  },
+  "t11": {
+   "verdict": "SHIPPED",
+   "turns": 2,
+   "cost": 0.67696875,
+   "secs": 283
+  },
+  "t12": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.7346129499999999,
+   "secs": 60
+  },
+  "t13": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6550031500000001,
+   "secs": 189
+  },
+  "t14": {
+   "verdict": "SHIPPED",
+   "turns": 2,
+   "cost": 0.6848561999999999,
+   "secs": 367
+  },
+  "t15": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.6562723,
+   "secs": 128
+  },
+  "t16": {
+   "verdict": "SHIPPED",
+   "turns": 5,
+   "cost": 0.6844345500000001,
+   "secs": 185
+  },
+  "t17": {
+   "verdict": "Skipped: `src/users.js` (the other copy) was not touched, since the task named `src2` only. Risk: non-string names (for example a number) still pass, as `.trim`",
+   "turns": 4,
+   "cost": 0.6133551500000001,
+   "secs": 61
+  },
+  "t18": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.6634042000000001,
+   "secs": 77
+  },
+  "t19": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.77207505,
+   "secs": 167
+  },
+  "t20": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.6129208500000001,
+   "secs": 63
+  }
+ },
+ "cost_usd": 13.72,
+ "host_peak": {
+  "claude": 28,
+  "rss_mb": 8227,
+  "cpu": 264
+ }
+}

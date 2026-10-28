@@ -1,0 +1,21 @@
+942311e Add orderTotal to src2/report: formatted sum of item cents for order totals
+ed985cb report: userLabel uses findUser after the rename on main
+1d3465c report: add userLabel(db, id) returning 'Name <email>'
+ac519d8 Add slugify to src2/text: lowercase, non-alphanumeric runs become one hyphen, trimmed
+ea44446 Rename getUser to findUser
+b5b5ba5 Add orderTotal(items) to report: formatted sum of item.cents for order summaries
+7d5c2ea createUser(src2): reject empty or whitespace-only name
+13aa97c rename getUser call in userLabel to findUser
+bff5e9e rename getUser to findUser in src2/ and test2/
+bb18214 createUser: reject empty or whitespace-only name
+bef537b posts: append title slug to postPath
+03429a7 Add 'import' command to src2 registry with en2 label
+d513ec9 posts: add title slug to post paths
+be570b4 Add 'import' command and its English label
+d5f5fc7 Add userLabel(db, id) to src2/report.js
+d83f500 src2: formatPrice takes a required currency argument
+bc6a677 formatPrice: require currency argument
+a85c409 Add 'export' command to src2 registry with en2 label
+e4e484a Add slugify(text) to src/text.js
+d1514a3 createUser: require name
+973df0f Add 'export' command with its English label

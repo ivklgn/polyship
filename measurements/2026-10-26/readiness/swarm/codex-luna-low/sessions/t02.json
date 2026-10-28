@@ -1,0 +1,1 @@
+{"result": "`node --test` passes all 6 tests, including the new title slug test. I could not commit or run `scripts/ship.sh`: Git could not create its index lock because the shared repository metadata is outside the writable paths.\n\nSTOPPED: unable to commit; `scripts/ship.sh` was not run."}

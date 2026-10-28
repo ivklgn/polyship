@@ -1,0 +1,11 @@
+aee3f60 text: add slugify for URL-safe identifiers
+af05445 orderTotal: pass USD to formatPrice, which now requires a currency
+c8e2473 Add orderTotal(items) to report: formatted sum of item.cents for order summaries
+53bb500 formatPrice: require currency argument
+0d790f1 users: reject empty or whitespace-only name in createUser
+ea31e07 Add 'import' command with its English label
+8a3ec25 report: userLabel uses findUser after rename on main
+e73fad3 report: add userLabel(db, id) returning 'Name <email>'
+c218c1e posts: add title slug to postPath
+fdbc0ce feat: add 'export' command with English label
+264edcb rename getUser to findUser

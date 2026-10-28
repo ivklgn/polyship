@@ -1,0 +1,51 @@
+lab/race.sh: line 143: 24420 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 27063 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 83516 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 10891 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s8 not on main (gave-up)
+  VIOLATION refused: s18 not on main (gave-up)
+  VIOLATION refused: s25 not on main (dep-missing)
+  VIOLATION refused: s29 not on main (dep-missing)
+run 1/50 seed=7250 mode=ship: 23 commits on main, 5 violation(s), 172s
+  lab kept: /tmp/wt-race.NryBbK
+lab/race.sh: line 143: 66838 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 91089 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143:  9056 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (dep-missing)
+  VIOLATION refused: s5 not on main (gave-up)
+  VIOLATION refused: s6 not on main (dep-missing)
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s13 not on main (dep-missing)
+  VIOLATION refused: s15 not on main (gave-up)
+  VIOLATION refused: s16 not on main (dep-missing)
+  VIOLATION refused: s26 not on main (dep-missing)
+run 2/50 seed=7251 mode=ship: 20 commits on main, 8 violation(s), 185s
+  lab kept: /tmp/wt-race.ynHxYY
+lab/race.sh: line 143:  9905 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 42832 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 55757 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s3 not on main (dep-missing)
+  VIOLATION refused: s18 not on main (dep-missing)
+run 3/50 seed=7252 mode=ship: 27 commits on main, 2 violation(s), 178s
+  lab kept: /tmp/wt-race.EeUm2y
+lab/race.sh: line 143: 37677 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s7 not on main (dep-missing)
+  VIOLATION refused: s9 not on main (dep-missing)
+  VIOLATION refused: s12 not on main (dep-missing)
+  VIOLATION refused: s13 not on main (dep-missing)
+  VIOLATION refused: s15 not on main (dep-missing)
+  VIOLATION refused: s23 not on main (gave-up)
+  VIOLATION refused: s30 not on main (gave-up)
+run 4/50 seed=7253 mode=ship: 20 commits on main, 7 violation(s), 178s
+  lab kept: /tmp/wt-race.nYwIrr
+lab/race.sh: line 143: 19841 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 48691 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+lab/race.sh: line 143: 78260 Killed: 9               ( cd "$p" && exec perl -e 'setpgrp(0,0); exec @ARGV' "$@" ) >> "$LAB/$(basename "$p").log" 2>&1 < /dev/null
+  VIOLATION refused: s2 not on main (gave-up)
+  VIOLATION refused: s4 not on main (dep-missing)
+  VIOLATION refused: s5 not on main (dep-missing)
+  VIOLATION refused: s17 not on main (dep-missing)
+  VIOLATION refused: s29 not on main (dep-missing)
+run 5/50 seed=7254 mode=ship: 24 commits on main, 5 violation(s), 187s
+  lab kept: /tmp/wt-race.GvQ5sI

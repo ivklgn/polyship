@@ -1,0 +1,7 @@
+== lab/recover.sh rc=0 PASS=195 FAIL=0
+== REPS=5 lab/lock.sh rc=0 PASS=7 FAIL=0
+== lab/ship-checks.sh rc=0 PASS=20 FAIL=0
+== lab/vendor-checks.sh rc=0 PASS=5 FAIL=0
+PASS: 20 run(s), mode=lock
+PASS: 20 run(s), mode=ship
+PASS: 20 run(s), mode=ship

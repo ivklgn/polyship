@@ -1,0 +1,5 @@
+fatal: not a git repository: <checkout>/worktree-ship/.git/worktrees/worktree-ship.readiness
+== lab/recover.sh rc=0 31s PASS=174 FAIL=0
+== REPS=5 lab/lock.sh rc=0 30s PASS=7 FAIL=0
+== lab/ship-checks.sh rc=0 1s PASS=20 FAIL=0
+== lab/vendor-checks.sh rc=0 31s PASS=5 FAIL=0

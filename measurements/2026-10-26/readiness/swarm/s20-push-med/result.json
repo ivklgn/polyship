@@ -1,0 +1,242 @@
+{
+ "wall": 613,
+ "tasks": 20,
+ "accepted": 17,
+ "acceptance_final": {
+  "t01": "ok",
+  "t02": "ok",
+  "t03": "ok",
+  "t04": "ok",
+  "t05": "ok",
+  "t06": "fail",
+  "t07": "ok",
+  "t08": "ok",
+  "t09": "ok",
+  "t10": "ok",
+  "t11": "ok",
+  "t12": "ok",
+  "t13": "ok",
+  "t14": "fail",
+  "t15": "ok",
+  "t16": "ok",
+  "t17": "ok",
+  "t18": "ok",
+  "t19": "ok",
+  "t20": "fail"
+ },
+ "undone": [
+  "t20"
+ ],
+ "red_main_commits": 0,
+ "main_commits": 16,
+ "merge_commits": 16,
+ "slug_files_in_src": 3,
+ "name_required_in_src": 2,
+ "ship_runs": 35,
+ "ship_exit4": 7,
+ "ship_exit_codes": {
+  "t03": [
+   0
+  ],
+  "t15": [
+   0
+  ],
+  "t10": [
+   0
+  ],
+  "t11": [
+   0
+  ],
+  "t16": [
+   0
+  ],
+  "t13": [
+   0
+  ],
+  "t01": [
+   0
+  ],
+  "t05": [
+   0
+  ],
+  "t09": [
+   0
+  ],
+  "t20": [
+   0
+  ],
+  "t19": [
+   1,
+   0
+  ],
+  "t02": [
+   0
+  ],
+  "t06": [
+   5,
+   1,
+   1,
+   4,
+   1,
+   1
+  ],
+  "t07": [
+   4,
+   4,
+   4,
+   1
+  ],
+  "t12": [
+   0
+  ],
+  "t17": [
+   0
+  ],
+  "t04": [
+   0
+  ],
+  "t08": [
+   1,
+   1,
+   4,
+   0
+  ],
+  "t18": [
+   4,
+   5,
+   1
+  ],
+  "t14": [
+   4,
+   1
+  ]
+ },
+ "sessions": {
+  "t01": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1336267,
+   "secs": 93
+  },
+  "t02": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.1497637,
+   "secs": 177
+  },
+  "t03": {
+   "verdict": "SHIPPED",
+   "turns": 3,
+   "cost": 0.119252,
+   "secs": 48
+  },
+  "t04": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1365652,
+   "secs": 333
+  },
+  "t05": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1347015,
+   "secs": 140
+  },
+  "t06": {
+   "verdict": "The branch is clean. Someone who owns main needs to push or drop those three commits, then `scripts/ship.sh` should merge it.",
+   "turns": 10,
+   "cost": 0.1834741,
+   "secs": 588
+  },
+  "t07": {
+   "verdict": "- **Earlier exit 4s:** I got exit 4 three times. Each time I checked the main reflog, the remotes and the hooks. Only `wt merge` entries from other sessions sho",
+   "turns": 10,
+   "cost": 0.18943129999999997,
+   "secs": 527
+  },
+  "t08": {
+   "verdict": "SHIPPED",
+   "turns": 7,
+   "cost": 0.152468,
+   "secs": 395
+  },
+  "t09": {
+   "verdict": "- **Not checked:** no test shows that `invoiceLine` follows a changed default currency. It would still pass if the call hard-coded `'USD'`.",
+   "turns": 6,
+   "cost": 0.147927,
+   "secs": 114
+  },
+  "t10": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1244006,
+   "secs": 63
+  },
+  "t11": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1291531,
+   "secs": 64
+  },
+  "t12": {
+   "verdict": "SHIPPED",
+   "turns": 6,
+   "cost": 0.1511998,
+   "secs": 238
+  },
+  "t13": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.12168670000000002,
+   "secs": 78
+  },
+  "t14": {
+   "verdict": "`userLabel` throws a `TypeError` for an unknown id, because `findUser` returns `null`. `invoiceLine` already does the same.",
+   "turns": 7,
+   "cost": 0.16634159999999998,
+   "secs": 506
+  },
+  "t15": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1331321,
+   "secs": 65
+  },
+  "t16": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.13243510000000003,
+   "secs": 109
+  },
+  "t17": {
+   "verdict": "I did not touch `src/users.js`, which has the same `createUser`. It still accepts empty names.",
+   "turns": 4,
+   "cost": 0.1357568,
+   "secs": 294
+  },
+  "t18": {
+   "verdict": "- **What the owner needs to do:** push or drop the unpushed local commits on main. They can also add `1250ed1` to the `merge-dropped` file that exit 5 named, be",
+   "turns": 8,
+   "cost": 0.18377030000000005,
+   "secs": 541
+  },
+  "t19": {
+   "verdict": "SHIPPED",
+   "turns": 9,
+   "cost": 0.1747719,
+   "secs": 343
+  },
+  "t20": {
+   "verdict": "SHIPPED",
+   "turns": 4,
+   "cost": 0.1339951,
+   "secs": 125
+  }
+ },
+ "cost_usd": 2.93,
+ "host_peak": {
+  "claude": 33,
+  "rss_mb": 7275,
+  "cpu": 317
+ }
+}
