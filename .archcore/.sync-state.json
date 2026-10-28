@@ -56,6 +56,21 @@
       "source": "architecture/merge-sh.spec.md",
       "target": "architecture/merge-commit-and-optional-push.adr.md",
       "type": "implements"
+    },
+    {
+      "source": "architecture/install-once-per-machine-config-only-adopters.adr.md",
+      "target": "research/how-dev-tools-install-and-configure.research.md",
+      "type": "depends_on"
+    },
+    {
+      "source": "architecture/polyship-cli.spec.md",
+      "target": "architecture/install-once-per-machine-config-only-adopters.adr.md",
+      "type": "implements"
+    },
+    {
+      "source": "plans/global-install.plan.md",
+      "target": "architecture/polyship-cli.spec.md",
+      "type": "implements"
     }
   ]
 }
