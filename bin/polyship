@@ -65,7 +65,7 @@ self_update() {
   if [ ! -d "$data/$tag" ]; then
     # an interrupted install leaves only a .tmp.* directory, never a <tag> one: the rename below is the last step
     tmp=$(mktemp -d "$data/.tmp.XXXXXX"); trap 'rm -rf "$tmp"' EXIT
-    git clone -q --depth 1 --branch "$tag" "$repo" "$tmp/src" || { echo "polyship: cannot fetch $tag from $repo" >&2; exit 1; }
+    git -c advice.detachedHead=false clone -q --depth 1 --branch "$tag" "$repo" "$tmp/src" || { echo "polyship: cannot fetch $tag from $repo" >&2; exit 1; }
     mkdir -p "$tmp/v/lab"; cp -R "$tmp/src/bin" "$tmp/v/"; cp "$tmp/src/lab/recover.sh" "$tmp/v/lab/"; echo "$tag" > "$tmp/v/VERSION"
     mv "$tmp/v" "$data/$tag"   # shortcut: two self-updates of one tag at once can race here; rare on one machine
   fi
