@@ -23,9 +23,14 @@ Source: the variable table in `@README.md` and the headers of `@bin/lib.sh`, `@b
 - SHIP_ROUNDS — merge rounds per ship.sh run; default 10
 - SHIP_AGENT_RUN — set by ship.sh for its agent runs to this repository's git common dir; merge.sh refuses to run in that repository
 
+## Settings layers (bin/polyship)
+`@bin/polyship` sets each variable above from the first layer that defines it: the env variable (an empty value counts), `git config polyship.<key>` in git's own scope order, the worktree's committed `.config/polyship.conf` (git-config syntax), the script default. Keys: target → MERGE_TARGET, push → MERGE_PUSH, review (bool) → SHIP_REVIEW, reviewHow → SHIP_REVIEW_HOW, rounds → SHIP_ROUNDS, agent → SHIP_AGENT, staleIndexLock → MERGE_STALE_INDEX_LOCK, prepare → MERGE_PREPARE, test → SHIP_TEST; minVersion sets no variable. The committed file cannot set prepare or test. Contract: `.archcore/architecture/polyship-cli.spec.md`.
+- POLYSHIP_REPO — where `install.sh` and `polyship self-update` read releases (`v*` tags); default the GitHub URL
+- XDG_DATA_HOME — the install root, `polyship/<tag>/` and the `current` link under it; default `~/.local/share`
+
 ## Worktrunk hooks (the adopter's `.config/wt.toml`)
 - `[post-start]` — commands that prepare a new worktree (dependency install)
 - `[pre-merge]` — the gate run on the rebased tree under the lock, before the merge commit
 
 ## Lab inputs
-- RUNS, N, MODE, SEED, OUT, FILES, EDITS, LINES, P_DEP, P_DUP, DEP_POLICY, DEP_WAIT (`@lab/race.sh`); PUSH (`@lab/race.sh`); SUITE, START_WINDOW, CAP, CLUSTERS, BIN, SHIP_AGENT_MODEL, SHIP_AGENT_EFFORT, SWARM_AGENT, SWARM_REVIEW, SWARM_PUSH (`@lab/swarm.sh`); REPS, LAB (`@lab/suite-time.sh`); REPS, W, MERGE_SH (`@lab/lock.sh`); BIN (`@lab/recover.sh`); N, SUITE_SLEEP, BAD (`@lab/merge-batch.sh`)
+- RUNS, N, MODE, SEED, OUT, FILES, EDITS, LINES, P_DEP, P_DUP, DEP_POLICY, DEP_WAIT (`@lab/race.sh`); PUSH (`@lab/race.sh`); SUITE, START_WINDOW, CAP, CLUSTERS, BIN, SHIP_AGENT_MODEL, SHIP_AGENT_EFFORT, SWARM_AGENT, SWARM_REVIEW, SWARM_PUSH (`@lab/swarm.sh`); REPS, LAB (`@lab/suite-time.sh`); REPS, W, MERGE_SH (`@lab/lock.sh`); BIN (`@lab/recover.sh`); N, SUITE_SLEEP, BAD (`@lab/merge-batch.sh`); HOME, POLYSHIP_REPO (`@lab/polyship-checks.sh`, both set to throwaway paths)

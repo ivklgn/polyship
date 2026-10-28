@@ -1,6 +1,6 @@
-# This repository's own gate: the recovery, lock, ship.sh and vendor.sh checks.
+# This repository's own gate: the recovery, lock, ship.sh and polyship launcher checks.
 [pre-merge]
 recover = "lab/recover.sh"
 lock = "REPS=5 lab/lock.sh"
 ship = "lab/ship-checks.sh"
-vendor = "lab/vendor-checks.sh"
+polyship = "lab/polyship-checks.sh"

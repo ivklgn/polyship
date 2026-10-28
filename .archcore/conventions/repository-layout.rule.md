@@ -13,7 +13,7 @@ tags:
 4. `bin/lib.sh` MUST stay a file that `merge.sh` and `ship.sh` source, never an executable entry point.
 
 ## Rationale
-`@bin/vendor.sh` copies `bin/merge.sh`, `bin/ship.sh` and `bin/lib.sh` as they are into every adopter, so a stack-specific line in `bin/` would reach repositories of another stack. The project-side contract is the pair of hooks `[post-start]` and `[pre-merge]` in the adopter's `.config/wt.toml`. Every number in `@measurements/REPORT.md` is computed from the raw files under `@measurements/2026-10-21/`, so a report line without its data cannot be re-checked.
+`@bin/polyship` runs `bin/merge.sh`, `bin/ship.sh` and `bin/lib.sh` as they are in every adopter on the machine, so a stack-specific line in `bin/` would reach repositories of another stack. The project-side contract is the pair of hooks `[post-start]` and `[pre-merge]` in the adopter's `.config/wt.toml`. Every number in `@measurements/REPORT.md` is computed from the raw files under `@measurements/2026-10-21/`, so a report line without its data cannot be re-checked.
 
 ## Examples
 ### Good
@@ -25,8 +25,8 @@ measurements/2026-10-21/race/*.jsonl.gz   # raw data; the line in measurements/R
 ### Bad
 ```sh
 # bin/merge.sh
-pnpm install --frozen-lockfile     # an adopter's install command inside the vendored script
+pnpm install --frozen-lockfile     # an adopter's install command inside the shared script
 ```
 
 ## Enforcement
-Manual review; `bin/vendor.sh` copies `bin/` without a check.
+Manual review; a release tag ships `bin/` to every adopter without a check of its own.

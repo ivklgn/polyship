@@ -12,7 +12,7 @@ step is off. Everything runs in a new directory under `/tmp`. You need `wt`, git
 ## What you see
 
 ```text
-== three sessions run scripts/ship.sh at the same time
+== three sessions run polyship ship at the same time
 [greet] ship: tests before the queue
 [greet] ship: merge (round 1)
 [greet] ship: greet is on main
@@ -39,7 +39,7 @@ step is off. Everything runs in a new directory under `/tmp`. You need `wt`, git
 |\
 | * feat: greet command
 |/
-* chore: the app, with polyship in scripts/
+* chore: the app, with its polyship configuration
 ```
 
 All three branches started from the same commit. Each one waited for the lock, was rebased onto the merges
@@ -47,7 +47,8 @@ before it, and passed the tests again before it landed.
 
 ## What a project adds
 
-The demo builds the same three things you add to a real project.
+The demo builds the same things you add to a real project. polyship itself is installed once per machine
+(`install.sh`); the demo runs it from this checkout instead.
 
 `.config/wt.toml`: how to prepare a worktree and how to test it. The `pre-merge` command is the gate.
 
@@ -59,13 +60,11 @@ deps = "npm ci"
 test = "npm test"
 ```
 
-`scripts/`: `ship.sh`, `merge.sh` and `lib.sh`, copied by `install.sh` and committed.
-
-`CLAUDE.md` or `AGENTS.md`: tells each agent to end its task with `scripts/ship.sh` (see the main README).
+`CLAUDE.md` or `AGENTS.md`: tells each agent to end its task with `polyship ship` (see the main README).
 
 ## With real agents
 
-With a real agent, `ship.sh` does two more things:
+With a real agent, `polyship ship` does two more things:
 
 - **Review.** Before the tests, an agent reviews the branch and fixes what it finds.
 - **Conflicts.** When the rebase stops on a conflict, an agent resolves it and the branch goes back to the queue.
