@@ -1,5 +1,5 @@
 ---
-title: "polyship — the per-machine command and its configuration layers"
+title: "polyship — the per-machine command and its arguments"
 status: draft
 tags:
   - "config"
@@ -9,77 +9,65 @@ tags:
 
 ## Purpose & Scope
 
-Normative for the `polyship` launcher (`@bin/polyship`) and the installer `@install.sh`: how polyship is installed and updated per machine, how a subcommand reaches `bin/ship.sh` and `bin/merge.sh`, and how settings are read from the environment, `git config` and an adopter's committed `.config/polyship.conf`. Dependents: agents and people in adopter repositories (they run `polyship ship`), the adopter instructions in `@INSTALL.md` and `@README.md`, and `@example/demo.sh`.
+Normative for the `polyship` launcher (`@bin/polyship`): its commands, the `-o KEY=VALUE` settings, how a command reaches `bin/ship.sh` and `bin/merge.sh` of its own version, and its refusals. Dependents: agents and people in adopter repositories (they run `polyship ship` with the arguments their Shipping block names), `@INSTALL.md`, `@README.md` and `@example/demo.sh`.
 
-Not covered: the merge flow itself (`.archcore/architecture/merge-sh.spec.md`, `.archcore/architecture/ship-sh.spec.md`), Worktrunk hooks and approvals, and the polyship repository's own gate.
+Not covered: the release and the install (`.archcore/architecture/polyship-release.spec.md`), the merge flow (`.archcore/architecture/merge-sh.spec.md`, `.archcore/architecture/ship-sh.spec.md`), Worktrunk hooks and approvals.
 
 ## Surface
 
-- `polyship ship` — runs `bin/ship.sh` of the running version; exit codes are ship.sh's.
-- `polyship merge [flags]` — runs `bin/merge.sh`; flags go to `wt merge`; exit codes are merge.sh's.
-- `polyship self-update [<tag>]` — installs the newest `v*` tag, or `<tag>`, and makes it current.
-- `polyship check` — runs `lab/recover.sh` with `BIN` set to the running version's `bin/`.
-- `polyship version` — prints the running version: its tag, or `dev <short sha>` for a checkout.
-- Install layout: `${XDG_DATA_HOME:-$HOME/.local/share}/polyship/<tag>/{bin,lab/recover.sh}`, the link `…/polyship/current` → `<tag>`, and `~/.local/bin/polyship` → `…/current/bin/polyship`.
-- `POLYSHIP_REPO` — the git URL or path of polyship releases; default `https://github.com/ivklgn/polyship`.
-- Settings — key, env variable it sets, allowed in `.config/polyship.conf`:
+- `polyship ship [-C DIR] [-o KEY=VALUE]...` — runs `bin/ship.sh`; exit codes are ship.sh's.
+- `polyship merge [-C DIR] [-o KEY=VALUE]... [FLAGS]` — runs `bin/merge.sh`; FLAGS go to `wt merge`.
+- `polyship config [-o KEY=VALUE]...` — one line `CONFIG<TAB>key<TAB>value<TAB>source` per key; source `flag` or `default`.
+- `polyship check` — runs `lab/recover.sh` with `BIN` set to the version's `bin/`.
+- `polyship --version` — `polyship <version>` from the release's `VERSION` file, or `polyship dev` in a checkout.
+- Settings, each mapped to the variable the scripts read:
 
-| Key | Env variable | In project file |
+| Key | Values | Variable |
 |---|---|---|
-| `polyship.target` | `MERGE_TARGET` | yes |
-| `polyship.push` | `MERGE_PUSH` | yes |
-| `polyship.review` (bool) | `SHIP_REVIEW` (`0`/`1`) | yes |
-| `polyship.reviewHow` | `SHIP_REVIEW_HOW` | yes |
-| `polyship.rounds` | `SHIP_ROUNDS` | yes |
-| `polyship.agent` | `SHIP_AGENT` | yes |
-| `polyship.staleIndexLock` | `MERGE_STALE_INDEX_LOCK` | yes |
-| `polyship.minVersion` | — | yes |
-| `polyship.prepare` | `MERGE_PREPARE` | no |
-| `polyship.test` | `SHIP_TEST` | no |
+| `target` | branch | `MERGE_TARGET` |
+| `push` | remote | `MERGE_PUSH` |
+| `prepare` | command | `MERGE_PREPARE` |
+| `test` | command | `SHIP_TEST` |
+| `agent` | `claude`, `codex` | `SHIP_AGENT` |
+| `review` | `on`, `off` | `SHIP_REVIEW` (`1`, `0`) |
+| `review_how` | text | `SHIP_REVIEW_HOW` |
+| `rounds` | whole number ≥ 1 | `SHIP_ROUNDS` |
+| `stale_index_lock` | whole number ≥ 1 | `MERGE_STALE_INDEX_LOCK` |
 
 ## Normative Behavior
 
-1. WHEN a subcommand starts, the launcher MUST resolve its own path through every symlink and use that real version directory for the whole run.
-2. WHEN `polyship ship` or `polyship merge` runs, the launcher MUST execute the script from the resolved version directory, never from `current`.
-3. WHEN a setting is resolved, the launcher MUST take the first layer that defines it: env variable, `git config`, `.config/polyship.conf`, the script default.
-4. The launcher MUST treat an env variable that is set to an empty string as defined.
-5. WHEN the launcher reads `git config`, it MUST use git's own scope order (command, worktree, local, global, system).
-6. WHEN the launcher reads `.config/polyship.conf`, it MUST read the file at the top level of the current worktree with `git config --file`.
-7. WHEN a setting resolves to a value, the launcher MUST export it under its env variable before executing the script.
-8. WHEN the current worktree's `polyship.minVersion` is higher than the running tag, the launcher MUST stop before executing any script.
-9. WHILE the running version is a checkout (`dev`), the launcher MUST skip the minimum-version check.
-10. WHEN `polyship self-update` runs, the launcher MUST list tags with `git ls-remote --tags` on `POLYSHIP_REPO` and pick the highest `vMAJOR.MINOR.PATCH`.
-11. WHEN the chosen tag is not installed, the launcher MUST install it into a temporary directory and rename it to `<tag>`.
-12. WHEN the new version directory is complete, the launcher MUST replace the `current` link with one `rename(2)`.
-13. WHEN `@install.sh` runs, it MUST clone `POLYSHIP_REPO` and hand the install to the clone's `polyship self-update`.
-14. IF `~/.local/bin` is not on `PATH`, THEN `@install.sh` MUST print the line that adds it.
+1. WHEN a command starts, the launcher MUST resolve its own path through every symlink and use that version directory for the whole run.
+2. WHEN `-o` names a known key, the launcher MUST export its value under the key's variable for that command.
+3. WHEN `-o` repeats a key, the launcher MUST use the last value.
+4. WHEN no argument sets a key, the launcher MUST unset the key's variable, so the script's default applies.
+5. WHEN `-C DIR` is given, the launcher MUST run the command in DIR.
+6. WHEN `polyship config` runs, the launcher MUST print every key with its effective value and source.
+7. WHEN `config` prints `review`, the launcher MUST print `on` or `off`, as the argument takes it.
+8. WHEN `polyship merge` gets an argument that is not `-C` or `-o`, the launcher MUST pass it to `bin/merge.sh`.
 
 ## Constraints & Invariants
 
-- The launcher MUST run on bash 3.2 and use only git, perl and the shell; `@install.sh` may also use `curl` only for its own download. Rationale: the stack rule, `.archcore/conventions/project-stack.rule.md`.
-- The launcher MUST NOT write any file inside an adopter repository.
-- `bin/merge.sh`, `bin/ship.sh` and `bin/lib.sh` MUST keep reading their settings from env variables only; the launcher is the only reader of `git config` and `.config/polyship.conf`.
-- An installed `<tag>` directory MUST NOT change after its rename; `self-update` never deletes a version directory, because a running `ship.sh` may still use it.
-- A committed `.config/polyship.conf` MUST NOT set a command: `polyship.prepare` and `polyship.test` come from env or `git config` only, as git-lfs limits `.lfsconfig`.
+- The launcher MUST read no settings file and no settings variable: a variable left in the caller's shell does not reach the scripts. Rationale: one approach with polybrief (`arguments-only-runtime.adr` there).
+- The launcher MUST NOT write any file.
+- `bin/merge.sh`, `bin/ship.sh` and `bin/lib.sh` keep reading env only; the launcher is their only public entry.
+- The launcher MUST run on bash 3.2 with perl and git (`.archcore/conventions/project-stack.rule.md`).
 
 ## Failure Behavior
 
-1. IF the subcommand is missing or unknown, THEN the launcher MUST print the usage and exit 2.
-2. IF `polyship ship` or `polyship merge` runs outside a git worktree, THEN the launcher MUST exit 2 with a message naming the directory.
-3. IF `polyship.minVersion` is higher than the running tag, THEN the launcher MUST exit 2 with "polyship <min> is required, <tag> is installed; run polyship self-update".
-4. IF `polyship.minVersion` is not `vMAJOR.MINOR.PATCH` or `MAJOR.MINOR.PATCH`, THEN the launcher MUST exit 2 naming the value and the file.
-5. IF `.config/polyship.conf` sets `polyship.prepare` or `polyship.test`, THEN the launcher MUST ignore the key and print one warning naming it.
-6. IF `self-update` cannot list or fetch tags, THEN the launcher MUST exit 1 and leave `current` unchanged.
-7. IF `POLYSHIP_REPO` has no `v*` tag, THEN `self-update` MUST exit 1 with a message naming the repository.
-8. IF the requested `<tag>` does not exist, THEN `self-update` MUST exit 1 and leave `current` unchanged.
-9. IF the launcher is interrupted during `self-update`, THEN the next `self-update` MUST NOT treat the leftover temporary directory as an installed version.
+1. IF the command is missing or unknown, THEN the launcher MUST print the usage and exit 2.
+2. IF an override lacks `=`, THEN the launcher MUST exit 2 naming the override.
+3. IF an override names an unknown key, THEN the launcher MUST exit 2 naming the key.
+4. IF a value is outside its allowed values, THEN the launcher MUST exit 2 naming the key and the value.
+5. IF `ship` gets an argument that is not `-C` or `-o`, THEN the launcher MUST exit 2 naming it.
+6. IF `-C` names no directory, THEN the launcher MUST exit 2 naming it.
+7. IF `ship` or `merge` runs outside a git worktree, THEN the launcher MUST exit 2 naming the directory.
 
 ## Conformance
 
-An implementation conforms when it satisfies every MUST in Normative Behavior, Constraints & Invariants and Failure Behavior. `@lab/polyship-checks.sh` (P1–P8) checks the launcher and the installer in a throwaway HOME. Also: `polyship check` reports no `FAIL` line and exits 0; an install into `HOME=$(mktemp -d)` from a local `POLYSHIP_REPO` with a tag gives a working `polyship version`; a project with `polyship.minVersion` above the installed tag exits 2.
+An implementation conforms when it satisfies every MUST above. `@lab/polyship-checks.sh` P4–P8 check clauses 1–8 and Failure Behavior 1–7 against a stub `ship.sh` and `merge.sh` in a throwaway HOME.
 
 ```
-Given .config/polyship.conf sets polyship.push = origin and the shell sets MERGE_PUSH=
-When the agent runs polyship ship
-Then ship.sh runs with MERGE_PUSH set to the empty string (no push)
+Given the caller's shell sets MERGE_PUSH=evil
+When the agent runs polyship ship -o review=off
+Then ship.sh sees SHIP_REVIEW=0 and no MERGE_PUSH
 ```

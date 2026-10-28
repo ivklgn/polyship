@@ -1,86 +1,67 @@
 #!/usr/bin/env bash
-# The per-machine command: runs ship.sh or merge.sh of the version it belongs to, with the settings of the current
-# repository in env, and installs or switches versions. Contract: .archcore/architecture/polyship-cli.spec.md.
+# The per-machine command: runs ship.sh or merge.sh of the version it belongs to, with the settings given as
+# arguments. No settings file and no settings env: a caller passes -o KEY=VALUE, as with polybrief.
+# Contract: .archcore/architecture/polyship-cli.spec.md.
 #
-#   polyship ship                 bin/ship.sh of this version (exit codes are ship.sh's)
-#   polyship merge [flags]        bin/merge.sh of this version; flags go to wt merge
-#   polyship self-update [<tag>]  install the newest v* tag of POLYSHIP_REPO, or <tag>, and make it current
-#   polyship check                lab/recover.sh against this version's bin/
-#   polyship version              the tag, or "dev <sha>" for a checkout
-#
-# Settings, first layer that defines one wins: env variable, git config (polyship.<key>), the worktree's committed
-# .config/polyship.conf (git-config syntax), the script's default. The committed file cannot set a command.
+#   polyship ship [-C DIR] [-o KEY=VALUE]...            review, tests, the locked merge, conflict rounds
+#   polyship merge [-C DIR] [-o KEY=VALUE]... [FLAGS]   only the locked merge; FLAGS go to wt merge
+#   polyship config [-o KEY=VALUE]...                    every setting with its value and source
+#   polyship check                                       the replay tests against this version's scripts
+#   polyship --version
 set -euo pipefail
 self=$(perl -MCwd=abs_path -e 'print abs_path(shift)' "$0")
 bin=$(dirname "$self"); root=$(dirname "$bin")
-data=${XDG_DATA_HOME:-$HOME/.local/share}/polyship
-repo=${POLYSHIP_REPO:-https://github.com/ivklgn/polyship}
 
-usage() { sed -n 's/^#   \(polyship \)/\1/p' "$self" >&2; exit 2; }
-version() { if [ -f "$root/VERSION" ]; then cat "$root/VERSION"; else echo "dev $(git -C "$root" rev-parse --short HEAD 2>/dev/null || echo unknown)"; fi; }
-ge() { perl -e '@a = $ARGV[0] =~ /(\d+)/g; @b = $ARGV[1] =~ /(\d+)/g; for (0..2) { exit 0 if $a[$_] > $b[$_]; exit 1 if $a[$_] < $b[$_] } exit 0' "$1" "$2"; }
+# key, the variable the scripts read, allowed values
+settings='target MERGE_TARGET branch
+push MERGE_PUSH remote
+prepare MERGE_PREPARE command
+test SHIP_TEST command
+agent SHIP_AGENT claude|codex
+review SHIP_REVIEW on|off
+review_how SHIP_REVIEW_HOW text
+rounds SHIP_ROUNDS number
+stale_index_lock MERGE_STALE_INDEX_LOCK number'
 
-# key, env variable, whether the committed file may set it
-settings='target MERGE_TARGET 1
-push MERGE_PUSH 1
-review SHIP_REVIEW 1
-reviewHow SHIP_REVIEW_HOW 1
-rounds SHIP_ROUNDS 1
-agent SHIP_AGENT 1
-staleIndexLock MERGE_STALE_INDEX_LOCK 1
-prepare MERGE_PREPARE 0
-test SHIP_TEST 0'
+die() { echo "polyship: $*" >&2; exit 2; }
+usage() { sed -n 's/^#   \(polyship\)/\1/p' "$self" >&2; exit 2; }
+version() { if [ -f "$root/VERSION" ]; then cat "$root/VERSION"; else echo dev; fi; }
 
-load() { # export every setting the layers define; stop on a minVersion this version does not meet
-  local top conf key var shared val type min
-  top=$(git rev-parse --show-toplevel 2>/dev/null) || { echo "polyship: $PWD is not in a git worktree" >&2; exit 2; }
-  conf="$top/.config/polyship.conf"; [ -f "$conf" ] || conf=
-  while read -r key var shared; do
-    eval "[ -n \"\${$var+set}\" ]" && continue   # set, even to "", by the caller: env wins
-    type=; [ "$key" = review ] && type=--type=bool
-    val=$(git config $type --get "polyship.$key") ||
-      if [ -n "$conf" ] && val=$(git config --file "$conf" $type --get "polyship.$key"); then
-        [ "$shared" = 1 ] || { echo "polyship: $conf: polyship.$key is a command and is ignored there; set it with git config" >&2; continue; }
-      else continue; fi
-    [ "$key" = review ] && { [ "$val" = true ] && val=1 || val=0; }
-    export "$var=$val"
-  done <<< "$settings"
-  min=$(git config --get polyship.minVersion || { [ -z "$conf" ] || git config --file "$conf" --get polyship.minVersion; } || true)
-  [ -n "$min" ] || return 0
-  printf '%s\n' "$min" | grep -Eq '^v?[0-9]+\.[0-9]+\.[0-9]+$' || { echo "polyship: polyship.minVersion '$min' (${conf:-git config}) is not MAJOR.MINOR.PATCH" >&2; exit 2; }
-  case $(version) in dev*) return 0 ;; esac
-  ge "$(version)" "$min" || { echo "polyship: polyship $min is required, $(version) is installed; run polyship self-update" >&2; exit 2; }
-}
-
-self_update() {
-  local tags tag
-  tags=$(git ls-remote --tags --refs "$repo" 'v*' | sed 's#.*refs/tags/##' | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$') ||
-    { echo "polyship: no v* tag in $repo (or it cannot be read)" >&2; exit 1; }
-  if [ -n "${1:-}" ]; then
-    tag=$1; printf '%s\n' "$tags" | grep -qxF "$tag" || { echo "polyship: no tag $tag in $repo" >&2; exit 1; }
-  else
-    tag=$(printf '%s\n' "$tags" | perl -e 'print +(sort { my @a = $a =~ /(\d+)/g; my @b = $b =~ /(\d+)/g; $a[0] <=> $b[0] || $a[1] <=> $b[1] || $a[2] <=> $b[2] } <STDIN>)[-1]')
-  fi
-  mkdir -p "$data"
-  if [ ! -d "$data/$tag" ]; then
-    # an interrupted install leaves only a .tmp.* directory, never a <tag> one: the rename below is the last step
-    tmp=$(mktemp -d "$data/.tmp.XXXXXX"); trap 'rm -rf "$tmp"' EXIT
-    git -c advice.detachedHead=false clone -q --depth 1 --branch "$tag" "$repo" "$tmp/src" || { echo "polyship: cannot fetch $tag from $repo" >&2; exit 1; }
-    mkdir -p "$tmp/v/lab"; cp -R "$tmp/src/bin" "$tmp/v/"; cp "$tmp/src/lab/recover.sh" "$tmp/v/lab/"; echo "$tag" > "$tmp/v/VERSION"
-    mv "$tmp/v" "$data/$tag"   # shortcut: two self-updates of one tag at once can race here; rare on one machine
-  fi
-  rm -f "$data/current.new"
-  perl -e 'symlink($ARGV[0], "$ARGV[1].new") && rename("$ARGV[1].new", $ARGV[1]) or die "polyship: $ARGV[1]: $!\n"' "$tag" "$data/current"
-  mkdir -p "$HOME/.local/bin"; ln -sfn "$data/current/bin/polyship" "$HOME/.local/bin/polyship"
-  echo "polyship: $tag is current ($data/$tag)"
+set_kv() { # KEY=VALUE: check it, record it for export
+  local k=${1%%=*} v=${1#*=} var kind
+  [ "$k" != "$1" ] || die "bad override '$1' (use KEY=VALUE)"
+  read -r var kind <<< "$(printf '%s\n' "$settings" | awk -v k="$k" '$1 == k { print $2, $3 }')"
+  [ -n "${var:-}" ] || die "unknown setting '$k'"
+  case $kind in
+    on\|off) case $v in on) v=1 ;; off) v=0 ;; *) die "$k must be on or off, not '$v'" ;; esac ;;
+    number) printf '%s' "$v" | grep -Eq '^[1-9][0-9]*$' || die "$k must be a whole number, not '$v'" ;;
+    claude\|codex) case $v in claude|codex) ;; *) die "$k must be claude or codex, not '$v'" ;; esac ;;
+  esac
+  eval "set_$var=\$v"
 }
 
 cmd=${1:-}; [ $# = 0 ] || shift
+case $cmd in --version|version) echo "polyship $(version)"; exit 0 ;; ship|merge|config|check) ;; *) usage ;; esac
+
+dir=; rest=()
+while [ $# -gt 0 ]; do
+  case $1 in
+    -C|-o) [ $# -ge 2 ] || die "$1 needs a value"; [ "$1" = -C ] && dir=$2 || set_kv "$2"; shift 2 ;;
+    *) [ "$cmd" = merge ] || die "unexpected argument '$1'"; rest+=("$1"); shift ;;
+  esac
+done
+[ -z "$dir" ] || cd "$dir" 2>/dev/null || die "no directory $dir"
+
+# only arguments count: a variable left in the caller's shell does not reach the scripts
+while read -r key var kind; do
+  if eval "[ -n \"\${set_$var+x}\" ]"; then eval "export $var=\"\$set_$var\""; src=flag; else unset "$var"; src=default; fi
+  val=${!var:-}; [ "$kind" != 'on|off' ] || case $val in 1) val=on ;; 0) val=off ;; esac
+  [ "$cmd" != config ] || printf 'CONFIG\t%s\t%s\t%s\n' "$key" "$val" "$src"
+done <<< "$settings"
+
 case $cmd in
-  ship)  load; exec "$bin/ship.sh" "$@" ;;
-  merge) load; exec "$bin/merge.sh" "$@" ;;
-  self-update) self_update "$@" ;;
+  config) ;;
   check) BIN=$bin exec "$root/lab/recover.sh" ;;
-  version) version ;;
-  *) usage ;;
+  *) git rev-parse --show-toplevel >/dev/null 2>&1 || die "$PWD is not in a git worktree"
+     exec "$bin/$cmd.sh" ${rest[@]+"${rest[@]}"} ;;
 esac

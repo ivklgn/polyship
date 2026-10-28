@@ -3,8 +3,9 @@
 Work in a worktree of this repository and land with `bin/merge.sh`: its own `pre-merge` gate
 (`.config/wt.toml`) runs `lab/recover.sh`, `lab/lock.sh`, `lab/ship-checks.sh` and `lab/polyship-checks.sh`. A change to the merge flow also gets a run of
 `lab/race.sh` (`RUNS=100 N=10`, modes `lock` and `ship`) and a line in [measurements/REPORT.md](measurements/REPORT.md);
-a new failure shape gets a deterministic replay in `lab/recover.sh` before its fix. A release is a `vMAJOR.MINOR.PATCH` tag on `main`, set after the change landed;
-adopters take it with `polyship self-update`.
+a new failure shape gets a deterministic replay in `lab/recover.sh` before its fix. A release is a pushed `vMAJOR.MINOR.PATCH` tag on `main`, the next version after the last one, set after the change
+landed: `.github/workflows/release.yml` runs the same checks on macOS and Linux and publishes `polyship.tar.gz` and
+`checksums.txt`. A published tag is never moved; a fix is the next version. Adopters update by running `install.sh` again.
 
 Needs bash, perl, git ≥ 2.40 (`bin/` uses `rev-parse --path-format`, 2.31, and `merge-tree --merge-base`, 2.40) and
 `wt` ≥ 0.80 (`brew install worktrunk`, `wt config shell install`); once per repository `wt config approvals add --yes`.
@@ -28,7 +29,7 @@ Needs bash, perl, git ≥ 2.40 (`bin/` uses `rev-parse --path-format`, 2.31, and
 | `lab/recover.sh` | the failures found under SIGKILL and in review (R1-R10 with R1b-R1e, R5b, R6b, R6c, R8b-R8e, R10b, R10c), deterministic, for `main`, `master` and `MERGE_TARGET`; the regression guard | `lab/recover.sh` |
 | `lab/ship-checks.sh` | ship.sh's own decisions with a stub agent (S1-S9): refusals, review verdicts, the fence (exit 4), red tests, conflict rounds (exit 3), codex; a regression guard | `lab/ship-checks.sh` |
 | `lab/kill-stress.sh` | one SIGKILL at a random moment of ship.sh, then the recovery its messages ask for, repeated (`REPS`); counts landed, lost and stuck sessions | `REPS=300 lab/kill-stress.sh` |
-| `lab/polyship-checks.sh` | bin/polyship and install.sh in a throwaway HOME (P1-P8): install, the version directory, the settings layers, minVersion, self-update; a regression guard | `lab/polyship-checks.sh` |
+| `lab/polyship-checks.sh` | bin/polyship and install.sh in a throwaway HOME (P1-P8): the release archive, install with its checksum, the version directory, arguments only, refusals, `config`; a regression guard | `lab/polyship-checks.sh` |
 | `lab/replay.sh` | a real human-resolved conflict of any repository, replayed through `ship.sh` with a real agent, diffed against the human | `lab/replay.sh <repo> <back-merge-sha>` |
 | `lab/merge-race.sh` | six fixed scenarios (the original acceptance stand) | `lab/merge-race.sh` |
 | `lab/merge-batch.sh` | model of a Bors-style batch queue against the serial lock | `N=8 SUITE_SLEEP=2 lab/merge-batch.sh` |
