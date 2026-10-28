@@ -71,6 +71,16 @@
       "source": "plans/global-install.plan.md",
       "target": "architecture/polyship-cli.spec.md",
       "type": "implements"
+    },
+    {
+      "source": "architecture/polyship-release.spec.md",
+      "target": "architecture/install-once-per-machine-config-only-adopters.adr.md",
+      "type": "implements"
+    },
+    {
+      "source": "plans/global-install.plan.md",
+      "target": "architecture/polyship-release.spec.md",
+      "type": "implements"
     }
   ]
 }

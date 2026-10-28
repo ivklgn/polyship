@@ -1,0 +1,38 @@
+name: CI
+
+# The same checks as this repository's pre-merge gate (.config/wt.toml), on the target systems.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install Worktrunk
+        run: |
+          command -v brew >/dev/null || eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          brew install worktrunk
+          echo "$(brew --prefix)/bin" >> "$GITHUB_PATH"
+
+      - name: Git identity for the throwaway repositories
+        run: |
+          git config --global user.name ci
+          git config --global user.email ci@example.com
+
+      - run: lab/recover.sh
+      - run: REPS=5 lab/lock.sh
+      - run: lab/ship-checks.sh
+      - run: lab/polyship-checks.sh

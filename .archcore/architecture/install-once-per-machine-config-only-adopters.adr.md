@@ -1,5 +1,5 @@
 ---
-title: "Install polyship once per machine; an adopter commits only configuration"
+title: "Distribute and configure polyship as polybrief is: release archive, installer, arguments only"
 status: draft
 tags:
   - "architecture"
@@ -9,39 +9,39 @@ tags:
 
 ## Context
 
-`@install.sh` and `@bin/vendor.sh` copy `merge.sh`, `ship.sh`, `lib.sh` and `lab/recover.sh` into every adopter: in lifecore-app the adoption commit 3171938 added 1080 lines of polyship code under `scripts/`, and every polyship change reaches an adopter only through a new vendoring commit there (`.archcore/conventions/changing-the-merge-flow.rule.md`, clause 5). The copy does not make an adopter self-sufficient, because Worktrunk `wt` must be installed on every machine anyway (`@INSTALL.md`, step 1). Per-project settings (`MERGE_PUSH`, `SHIP_REVIEW_HOW`, `MERGE_PREPARE`) have no file of their own; `@INSTALL.md` step 6 puts them into task-runner aliases, and lifecore-app has no task runner. The comparison of eight tools in the linked research shows one common pattern: a per-machine command, a self-update command, one committed project file owned by the tool, and a project-declared minimum version.
+`@install.sh` and `@bin/vendor.sh` copied `merge.sh`, `ship.sh`, `lib.sh` and `lab/recover.sh` into every adopter: in lifecore-app the adoption commit 3171938 added 1080 lines under `scripts/`, and every polyship change reached an adopter only through a vendoring commit there. A first per-machine design (commits 3cce83b, afeb901) installed from a git clone, updated with `polyship self-update` and read settings from env, `git config` and a committed `.config/polyship.conf`; it read that file from the branch being shipped, so a branch could set `review = false` for itself. The owner's other tool, polybrief, already settled the same questions in accepted decisions (`release-distribution.adr` and `arguments-only-runtime.adr` in that repository): a tag publishes a GitHub Release with archives and `checksums.txt`, `install.sh` verifies the sha256 and places the command, and settings are `-o KEY=VALUE` arguments with no settings file. The owner asked on 2026-10-28 to use one approach for both tools and to keep polyship in Bash.
 
 ## Decision
 
-Install polyship per machine with `@install.sh` into `${XDG_DATA_HOME:-~/.local/share}/polyship/<tag>/`, behind a `current` link and the `polyship` command in `~/.local/bin`, updated by `polyship self-update` to the newest `v*` tag; an adopter commits only `.config/polyship.conf` in git-config syntax, its hooks in `.config/wt.toml`, and the Shipping block in `CLAUDE.md`/`AGENTS.md`.
+A pushed `vMAJOR.MINOR.PATCH` tag runs `@.github/workflows/release.yml`, which runs the checks of `@.github/workflows/ci.yml` and publishes `polyship.tar.gz` with `checksums.txt`; `@install.sh` verifies the sha256 and unpacks the release into `${XDG_DATA_HOME:-~/.local/share}/polyship/<version>/` behind the link `~/.local/bin/polyship`, and `@bin/polyship` takes its settings only as `-o KEY=VALUE` arguments, so an adopter keeps `.config/wt.toml` and the Shipping block that names the command with its arguments.
 
 ## Alternatives Considered
 
-1. Keep vendoring into `scripts/` (polyship bddc77d) — rejected because each adopter carries about 1080 lines of copied code and each polyship change costs one commit per adopter.
-2. A Homebrew tap formula — deferred because it needs a separate tap repository and release automation; it can install the same `<tag>` layout later.
-3. Settings inside `.config/wt.toml`, as a `[polyship]` table or as `[aliases] ship = "MERGE_PUSH=origin polyship ship"` — rejected because wt 0.80.0 warns about an unknown table on every command, and an alias needs a new approval after every edit of its text (measured 2026-10-28).
-4. A TOML or YAML `.config/polyship.toml` — rejected because bash 3.2 has no parser for it, while `git config --file` reads git-config syntax with the git polyship already requires, as git-lfs reads `.lfsconfig`.
-5. A git submodule with the scripts — rejected because every new worktree needs `git submodule update --init`, and polyship creates one worktree per task.
-6. Track the tip of `main` instead of tags — rejected because a minimum version needs an order between versions, and a tag marks a commit that passed the polyship gate.
+1. Keep vendoring into `scripts/` (polyship bddc77d) — rejected because each adopter carries about 1080 lines of copied code and each change costs one commit per adopter.
+2. Keep the first per-machine design: git-clone install, `polyship self-update`, settings from env, `git config` and `.config/polyship.conf` — rejected because it differs from polybrief on every point, and its committed file is read from the branch being shipped, the risk polybrief rejected in `polybrief-home.adr` alternative 2.
+3. Rewrite polyship in Go and release it with GoReleaser like polybrief — rejected on 2026-10-28 because the merge flow's guarantees are measured on the Bash code (`@measurements/REPORT.md`), and its known failures are git states under kills and races (`@lab/recover.sh`), which a port keeps.
+4. One file on PATH, as polybrief's binary — rejected because `ship.sh` runs for minutes and starts `merge.sh` from disk later, so replacing files in place could mix two versions inside one run; a directory per version never changes once installed.
+5. A Homebrew tap — deferred, as in polybrief, because it needs a second repository and a token with write access.
 
 ## Consequences
 
 Positive:
 
-- An adopter holds no polyship code: lifecore-app drops 1080 lines under `scripts/` and keeps two config files and one instruction block.
-- One `polyship self-update` moves every repository on the machine to the new version, instead of one vendoring commit per adopter.
-- An agent ends every task with the same command, `polyship ship`, and the project's settings apply without an alias or an env prefix.
-- A project's `polyship.minVersion` stops an older install with an upgrade hint, as lefthook, mise and pre-commit do.
+- polyship and polybrief install, update, pin a version and report their settings the same way: `curl … install.sh | sh`, `POLY*_VERSION`, `-o KEY=VALUE`, `config`, `--version`.
+- An adopter holds no polyship code: lifecore-app drops 1080 lines under `scripts/`.
+- A branch cannot change its own ship settings through a file; the settings are in the command the session runs.
+- A download is checked against the release's sha256 before anything is installed.
 
 Negative:
 
-- Every machine and sandbox that ships needs the install; a cloud agent without it cannot run `polyship ship` [expected].
-- All repositories on a machine change version at the same moment, so a regression in `bin/` reaches all of them; the polyship `pre-merge` gate (`@.config/wt.toml`) is the only guard before a tag.
-- A release now needs a `v*` tag, a step the maintainer did not have before.
-- `.config/polyship.conf` cannot set a command (`MERGE_PREPARE`, `SHIP_TEST`), as git-lfs limits `.lfsconfig` to a fixed key set; a project puts its install step into its `[pre-merge]` hook instead, which wt approves.
+- Every machine that ships needs the install; a cloud agent without it cannot run `polyship ship` [expected].
+- All repositories on a machine change version at once; the checks before each release are the only guard.
+- A repository's settings live in the text of its agent instructions: a person who types `polyship ship` without `-o push=origin` merges locally only. The next run with `-o push=origin` publishes that recorded merge; if the remote moved in between, `merge.sh` stops with exit 2 (the two diverged, `@bin/merge.sh` `sync_remote`). Until then new sessions start from the older remote target.
+- No project-declared minimum version: polybrief has none either.
+- Updating is running `install.sh` again; nothing reminds a user that a newer release exists (polybrief stayed at 0.0.3 while 0.1.0 was out, seen 2026-10-28).
 
 ## Superseded when
 
-- An adopter must ship from a sandbox where installing polyship is impossible (for example a hosted agent with no shell setup step).
-- Two repositories on one machine need versions that one install cannot serve, that is, a maximum version, not only a minimum.
-- Worktrunk supports third-party project settings or plugins that carry scripts.
+- polyship must ship from a sandbox where installing it is impossible.
+- polybrief changes its distribution or configuration decision: both tools follow one approach.
+- Bash defects of the kind polybrief's `go-runtime.adr` lists start to appear in `bin/`, which reopens alternative 3.

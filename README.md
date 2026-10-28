@@ -48,13 +48,10 @@ Once per machine, on macOS or Linux:
 curl -fsSL https://raw.githubusercontent.com/ivklgn/polyship/main/install.sh | sh
 ```
 
-It installs the newest release into `~/.local/share/polyship/<version>/` and the command `~/.local/bin/polyship`.
-Nothing is copied into your repositories: they keep only configuration. To update every repository on the
-machine at once:
-
-```bash
-polyship self-update            # or: polyship self-update v0.1.0
-```
+It downloads the newest release, checks its sha256, unpacks it into `~/.local/share/polyship/<version>/` and
+links the command `~/.local/bin/polyship`. Nothing is copied into your repositories: they keep only
+configuration. Run the same command again to update every repository on the machine at once;
+`POLYSHIP_VERSION=v0.1.0` picks a release, also to go back.
 
 You also need bash, perl, git 2.40+ and Worktrunk 0.80+:
 
@@ -96,14 +93,9 @@ polyship ship
 Exit code 0 means the branch is on `main`. To see three sessions land without any agent, run
 [example/demo.sh](example/README.md).
 
-If your worktrees start from `origin/main` (Claude Code and Codex worktrees usually do), commit
-`.config/polyship.conf` with the remote. Then each merge is pushed under the lock, and the next session starts
-from up-to-date code:
-
-```ini
-[polyship]
-	push = origin
-```
+If your worktrees start from `origin/main` (Claude Code and Codex worktrees usually do), ship with
+`polyship ship -o push=origin`, and write that command into your agent instructions below. Then each merge is
+pushed under the lock, and the next session starts from up-to-date code.
 
 ## Tell your agents
 
@@ -113,11 +105,11 @@ Add this to `CLAUDE.md` or `AGENTS.md`:
 ## Shipping
 
 - A task ends with `polyship ship`. Commit first. Exit code 0 means the branch is on the target.
-- `ship.sh` runs for minutes (review, tests, the queue). Run it in the foreground and wait for its exit code;
-  do not end your turn while it runs, and do not report the task shipped without exit code 0.
+- `polyship ship` runs for minutes (review, tests, the queue). Run it in the foreground and wait for its exit
+  code; do not end your turn while it runs, and do not report the task shipped without exit code 0.
 - Write the intent of the task into the commit message, not only what changed.
 - If a conflict is between two incompatible product behaviors, do not choose. Leave the rebase open
-  and ask the owner, with both options (`ship.sh` exits with 3).
+  and ask the owner, with both options (`polyship ship` exits with 3).
 - Exit code 5 means lost commits: run the `git reset --hard` command from the message. If the tree has
   uncommitted changes, `git stash -u` first and `git stash pop` after: the reset deletes them.
 ```
@@ -136,7 +128,7 @@ flowchart LR
   M -- conflict --> R[agent resolves] --> L
 ```
 
-1. An agent reviews the branch and fixes what it finds (`SHIP_REVIEW=0` turns this off).
+1. An agent reviews the branch and fixes what it finds (`-o review=off` turns this off).
 2. The tests run, outside the lock.
 3. `merge.sh` takes the lock, rebases onto `main`, runs the `pre-merge` tests again and merges with a merge
    commit. Every first-parent commit of `main` is a tested tree.
@@ -148,39 +140,39 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). polyship is released under the [MIT Lice
 
 ## Quick reference
 
-`polyship ship` (`bin/ship.sh`): review, tests, merge, conflict rounds. `polyship merge [wt merge flags]`
-(`bin/merge.sh`): only the locked merge. `polyship self-update [<tag>]`, `polyship check` (the replay tests
-against the installed version), `polyship version`.
+`polyship ship [-C DIR] [-o KEY=VALUE]...` (`bin/ship.sh`): review, tests, merge, conflict rounds.
+`polyship merge [-C DIR] [-o KEY=VALUE]... [wt merge flags]` (`bin/merge.sh`): only the locked merge.
+`polyship config [-o KEY=VALUE]...`: every setting with its value and source. `polyship check`: the replay tests
+against the installed version. `polyship --version`.
 
 | Exit | `polyship ship` | `polyship merge` |
 |---|---|---|
 | 0 | The branch is on the target. | Same. |
-| 1 | The tests failed, or there is no progress. | `MERGE_PREPARE` failed, a fresh git lock file is in the way, or (`MERGE_PUSH`) the fetch or the push failed; the target is back where it was. |
-| 2 | Not ready: on the target, a detached HEAD, uncommitted changes, an open rebase, or `merge.sh` refused (below). | Run by `ship.sh`'s agent, no target branch, or (`MERGE_PUSH`) a local commit on the target that the remote lacks. |
+| 1 | The tests failed, or there is no progress. | `prepare` failed, a fresh git lock file is in the way, or (`push`) the fetch or the push failed; the target is back where it was. |
+| 2 | Not ready: on the target, a detached HEAD, uncommitted changes, an open rebase, a bad argument, or `merge.sh` refused (below). | Run by `ship.sh`'s agent, no target branch, a bad argument, or (`push`) a local commit on the target that the remote lacks. |
 | 3 | The owner must choose between two product behaviors. The rebase stays open. | |
 | 4 | The target, a remote or `.git/hooks` changed while the agent ran, other than by another session's `merge.sh`. Run again. | |
 | 5 | The branch is on the target, but its commits are not. Run the `git reset --hard <tip>` from the message (`git stash -u` first if the tree has changes). | Same. |
 | other | | The code from `wt merge`. |
 
-Each setting is read from the first layer that defines it: the env variable, then `git config polyship.<key>`
-(`.git/config` for you only, `--global` for every repository), then the repository's committed
-`.config/polyship.conf` (git-config syntax), then the default. The committed file cannot set a command.
+Settings are arguments only, as in polybrief: `-o KEY=VALUE` for one command, repeatable, the last one wins.
+There is no settings file, and a variable left in your shell does not reach the scripts. An unknown key or a
+bad value stops the command with exit 2.
 
-| Key | Variable | Default | Meaning |
+| Key | Values | Default | Meaning |
 |---|---|---|---|
-| `target` | `MERGE_TARGET` | `wt config state default-branch` | The branch every session merges into. |
-| `push` | `MERGE_PUSH` | none | A remote: take its target under the lock before each merge, push each merge, land only what it took. |
-| `prepare` | `MERGE_PREPARE` | none | `sh -c` command under the lock before the merge, for worktrees that skipped `post-start`. Not in the committed file: put the step into `[pre-merge]` instead. |
-| `staleIndexLock` | `MERGE_STALE_INDEX_LOCK` | `60` | Seconds after which a git lock file counts as left by a killed command. |
-| `test` | `SHIP_TEST` | `wt hook pre-merge --yes` | The tests before the queue. Not in the committed file. |
-| `agent` | `SHIP_AGENT` | `claude`, else `codex` | The agent for the review and conflicts. |
-| `review` | `SHIP_REVIEW` | `true` (`1`) | `false` (`0`) skips the review. |
-| `reviewHow` | `SHIP_REVIEW_HOW` | `for correctness, the task in the commit messages, tests` | How the agent reviews; name your own review skill or checklist here. |
-| `rounds` | `SHIP_ROUNDS` | `10` | Merge rounds per `ship.sh` run. |
-| `minVersion` | | none | The oldest polyship release this repository works with; an older install stops with exit 2. |
-| | `SHIP_AGENT_RUN` | set by `ship.sh` | Marks `ship.sh`'s agent runs; `merge.sh` refuses to run under it. |
+| `target` | branch | `wt config state default-branch` | The branch every session merges into. |
+| `push` | remote | none | Take the remote's target under the lock before each merge, push each merge, land only what it took. |
+| `prepare` | command | none | `sh -c` command under the lock before the merge, for worktrees that skipped `post-start`. |
+| `test` | command | `wt hook pre-merge --yes` | The tests before the queue. |
+| `agent` | `claude`, `codex` | `claude`, else `codex` | The agent for the review and conflicts. |
+| `review` | `on`, `off` | `on` | `off` skips the review. |
+| `review_how` | text | `for correctness, the task in the commit messages, tests` | How the agent reviews; name your own review skill or checklist here. |
+| `rounds` | number | `10` | Merge rounds per `polyship ship` run. |
+| `stale_index_lock` | seconds | `60` | After this, a git lock file counts as left by a killed command. |
 
 [polyship command spec](.archcore/architecture/polyship-cli.spec.md) ·
+[release spec](.archcore/architecture/polyship-release.spec.md) ·
 
 [ship.sh spec](.archcore/architecture/ship-sh.spec.md) ·
 [merge.sh spec](.archcore/architecture/merge-sh.spec.md) ·

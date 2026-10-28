@@ -4,8 +4,8 @@ Reader: a coding agent, or a person, working **in the repository that adopts pol
 order. Every step ends with a check; when a check fails, stop and report the step and its output. Do not
 skip the end-to-end check in step 8: it is the only proof that the install works.
 
-polyship is installed once per machine. The repository gets only configuration: `.config/wt.toml`, an optional
-`.config/polyship.conf` and a block in `CLAUDE.md` or `AGENTS.md`. Never copy polyship's scripts into it.
+polyship is installed once per machine. The repository gets only configuration: `.config/wt.toml` and a block
+in `CLAUDE.md` or `AGENTS.md` that names the command with its arguments. Never copy polyship's scripts into it.
 
 Facts to collect before you start, from the owner or from the repository (lockfile, Makefile, CI config).
 Say which ones you inferred.
@@ -40,21 +40,21 @@ Check: all four commands print a version, and `wt --version` is at least `v0.80.
 
 ## 2. polyship on this machine
 
-Skip the install if `polyship version` already prints a tag; run `polyship self-update` instead.
+`polyship --version` already prints a version: run the install anyway, it updates to the newest release.
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/ivklgn/polyship/main/install.sh | sh
-polyship version
+polyship --version
 polyship check; echo "exit $?"
 ```
 
 `polyship check` builds throwaway repositories under `/tmp` and runs the known failure replays against the
 installed scripts. It touches nothing in this repository and takes a few minutes (about 4 on a laptop).
 
-Check: the install ends with `polyship: <tag> is current`; `polyship version` prints that tag (if the shell
-does not find `polyship`, add the PATH line the installer printed); in the `check` output no line starts with
-`FAIL`, and the last line is `exit 0`. Other lines (`reproduced …`, `Killed: 9`, git messages) are the replays'
-own output, not failures.
+Check: the install prints `Installed polyship <version>` (it verified the sha256 of the release); `polyship
+--version` prints the same (if the shell does not find `polyship`, add the PATH line the installer printed); in
+the `check` output no line starts with `FAIL`, and the last line is `exit 0`. Other lines (`reproduced …`,
+`Killed: 9`, git messages) are the replays' own output, not failures.
 
 ## 3. The project's hooks
 
@@ -84,40 +84,31 @@ wt config approvals list
 
 Check: the list shows the `pre-merge` commands (and `post-start`, if any) as approved.
 
-## 5. Settings
+## 5. The command and its arguments
 
-Create `.config/polyship.conf` only for what the facts table asks; with the defaults, skip this step. It is
-git-config syntax, committed, and read by `polyship` from the worktree it runs in:
+Settings are arguments of the command, `-o KEY=VALUE`; there is no settings file. Choose them from the facts
+table; with the defaults the command is plain `polyship ship`:
 
-```ini
-[polyship]
-	push = origin                  # new worktrees start from origin/<target>
-	reviewHow = with /<skill>      # the project's own review skill or checklist
-	minVersion = <tag>             # the tag from step 2: an older install stops instead of running
-```
+- new worktrees start from `origin/<target>`: `-o push=origin`. Every merge is then pushed under the lock, so the
+  next session starts from the merged code; without it, new sessions start from a stale target.
+- the project has its own review skill or checklist: `-o review_how='with /<skill>'` (or the checklist in plain
+  words). Without it the agent reviews for correctness, the task in the commit messages and tests;
+  `-o review=off` skips the review step.
+- Codex sessions must be able to write the worktree's git directory to commit. Codex's `workspace-write` sandbox
+  keeps it read-only, so run non-interactive Codex sessions with `--dangerously-bypass-approvals-and-sandbox` (or
+  approve `git commit` by hand). The Codex agent that `polyship ship` starts already runs without the sandbox.
 
-- `push = origin`: every merge is pushed under the lock, so the next session starts from the merged code;
-  without it, new sessions start from a stale target.
-- Without `reviewHow` the agent reviews for correctness, the task in the commit messages and tests;
-  `review = false` skips the review step.
-- The committed file cannot set a command (`prepare`, `test`): step 3 holds the commands, which wt approves.
-- A setting for one person only goes into git config, not the file: `git config polyship.agent codex`.
-- Sessions in Codex must be able to write the worktree's git directory to commit. Codex's `workspace-write`
-  sandbox keeps it read-only, so run non-interactive Codex sessions with
-  `--dangerously-bypass-approvals-and-sandbox` (or approve `git commit` by hand). `ship.sh`'s own Codex agent
-  already runs without the sandbox.
-
-Check: `git config --file .config/polyship.conf --list` prints the keys you set.
+Check: `polyship config <your -o arguments>` prints each key you set with source `flag`, and exits 0.
 
 ## 6. Tell the agents
 
-Add this to `CLAUDE.md` or `AGENTS.md`, worded for this repository. A later session that resolves a
-conflict sees only the commits, not the chat, so the intent must be in the commits.
+Add this to `CLAUDE.md` or `AGENTS.md`, worded for this repository, with the command from step 5. A later
+session that resolves a conflict sees only the commits, not the chat, so the intent must be in the commits.
 
 ```markdown
 ## Shipping
 
-- A task ends with `polyship ship`. Commit first. Exit code 0 means the branch is on `<target>`.
+- A task ends with `<the command from step 5>`. Commit first. Exit code 0 means the branch is on `<target>`.
 - `polyship ship` runs for minutes (review, tests, the queue). Run it in the foreground and wait for its exit
   code; do not end your turn while it runs, and do not report the task shipped without exit code 0.
 - Write the intent of the task into the commit message, not only what changed.
@@ -127,11 +118,11 @@ conflict sees only the commits, not the chat, so the intent must be in the commi
   uncommitted changes, `git stash -u` first and `git stash pop` after: the reset deletes them.
 ```
 
-Check: `grep -n 'polyship ship' CLAUDE.md AGENTS.md` finds the block.
+Check: `grep -n 'polyship ship' CLAUDE.md AGENTS.md` finds the block with the command of step 5.
 
 ## 7. Commit
 
-Commit `.config/wt.toml`, `.config/polyship.conf` (if any) and the agent instructions, with the intent in the
+Commit `.config/wt.toml` and the agent instructions, with the intent in the
 message (why this repository adopts polyship). The configuration must be in a commit before step 8: a
 worktree is created from a commit.
 
@@ -149,11 +140,10 @@ smoke=$(git worktree list --porcelain | awk '/^worktree /{w=substr($0,10)} $0=="
 cd "$smoke"
 echo "polyship smoke $(date +%s)" > .polyship-smoke
 git add .polyship-smoke && git commit -qm "chore: polyship smoke test, delete after the check"
-MERGE_PUSH= SHIP_REVIEW=0 MERGE_TARGET=polyship-smoke-target polyship ship; echo "exit $?"
+polyship ship -o target=polyship-smoke-target -o review=off; echo "exit $?"
 ```
 
-The env variables win over `.config/polyship.conf`, so this run pushes nothing and merges into the throwaway
-target.
+This run has no `push`, so it pushes nothing, and it merges into the throwaway target.
 
 Check, in this order:
 
@@ -176,7 +166,7 @@ Check: `git worktree list` has no `polyship-smoke`, `git branch --list 'polyship
 Exit codes other than 0 and what they mean: the exit code table in "Quick reference" of polyship's README. The
 common ones here: exit 1 with `tests are red` means the `pre-merge` commands of step 3 fail on a clean tree;
 exit 2 with `no target branch` means `wt config state default-branch set <target>` was never run and
-`MERGE_TARGET` is unset; exit 2 with `is required` means the installed polyship is older than `minVersion`.
+`-o target` is not given; exit 2 with `polyship:` names a bad argument.
 
 ## 9. Report
 
@@ -185,5 +175,5 @@ Report to the owner:
 - the files you changed and the commit;
 - the polyship version from step 2 and the result of `polyship check`;
 - the output of step 8, checks 1 to 4;
-- the facts you inferred rather than were given, and the keys you set in step 5;
-- whether you set `push` in step 5, and why: without it `polyship ship` merges into the **local** target only.
+- the facts you inferred rather than were given, and the command with its arguments from step 5;
+- whether you set `-o push` in step 5, and why: without it `polyship ship` merges into the **local** target only.

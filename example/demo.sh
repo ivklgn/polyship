@@ -32,7 +32,7 @@ done
 echo "== three sessions run polyship ship at the same time"
 for task in greet bye help; do
   wt_dir=$(git worktree list --porcelain | awk -v b="branch refs/heads/$task" '/^worktree /{w=substr($0,10)} $0==b{print w}')
-  (cd "$wt_dir" && SHIP_REVIEW=0 polyship ship 2>&1 | grep '^ship:' | sed "s/^/[$task] /"; echo "[$task] exit ${PIPESTATUS[0]}") &
+  (cd "$wt_dir" && polyship ship -o review=off 2>&1 | grep '^ship:' | sed "s/^/[$task] /"; echo "[$task] exit ${PIPESTATUS[0]}") &
 done
 wait
 
